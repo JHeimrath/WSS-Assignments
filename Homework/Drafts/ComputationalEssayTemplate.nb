@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5399,        149]
-NotebookOptionsPosition[      4020,        109]
-NotebookOutlinePosition[      4987,        142]
-CellTagsIndexPosition[      4920,        137]
+NotebookDataLength[      6130,        173]
+NotebookOptionsPosition[      4751,        133]
+NotebookOutlinePosition[      5718,        166]
+CellTagsIndexPosition[      5651,        161]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -66,11 +66,16 @@ Cell[TextData[{
         SubscriptBox["a", "2"], "+"}], "..."}]]}]], TraditionalForm]],
   FormatType->"TraditionalForm",ExpressionUUID->
   "4a593cf2-4d1e-49c8-9136-aaa6970038e8"],
- "\nis called a simple, or regular, continued fraction. The numbers ",
+ "\nis called a ",
+ StyleBox["simple",
+  FontSlant->"Italic"],
+ ", or ",
+ StyleBox["regular",
+  FontSlant->"Italic"],
+ ", continued fraction. The numbers {",
  Cell[BoxData[
   FormBox[
-   RowBox[{"{", 
-    SubscriptBox["a", "0"]}], TraditionalForm]],
+   SubscriptBox["a", "0"], TraditionalForm]],
   FormatType->"TraditionalForm",ExpressionUUID->
   "27241d7a-62c7-4f9a-82be-b85985986f74"],
  ", ",
@@ -90,13 +95,32 @@ Cell[TextData[{
   FontSlant->"Italic"],
  " of the continued fraction and in general they can belong to an arbitrary \
 domain. For simplicity in what follows we shall assume that the coefficients \
-are positive integers."
+are positive integers. It is also convenient to introduce the notation [",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d3b7b9eb-083d-4a1d-859a-a16c0ce61332"],
+ "; ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "1"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "346749bd-13a1-4926-837f-8e1ee4cf3b9b"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "0f70760e-99fd-46c7-aca6-ae9d5d829884"],
+ ", ..."
 }], "Text",
  CellChangeTimes->{{3.770484785831618*^9, 3.770484787531086*^9}, {
    3.7704848369826345`*^9, 3.7704848610263457`*^9}, 3.7704849491355906`*^9, {
    3.770485025135271*^9, 3.770485259354681*^9}, {3.7704853828250036`*^9, 
    3.7704854478699913`*^9}, 3.770485583269272*^9, {3.77048562290324*^9, 
-   3.7704856417927074`*^9}},
+   3.7704856417927074`*^9}, {3.770491674049889*^9, 3.770491717108697*^9}, {
+   3.770491990417308*^9, 3.7704921316810513`*^9}},
  TextAlignment->Left,ExpressionUUID->"cef6a0ba-b89b-4bd9-9566-70b53195f786"],
 
 Cell[BoxData[""], "Input",
@@ -136,7 +160,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 4781, 131}
+ {"Title", 5512, 155}
  }
 *)
 (*NotebookFileOutline
@@ -147,8 +171,8 @@ Cell[580, 22, 429, 6, 96, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3
 Cell[1012, 30, 537, 8, 53, "Subtitle",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[CellGroupData[{
 Cell[1574, 42, 404, 5, 67, "Section",ExpressionUUID->"c118bb02-e7a5-4344-a96c-0a8c9cb5a937"],
-Cell[1981, 49, 1801, 50, 116, "Text",ExpressionUUID->"cef6a0ba-b89b-4bd9-9566-70b53195f786"],
-Cell[3785, 101, 207, 4, 28, "Input",ExpressionUUID->"fa31704b-ed1a-48b1-9a99-cedb103f859d"]
+Cell[1981, 49, 2532, 74, 116, "Text",ExpressionUUID->"cef6a0ba-b89b-4bd9-9566-70b53195f786"],
+Cell[4516, 125, 207, 4, 28, "Input",ExpressionUUID->"fa31704b-ed1a-48b1-9a99-cedb103f859d"]
 }, Open  ]]
 }, Open  ]]
 }
