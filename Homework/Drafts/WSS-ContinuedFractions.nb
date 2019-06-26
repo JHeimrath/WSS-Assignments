@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21793,        574]
-NotebookOptionsPosition[     18424,        503]
-NotebookOutlinePosition[     19392,        536]
-CellTagsIndexPosition[     19324,        531]
+NotebookDataLength[     22395,        585]
+NotebookOptionsPosition[     18839,        512]
+NotebookOutlinePosition[     19807,        545]
+CellTagsIndexPosition[     19739,        540]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -250,29 +250,29 @@ f46dd059af91"],
 Cell[TextData[{
  "diverges to infinity and the rate of convergence of the continued fraction \
 is related to the rate of divergence of the above series. It is a bit \
-trickier but also possible to prove that each real number has a unique \
-continued fraction representation. Thus, with our assumption that the ",
+trickier but also possible to prove that there is a bijection between \
+irrational numbers and infinite continued fractions! Thus, with our \
+assumption that the ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["a", "i"], TraditionalForm]],
   FormatType->"TraditionalForm",ExpressionUUID->
   "efb5d193-f06b-4cf2-8baf-752689112a7a"],
  "\[CloseCurlyQuote]s are positive integers, we in fact see that every \
-continued fraction converges to a real number. The series which diverges most \
-slowly is given by ",
+continued fraction converges to a real (irrational) number. The series which \
+diverges most slowly is given by ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["a", "i"], "=", "1"}], TraditionalForm]],
   FormatType->"TraditionalForm",ExpressionUUID->
   "c41ac3d6-c6fa-4da8-9407-26eab8080eca"],
- " for all i. It is interesting to see which real number this continued \
-fraction converges to. The first 30 convergents can be found using the \
-following code:"
+ " for all i. It is interesting to see what this continued fraction actually \
+converges to. The first 30 convergents can be found using the following code:"
 }], "Text",
  CellChangeTimes->{{3.770548805223585*^9, 3.770548902606448*^9}, {
-  3.7705490065052276`*^9, 
-  3.770549250628083*^9}},ExpressionUUID->"9fdc6668-5c52-4582-8cdf-\
+  3.7705490065052276`*^9, 3.770549250628083*^9}, {3.770550201912247*^9, 
+  3.770550272510228*^9}},ExpressionUUID->"9fdc6668-5c52-4582-8cdf-\
 49b7949b8c68"],
 
 Cell[CellGroupData[{
@@ -375,6 +375,16 @@ Cell[BoxData[
  CellLabel->"Out[13]=",ExpressionUUID->"c41cdb45-d70e-4b6c-a30f-3c9d0ebbf6d9"]
 }, Open  ]],
 
+Cell["\<\
+Another example of an interesting continued fraction is the Trott constant, \
+discovered by M. Trott in 1999. It is the only known infinite simple \
+continued fraction whose decimal digits are also the coefficients of its \
+continued fraction.\
+\>", "Text",
+ CellChangeTimes->{{3.770550051272262*^9, 
+  3.7705501522586517`*^9}},ExpressionUUID->"5010a2fc-2ddc-45a8-af03-\
+a40660a5ac9e"],
+
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7704848873997903`*^9, 3.770484906102713*^9}, {
   3.7704851573884616`*^9, 
@@ -450,54 +460,53 @@ Cell["Khinchin\[CloseCurlyQuote]s Constant", "Section",
   3.770510675570605*^9}},ExpressionUUID->"3ace0394-c053-4c68-84eb-\
 a4407a7cb6e5"],
 
-Cell["\<\
-In this section we focus on properties of infinite continued fractions. Some \
-well known mathematical constants have very elegant continued fractions, for \
-example:\
-\>", "Text",
+Cell["", "Text",
  CellChangeTimes->{{3.7705106872483644`*^9, 3.7705107441032696`*^9}, {
-  3.77051114110999*^9, 
-  3.770511206582883*^9}},ExpressionUUID->"b683e5ef-1cc0-49da-be5d-\
-95fe9eac5514"],
+   3.77051114110999*^9, 3.770511206582883*^9}, 
+   3.7705506932680097`*^9},ExpressionUUID->"b683e5ef-1cc0-49da-be5d-\
+95fe9eac5514"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"ContinuedFraction", "[", "GoldenRatio", "]"}]], "Input",
- CellChangeTimes->{{3.770511209514989*^9, 3.7705112152905507`*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"be529e3b-13c3-487b-8b21-31fa9315b033"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"1", ",", 
-   RowBox[{"{", "1", "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.770511215811146*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"3589d148-1912-4288-bf2a-639b4a2e3858"]
-}, Open  ]],
+Cell["References", "Section",
+ CellChangeTimes->{{3.7705503479527383`*^9, 
+  3.770550356996263*^9}},ExpressionUUID->"c01c782a-d183-41d9-b103-\
+7c824d08cc63"],
 
 Cell[TextData[{
- "which in our notation can be written as ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"[", 
-    RowBox[{
-     RowBox[{"1", ";", "1"}], ",", "1", ",", "1", ",", "..."}], "]"}], 
-   TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "a0b8eedb-6ce6-409d-8d27-ba2a8032d7bd"],
- ", or [",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"1", ";", 
-    OverscriptBox["1", "-"]}], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "6f9be686-3170-41b4-9c13-7d498ab40998"],
- "]. It is also known that "
+ "Wiener, M. ",
+ StyleBox["Cryptanalysis of Short RSA Secret Exponents",
+  FontSlant->"Italic"],
+ ", IEEETransaction of Information Theory, Vol. 36, No. 3 1990"
 }], "Text",
- CellChangeTimes->{{3.7705112447617044`*^9, 3.7705112587313347`*^9}, {
-  3.7705114041133895`*^9, 
-  3.7705115497888236`*^9}},ExpressionUUID->"2ecc2768-d81d-45c9-9946-\
-0ed0f5a722b9"]
+ CellDingbat->"\[FilledSmallSquare]",
+ CellChangeTimes->{{3.7705508069414577`*^9, 3.770550810377246*^9}, {
+  3.7705509186314793`*^9, 
+  3.7705509899961576`*^9}},ExpressionUUID->"4520251f-7506-4217-a509-\
+02c699192f1f"],
+
+Cell[TextData[{
+ "Khinchin, A. ",
+ StyleBox["Continued Fractions",
+  FontSlant->"Italic"],
+ ", Dover 1997"
+}], "Text",
+ CellDingbat->"\[FilledSmallSquare]",
+ CellChangeTimes->{{3.770550431991131*^9, 3.770550446003127*^9}, {
+   3.7705505499620237`*^9, 3.770550607616568*^9}, 
+   3.770550778468027*^9},ExpressionUUID->"034da641-c8b6-4ae7-91a2-\
+efc048376dae"],
+
+Cell["\<\
+Weisstein, Eric W. \[OpenCurlyDoubleQuote]Trott Constants.\
+\[CloseCurlyDoubleQuote] From MathWorld--A Wolfram Web Resource. \
+http://mathworld.wolfram.com/TrottConstants.html\
+\>", "Text",
+ CellDingbat->"\[FilledSmallSquare]",
+ CellChangeTimes->{
+  3.770551059953226*^9},ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-\
+70481cb1c7c7"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -530,7 +539,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 19185, 525}
+ {"Title", 19600, 534}
  }
 *)
 (*NotebookFileOutline
@@ -545,35 +554,37 @@ Cell[1981, 49, 609, 8, 34, "Text",ExpressionUUID->"cef6a0ba-b89b-4bd9-9566-70b53
 Cell[2593, 59, 1077, 26, 52, "Text",ExpressionUUID->"2813800a-7e90-4369-ab42-397cf3161143"],
 Cell[3673, 87, 5445, 150, 166, "Text",ExpressionUUID->"bcdcdc72-8db7-4e1b-8dcf-99b64734e334"],
 Cell[9121, 239, 338, 8, 35, "Text",ExpressionUUID->"59d946b8-30e8-45af-b5f9-f46dd059af91"],
-Cell[9462, 249, 1193, 26, 78, "Text",ExpressionUUID->"9fdc6668-5c52-4582-8cdf-49b7949b8c68"],
+Cell[9462, 249, 1265, 26, 78, "Text",ExpressionUUID->"9fdc6668-5c52-4582-8cdf-49b7949b8c68"],
 Cell[CellGroupData[{
-Cell[10680, 279, 543, 12, 28, "Input",ExpressionUUID->"7b07ffaf-9bf5-4187-89a6-20815b92fe10"],
-Cell[11226, 293, 996, 25, 49, "Output",ExpressionUUID->"dabf2ef3-2cc0-4636-99a7-13f070b09fbc"]
+Cell[10752, 279, 543, 12, 28, "Input",ExpressionUUID->"7b07ffaf-9bf5-4187-89a6-20815b92fe10"],
+Cell[11298, 293, 996, 25, 49, "Output",ExpressionUUID->"dabf2ef3-2cc0-4636-99a7-13f070b09fbc"]
 }, Open  ]],
-Cell[12237, 321, 255, 6, 34, "Text",ExpressionUUID->"2a6a2170-6498-4d33-9195-a3e69937443a"],
+Cell[12309, 321, 255, 6, 34, "Text",ExpressionUUID->"2a6a2170-6498-4d33-9195-a3e69937443a"],
 Cell[CellGroupData[{
-Cell[12517, 331, 198, 3, 28, "Input",ExpressionUUID->"1be68880-7052-41d6-a2c3-72fe5b8fdcfa"],
-Cell[12718, 336, 770, 14, 32, "Output",ExpressionUUID->"c79a61b9-959b-4808-a3fd-2b63ef240fa4"]
+Cell[12589, 331, 198, 3, 28, "Input",ExpressionUUID->"1be68880-7052-41d6-a2c3-72fe5b8fdcfa"],
+Cell[12790, 336, 770, 14, 32, "Output",ExpressionUUID->"c79a61b9-959b-4808-a3fd-2b63ef240fa4"]
 }, Open  ]],
-Cell[13503, 353, 332, 7, 34, "Text",ExpressionUUID->"ec829243-145e-4b76-9b50-4540a48766cb"],
+Cell[13575, 353, 332, 7, 34, "Text",ExpressionUUID->"ec829243-145e-4b76-9b50-4540a48766cb"],
 Cell[CellGroupData[{
-Cell[13860, 364, 227, 3, 28, "Input",ExpressionUUID->"2b81051a-dd34-4a06-9bf4-b5c379c280df"],
-Cell[14090, 369, 220, 5, 89, "Output",ExpressionUUID->"c41cdb45-d70e-4b6c-a30f-3c9d0ebbf6d9"]
+Cell[13932, 364, 227, 3, 28, "Input",ExpressionUUID->"2b81051a-dd34-4a06-9bf4-b5c379c280df"],
+Cell[14162, 369, 220, 5, 32, "Output",ExpressionUUID->"c41cdb45-d70e-4b6c-a30f-3c9d0ebbf6d9"]
 }, Open  ]],
-Cell[14325, 377, 207, 4, 28, "Input",ExpressionUUID->"fa31704b-ed1a-48b1-9a99-cedb103f859d"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[14569, 386, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
-Cell[14749, 391, 1843, 51, 66, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"]
+Cell[14397, 377, 395, 8, 56, "Text",ExpressionUUID->"5010a2fc-2ddc-45a8-af03-a40660a5ac9e"],
+Cell[14795, 387, 207, 4, 28, "Input",ExpressionUUID->"fa31704b-ed1a-48b1-9a99-cedb103f859d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16629, 447, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
-Cell[16815, 452, 368, 8, 34, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"],
-Cell[CellGroupData[{
-Cell[17208, 464, 226, 3, 28, "Input",ExpressionUUID->"be529e3b-13c3-487b-8b21-31fa9315b033"],
-Cell[17437, 469, 217, 5, 32, "Output",ExpressionUUID->"3589d148-1912-4288-bf2a-639b4a2e3858"]
+Cell[15039, 396, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
+Cell[15219, 401, 1843, 51, 66, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"]
 }, Open  ]],
-Cell[17669, 477, 727, 22, 37, "Text",ExpressionUUID->"2ecc2768-d81d-45c9-9946-0ed0f5a722b9"]
+Cell[CellGroupData[{
+Cell[17099, 457, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
+Cell[17285, 462, 220, 4, 34, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17542, 471, 157, 3, 67, "Section",ExpressionUUID->"c01c782a-d183-41d9-b103-7c824d08cc63"],
+Cell[17702, 476, 407, 10, 34, "Text",ExpressionUUID->"4520251f-7506-4217-a509-02c699192f1f"],
+Cell[18112, 488, 357, 10, 34, "Text",ExpressionUUID->"034da641-c8b6-4ae7-91a2-efc048376dae"],
+Cell[18472, 500, 339, 8, 34, "Text",ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-70481cb1c7c7"]
 }, Open  ]]
 }, Open  ]]
 }
