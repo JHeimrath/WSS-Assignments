@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12071,        322]
-NotebookOptionsPosition[      9753,        267]
-NotebookOutlinePosition[     10721,        300]
-CellTagsIndexPosition[     10653,        295]
+NotebookDataLength[     21793,        574]
+NotebookOptionsPosition[     18424,        503]
+NotebookOutlinePosition[     19392,        536]
+CellTagsIndexPosition[     19324,        531]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -111,8 +111,14 @@ Cell[TextData[{
  StyleBox["coefficients",
   FontSlant->"Italic"],
  " of the continued fraction and in general they can belong to an arbitrary \
-domain. For simplicity in what follows we shall assume that the coefficients \
-are positive integers. It is also convenient to introduce the notation [",
+domain. For simplicity in what follows we shall assume that ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "59846c42-00eb-4909-8566-aedd630306d0"],
+ " is an integer and the remaining coefficients are positive integers. It is \
+also convenient to introduce the notation [",
  Cell[BoxData[
   FormBox[
    SubscriptBox["a", "0"], TraditionalForm]],ExpressionUUID->
@@ -127,7 +133,97 @@ are positive integers. It is also convenient to introduce the notation [",
   FormBox[
    SubscriptBox["a", "2"], TraditionalForm]],ExpressionUUID->
   "c4d39a8a-eefb-4f8d-beba-bd4b2df21f4b"],
- ", ...] to avoid the unwieldy nested fractions."
+ ", ...] to avoid the unwieldy nested fraction notation. Depending on the \
+length of the sequence [",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "0"], TraditionalForm]],ExpressionUUID->
+  "2ef9fd41-3adf-4465-865e-3840d70cf583"],
+ "; ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "1"], TraditionalForm]],ExpressionUUID->
+  "cc61f1d1-8540-4217-8ee1-2bec2b6a3f64"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "2"], TraditionalForm]],ExpressionUUID->
+  "52e3e753-c900-498f-b1e6-73b24c96e27b"],
+ ", ...], we distinguish two classes of continued fractions: finite and \
+infinite. A finite continued fraction looks like [",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "0"], TraditionalForm]],ExpressionUUID->
+  "a9453ad9-d16a-4604-97f6-3db8aeee2d48"],
+ "; ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "1"], TraditionalForm]],ExpressionUUID->
+  "d4d04301-fe28-4c09-acf5-2e22461d84b7"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "2"], TraditionalForm]],ExpressionUUID->
+  "3c1891a8-49d3-4c40-9817-0d04a7ab3b0c"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"...", ",", 
+    SubscriptBox["a", "n"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "1a4b0c87-118a-4258-a1da-8a8dfab5708f"],
+ "] and we call this an ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["n", "th"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "bbcd8258-32dd-43f0-b3ba-bd5fff4aff0a"],
+ " order continued fraction (so an ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["n", "th"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d217b73b-2777-4bc2-b811-ef40f5f55d90"],
+ " order continued fraction has ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "+", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "a1a415ec-54fa-4003-8f03-ed27be41aaea"],
+ " elements). Since we assumed all the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e02d54bd-0f96-4adc-9dc7-f1359c17391d"],
+ "\[CloseCurlyQuote]s are positive integers, it is immediately obvious that \
+finite simple fractions are rational numbers. \[LeftDoubleBracket]Write about \
+convergents, and and \[OpenCurlyDoubleQuote]unwinding\[CloseCurlyDoubleQuote] \
+a fraction\[RightDoubleBracket].\n\nInfinite continued fractions are a bit \
+more complicated. The first question we should ask is for which sequences ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    SubscriptBox["a", "i"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "09a5bd95-1f59-4cbf-ba01-f50761a31bf5"],
+ "} does the continued fraction [",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "0"], TraditionalForm]],ExpressionUUID->
+  "bd68af9e-60a5-4c5a-8e4e-1eb3a50ab26a"],
+ "; ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "1"], TraditionalForm]],ExpressionUUID->
+  "9be5e9be-aa00-45dc-8c22-99a0843561a8"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "2"], TraditionalForm]],ExpressionUUID->
+  "78222353-ad29-430d-8f70-dac06c197ca5"],
+ ", ...] actually converge? It turns out that a necessary and sufficient \
+condition is that the series"
 }], "Text",
  CellChangeTimes->{{3.770484785831618*^9, 3.770484787531086*^9}, {
    3.7704848369826345`*^9, 3.7704848610263457`*^9}, 3.7704849491355906`*^9, {
@@ -136,8 +232,148 @@ are positive integers. It is also convenient to introduce the notation [",
    3.7704856417927074`*^9}, {3.770491674049889*^9, 3.770491717108697*^9}, {
    3.770491990417308*^9, 3.7704921316810513`*^9}, {3.77050939940336*^9, 
    3.77050940226873*^9}, 3.7705100378069177`*^9, {3.7705112844674797`*^9, 
-   3.7705113149310193`*^9}},
+   3.7705113149310193`*^9}, {3.770548258240163*^9, 3.7705487441956253`*^9}, {
+   3.770548925771922*^9, 3.770548946133077*^9}, {3.770548977826723*^9, 
+   3.770548984959261*^9}},
  TextAlignment->Left,ExpressionUUID->"bcdcdc72-8db7-4e1b-8dcf-99b64734e334"],
+
+Cell[TextData[Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+  SubscriptBox["a", 
+   "i"]}]],ExpressionUUID->"0adccad5-9cd5-4dd6-8277-f90dd4fc1ff3"]], "Text",
+ CellChangeTimes->{{3.770548757580982*^9, 
+  3.770548790968897*^9}},ExpressionUUID->"59d946b8-30e8-45af-b5f9-\
+f46dd059af91"],
+
+Cell[TextData[{
+ "diverges to infinity and the rate of convergence of the continued fraction \
+is related to the rate of divergence of the above series. It is a bit \
+trickier but also possible to prove that each real number has a unique \
+continued fraction representation. Thus, with our assumption that the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "efb5d193-f06b-4cf2-8baf-752689112a7a"],
+ "\[CloseCurlyQuote]s are positive integers, we in fact see that every \
+continued fraction converges to a real number. The series which diverges most \
+slowly is given by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["a", "i"], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "c41ac3d6-c6fa-4da8-9407-26eab8080eca"],
+ " for all i. It is interesting to see which real number this continued \
+fraction converges to. The first 30 convergents can be found using the \
+following code:"
+}], "Text",
+ CellChangeTimes->{{3.770548805223585*^9, 3.770548902606448*^9}, {
+  3.7705490065052276`*^9, 
+  3.770549250628083*^9}},ExpressionUUID->"9fdc6668-5c52-4582-8cdf-\
+49b7949b8c68"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"slowestConvergent", "=", 
+  RowBox[{"NestList", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"1", "/", "#"}]}], ")"}], "&"}], ",", "1", ",", "20"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7705492580590634`*^9, 3.7705494211125946`*^9}, {
+  3.770549461837988*^9, 3.7705494625328755`*^9}, {3.7705495123513803`*^9, 
+  3.7705495530900054`*^9}, {3.7705496476800985`*^9, 3.7705496596994076`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"7b07ffaf-9bf5-4187-89a6-20815b92fe10"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", 
+   FractionBox["3", "2"], ",", 
+   FractionBox["5", "3"], ",", 
+   FractionBox["8", "5"], ",", 
+   FractionBox["13", "8"], ",", 
+   FractionBox["21", "13"], ",", 
+   FractionBox["34", "21"], ",", 
+   FractionBox["55", "34"], ",", 
+   FractionBox["89", "55"], ",", 
+   FractionBox["144", "89"], ",", 
+   FractionBox["233", "144"], ",", 
+   FractionBox["377", "233"], ",", 
+   FractionBox["610", "377"], ",", 
+   FractionBox["987", "610"], ",", 
+   FractionBox["1597", "987"], ",", 
+   FractionBox["2584", "1597"], ",", 
+   FractionBox["4181", "2584"], ",", 
+   FractionBox["6765", "4181"], ",", 
+   FractionBox["10946", "6765"], ",", 
+   FractionBox["17711", "10946"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7705493584361525`*^9, 3.7705494217099805`*^9}, {
+  3.770549533960533*^9, 3.770549554382705*^9}, {3.770549648659381*^9, 
+  3.7705496600358152`*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"dabf2ef3-2cc0-4636-99a7-13f070b09fbc"]
+}, Open  ]],
+
+Cell["\<\
+This might not look like anything familiar, however if we represent the \
+convergents in normal form:\
+\>", "Text",
+ CellChangeTimes->{{3.7705495616291103`*^9, 
+  3.7705496034784174`*^9}},ExpressionUUID->"2a6a2170-6498-4d33-9195-\
+a3e69937443a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "@", "%"}]], "Input",
+ CellChangeTimes->{{3.7705496086225715`*^9, 3.7705496111284657`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"1be68880-7052-41d6-a2c3-72fe5b8fdcfa"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1.`", ",", "2.`", ",", "1.5`", ",", "1.6666666666666667`", ",", "1.6`", 
+   ",", "1.625`", ",", "1.6153846153846154`", ",", "1.619047619047619`", ",", 
+   "1.6176470588235294`", ",", "1.6181818181818182`", ",", 
+   "1.6179775280898876`", ",", "1.6180555555555556`", ",", 
+   "1.6180257510729614`", ",", "1.6180371352785146`", ",", 
+   "1.618032786885246`", ",", "1.618034447821682`", ",", 
+   "1.6180338134001253`", ",", "1.618034055727554`", ",", 
+   "1.6180339631667064`", ",", "1.6180339985218033`", ",", 
+   "1.618033985017358`"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.770549612465678*^9, {3.7705496518084164`*^9, 3.7705496631858444`*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"c79a61b9-959b-4808-a3fd-2b63ef240fa4"]
+}, Open  ]],
+
+Cell["\<\
+we might recognise that our sequence converges to the golden ratio! We can \
+verify this using built in Wolfram Language symbols:\
+\>", "Text",
+ CellChangeTimes->{{3.770549623056075*^9, 3.7705496404504085`*^9}, {
+  3.7705496745317216`*^9, 
+  3.770549716193929*^9}},ExpressionUUID->"ec829243-145e-4b76-9b50-\
+4540a48766cb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ContinuedFraction", "[", "GoldenRatio", "]"}]], "Input",
+ CellChangeTimes->{{3.7705497200927815`*^9, 3.770549725807233*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"2b81051a-dd34-4a06-9bf4-b5c379c280df"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", 
+   RowBox[{"{", "1", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7705497266541047`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"c41cdb45-d70e-4b6c-a30f-3c9d0ebbf6d9"]
+}, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7704848873997903`*^9, 3.770484906102713*^9}, {
@@ -294,7 +530,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 10514, 289}
+ {"Title", 19185, 525}
  }
 *)
 (*NotebookFileOutline
@@ -307,21 +543,37 @@ Cell[CellGroupData[{
 Cell[1574, 42, 404, 5, 67, "Section",ExpressionUUID->"c118bb02-e7a5-4344-a96c-0a8c9cb5a937"],
 Cell[1981, 49, 609, 8, 34, "Text",ExpressionUUID->"cef6a0ba-b89b-4bd9-9566-70b53195f786"],
 Cell[2593, 59, 1077, 26, 52, "Text",ExpressionUUID->"2813800a-7e90-4369-ab42-397cf3161143"],
-Cell[3673, 87, 1978, 52, 56, "Text",ExpressionUUID->"bcdcdc72-8db7-4e1b-8dcf-99b64734e334"],
-Cell[5654, 141, 207, 4, 28, "Input",ExpressionUUID->"fa31704b-ed1a-48b1-9a99-cedb103f859d"]
+Cell[3673, 87, 5445, 150, 166, "Text",ExpressionUUID->"bcdcdc72-8db7-4e1b-8dcf-99b64734e334"],
+Cell[9121, 239, 338, 8, 35, "Text",ExpressionUUID->"59d946b8-30e8-45af-b5f9-f46dd059af91"],
+Cell[9462, 249, 1193, 26, 78, "Text",ExpressionUUID->"9fdc6668-5c52-4582-8cdf-49b7949b8c68"],
+Cell[CellGroupData[{
+Cell[10680, 279, 543, 12, 28, "Input",ExpressionUUID->"7b07ffaf-9bf5-4187-89a6-20815b92fe10"],
+Cell[11226, 293, 996, 25, 49, "Output",ExpressionUUID->"dabf2ef3-2cc0-4636-99a7-13f070b09fbc"]
+}, Open  ]],
+Cell[12237, 321, 255, 6, 34, "Text",ExpressionUUID->"2a6a2170-6498-4d33-9195-a3e69937443a"],
+Cell[CellGroupData[{
+Cell[12517, 331, 198, 3, 28, "Input",ExpressionUUID->"1be68880-7052-41d6-a2c3-72fe5b8fdcfa"],
+Cell[12718, 336, 770, 14, 32, "Output",ExpressionUUID->"c79a61b9-959b-4808-a3fd-2b63ef240fa4"]
+}, Open  ]],
+Cell[13503, 353, 332, 7, 34, "Text",ExpressionUUID->"ec829243-145e-4b76-9b50-4540a48766cb"],
+Cell[CellGroupData[{
+Cell[13860, 364, 227, 3, 28, "Input",ExpressionUUID->"2b81051a-dd34-4a06-9bf4-b5c379c280df"],
+Cell[14090, 369, 220, 5, 89, "Output",ExpressionUUID->"c41cdb45-d70e-4b6c-a30f-3c9d0ebbf6d9"]
+}, Open  ]],
+Cell[14325, 377, 207, 4, 28, "Input",ExpressionUUID->"fa31704b-ed1a-48b1-9a99-cedb103f859d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5898, 150, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
-Cell[6078, 155, 1843, 51, 66, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"]
+Cell[14569, 386, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
+Cell[14749, 391, 1843, 51, 66, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7958, 211, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
-Cell[8144, 216, 368, 8, 34, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"],
+Cell[16629, 447, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
+Cell[16815, 452, 368, 8, 34, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"],
 Cell[CellGroupData[{
-Cell[8537, 228, 226, 3, 28, "Input",ExpressionUUID->"be529e3b-13c3-487b-8b21-31fa9315b033"],
-Cell[8766, 233, 217, 5, 32, "Output",ExpressionUUID->"3589d148-1912-4288-bf2a-639b4a2e3858"]
+Cell[17208, 464, 226, 3, 28, "Input",ExpressionUUID->"be529e3b-13c3-487b-8b21-31fa9315b033"],
+Cell[17437, 469, 217, 5, 32, "Output",ExpressionUUID->"3589d148-1912-4288-bf2a-639b4a2e3858"]
 }, Open  ]],
-Cell[8998, 241, 727, 22, 37, "Text",ExpressionUUID->"2ecc2768-d81d-45c9-9946-0ed0f5a722b9"]
+Cell[17669, 477, 727, 22, 37, "Text",ExpressionUUID->"2ecc2768-d81d-45c9-9946-0ed0f5a722b9"]
 }, Open  ]]
 }, Open  ]]
 }
