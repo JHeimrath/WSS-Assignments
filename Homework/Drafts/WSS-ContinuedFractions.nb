@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     22395,        585]
-NotebookOptionsPosition[     18839,        512]
-NotebookOutlinePosition[     19807,        545]
-CellTagsIndexPosition[     19739,        540]
+NotebookDataLength[     24078,        625]
+NotebookOptionsPosition[     20206,        547]
+NotebookOutlinePosition[     21174,        580]
+CellTagsIndexPosition[     21106,        575]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -399,58 +399,65 @@ Cell["Wiener\[CloseCurlyQuote]s Attack", "Section",
   3.770509451462123*^9}},ExpressionUUID->"c488e2e5-09cd-4b8e-8253-\
 0516bdf7d724"],
 
-Cell[TextData[{
- "In 1990, Michael Wiener demonstrated a cryptographic attack on RSA based on \
-properties of continued fractions. In particular, he proved the following:\n\
-Let ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"N", "=", "pq"}], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "60d5bf24-efd9-412b-b197-3f4175757b9a"],
- " with ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"q", "<", "p", "<", 
-    RowBox[{"2", "q"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "fe74bf27-dec7-4147-bde4-3c42cf889bf9"],
- ". Let ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"d", "<", 
-    RowBox[{
-     FractionBox["1", "3"], 
-     SuperscriptBox["N", 
-      FractionBox["1", "4"]]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "3265867b-805d-490d-ac7e-cfba8b49df31"],
- ". Then, given the public key pair ",
- Cell[BoxData[
-  FormBox[
+Cell["\<\
+In 1990, Michael Wiener discovered a cryptographic attack on RSA based on \
+properties of continued fractions. In particular, he proved the following:\
+\>", "Text",
+ CellChangeTimes->{{3.770509460163807*^9, 3.7705094828421793`*^9}, {
+   3.7705098880631356`*^9, 3.7705099820290976`*^9}, {3.7705101302794952`*^9, 
+   3.770510138517493*^9}, {3.770510262474875*^9, 3.770510326190834*^9}, {
+   3.770510400521988*^9, 3.770510548771824*^9}, {3.770510588820682*^9, 
+   3.7705106311295*^9}, 3.770604576398301*^9, {3.7706298375365405`*^9, 
+   3.770629838852993*^9}},
+ TextJustification->
+  0.5,ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"],
+
+Cell[BoxData[{
+ RowBox[{
+  StyleBox["Theorem",
+   FontVariations->{"Underline"->True}], 
+  StyleBox[" ",
+   FontVariations->{"Underline"->True}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Let", " ", 
+   FormBox[
+    RowBox[{"N", "=", "pq"}],
+    TraditionalForm], " ", "with", " ", 
    RowBox[{
+    FormBox[
+     RowBox[{"q", "<", "p", "<", 
+      RowBox[{"2", "q"}]}],
+     TraditionalForm], ".", " ", "Let"}], " ", 
+   RowBox[{
+    FormBox[
+     RowBox[{"d", "<", 
+      RowBox[{
+       FractionBox["1", "3"], 
+       SuperscriptBox["N", 
+        FractionBox["1", "4"]]}]}],
+     TraditionalForm], ".", " ", "Then"}]}], ",", " ", 
+  RowBox[{"given", " ", "the", " ", "public", " ", "key", " ", "pair", " ", 
+   FormBox[
     RowBox[{
-     RowBox[{"\[LeftAngleBracket]", 
-      RowBox[{"N", ",", " ", "e"}], "\[RightAngleBracket]"}], " ", "with", 
-     " ", "ed"}], "=", 
-    RowBox[{"1", " ", "mod", " ", 
-     RowBox[{"\[CurlyPhi]", "(", "N", ")"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "9de8c5f6-fc81-4eaa-ac60-1249f009bd7e"],
- " an attacker can efficiently recover ",
- Cell[BoxData[
-  FormBox["d", TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
-  "65fe93a0-a1d3-4a05-8858-2a824e494974"],
- "."
-}], "Text",
+     RowBox[{
+      RowBox[{"\[LeftAngleBracket]", 
+       RowBox[{"N", ",", " ", "e"}], "\[RightAngleBracket]"}], " ", "with", 
+      " ", "ed"}], "=", 
+     RowBox[{"1", " ", "mod", " ", 
+      RowBox[{"\[CurlyPhi]", "(", "N", ")"}]}]}],
+    TraditionalForm], " ", "an", " ", "attacker", " ", "can", " ", 
+   "efficiently", " ", "recover", " ", 
+   RowBox[{
+    FormBox["d",
+     TraditionalForm], "."}]}]}]}], "Text",
  CellChangeTimes->{{3.770509460163807*^9, 3.7705094828421793`*^9}, {
   3.7705098880631356`*^9, 3.7705099820290976`*^9}, {3.7705101302794952`*^9, 
   3.770510138517493*^9}, {3.770510262474875*^9, 3.770510326190834*^9}, {
   3.770510400521988*^9, 3.770510548771824*^9}, {3.770510588820682*^9, 
-  3.7705106311295*^9}},
- TextJustification->
-  0.5,ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"]
+  3.7705106311295*^9}, {3.7706045787819304`*^9, 3.7706047353178005`*^9}},
+ TextJustification->0.5,
+ Background->GrayLevel[
+  0.85],ExpressionUUID->"e0a62b1b-2b24-44ae-b290-5a5a2607db99"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -459,6 +466,35 @@ Cell["Khinchin\[CloseCurlyQuote]s Constant", "Section",
  CellChangeTimes->{{3.7705106712332144`*^9, 
   3.770510675570605*^9}},ExpressionUUID->"3ace0394-c053-4c68-84eb-\
 a4407a7cb6e5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Product", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"1", "/", 
+        RowBox[{"(", 
+         RowBox[{"r", 
+          RowBox[{"(", 
+           RowBox[{"r", "+", "2"}], ")"}]}], ")"}]}]}], ")"}], "^", 
+     RowBox[{"(", 
+      RowBox[{"Log", "[", 
+       RowBox[{"2", ",", "r"}], "]"}], ")"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"r", ",", "1", ",", "Infinity"}], "}"}]}], "]"}], "//", 
+  "N"}]], "Input",
+ CellChangeTimes->{{3.77060442540438*^9, 3.7706045100268044`*^9}, {
+  3.7706045453852425`*^9, 3.7706045458001328`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"5a2dd7e3-06b0-4fb1-96dc-30fbd1064738"],
+
+Cell[BoxData["2.6854520010653062`"], "Output",
+ CellChangeTimes->{3.770604511631506*^9, 3.7706045460554466`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"7fa32c55-2046-47c2-a9e0-b33bf57d5c8c"]
+}, Open  ]],
 
 Cell["", "Text",
  CellChangeTimes->{{3.7705106872483644`*^9, 3.7705107441032696`*^9}, {
@@ -480,10 +516,11 @@ Cell[TextData[{
   FontSlant->"Italic"],
  ", IEEETransaction of Information Theory, Vol. 36, No. 3 1990"
 }], "Text",
- CellDingbat->"\[FilledSmallSquare]",
+ CellDingbat->None,
  CellChangeTimes->{{3.7705508069414577`*^9, 3.770550810377246*^9}, {
-  3.7705509186314793`*^9, 
-  3.7705509899961576`*^9}},ExpressionUUID->"4520251f-7506-4217-a509-\
+  3.7705509186314793`*^9, 3.7705509899961576`*^9}, {3.770604833021513*^9, 
+  3.770604833025502*^9}, {3.770604952682506*^9, 
+  3.7706049726231823`*^9}},ExpressionUUID->"4520251f-7506-4217-a509-\
 02c699192f1f"],
 
 Cell[TextData[{
@@ -492,7 +529,6 @@ Cell[TextData[{
   FontSlant->"Italic"],
  ", Dover 1997"
 }], "Text",
- CellDingbat->"\[FilledSmallSquare]",
  CellChangeTimes->{{3.770550431991131*^9, 3.770550446003127*^9}, {
    3.7705505499620237`*^9, 3.770550607616568*^9}, 
    3.770550778468027*^9},ExpressionUUID->"034da641-c8b6-4ae7-91a2-\
@@ -503,7 +539,6 @@ Weisstein, Eric W. \[OpenCurlyDoubleQuote]Trott Constants.\
 \[CloseCurlyDoubleQuote] From MathWorld--A Wolfram Web Resource. \
 http://mathworld.wolfram.com/TrottConstants.html\
 \>", "Text",
- CellDingbat->"\[FilledSmallSquare]",
  CellChangeTimes->{
   3.770551059953226*^9},ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-\
 70481cb1c7c7"]
@@ -539,7 +574,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 19600, 534}
+ {"Title", 20967, 569}
  }
 *)
 (*NotebookFileOutline
@@ -574,17 +609,22 @@ Cell[14795, 387, 207, 4, 28, "Input",ExpressionUUID->"fa31704b-ed1a-48b1-9a99-ce
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[15039, 396, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
-Cell[15219, 401, 1843, 51, 66, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"]
+Cell[15219, 401, 649, 11, 34, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"],
+Cell[15871, 414, 1637, 45, 89, "Text",ExpressionUUID->"e0a62b1b-2b24-44ae-b290-5a5a2607db99"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17099, 457, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
-Cell[17285, 462, 220, 4, 34, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"]
+Cell[17545, 464, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
+Cell[CellGroupData[{
+Cell[17753, 471, 688, 20, 28, "Input",ExpressionUUID->"5a2dd7e3-06b0-4fb1-96dc-30fbd1064738"],
+Cell[18444, 493, 190, 2, 32, "Output",ExpressionUUID->"7fa32c55-2046-47c2-a9e0-b33bf57d5c8c"]
+}, Open  ]],
+Cell[18649, 498, 220, 4, 34, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17542, 471, 157, 3, 67, "Section",ExpressionUUID->"c01c782a-d183-41d9-b103-7c824d08cc63"],
-Cell[17702, 476, 407, 10, 34, "Text",ExpressionUUID->"4520251f-7506-4217-a509-02c699192f1f"],
-Cell[18112, 488, 357, 10, 34, "Text",ExpressionUUID->"034da641-c8b6-4ae7-91a2-efc048376dae"],
-Cell[18472, 500, 339, 8, 34, "Text",ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-70481cb1c7c7"]
+Cell[18906, 507, 157, 3, 67, "Section",ExpressionUUID->"c01c782a-d183-41d9-b103-7c824d08cc63"],
+Cell[19066, 512, 486, 11, 34, "Text",ExpressionUUID->"4520251f-7506-4217-a509-02c699192f1f"],
+Cell[19555, 525, 319, 9, 34, "Text",ExpressionUUID->"034da641-c8b6-4ae7-91a2-efc048376dae"],
+Cell[19877, 536, 301, 7, 34, "Text",ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-70481cb1c7c7"]
 }, Open  ]]
 }, Open  ]]
 }
