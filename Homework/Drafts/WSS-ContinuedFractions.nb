@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     35429,        883]
-NotebookOptionsPosition[     30653,        794]
-NotebookOutlinePosition[     31619,        827]
-CellTagsIndexPosition[     31551,        822]
+NotebookDataLength[     43150,       1073]
+NotebookOptionsPosition[     37900,        979]
+NotebookOutlinePosition[     38867,       1012]
+CellTagsIndexPosition[     38798,       1007]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -560,12 +560,14 @@ Cell["\<\
 Another example of an interesting continued fraction is the Trott constant, \
 discovered by M. Trott in 1999. It is the only known infinite simple \
 continued fraction whose decimal digits are also the coefficients of its \
-continued fraction.\
+continued fraction. \[LeftDoubleBracket]Try to figure out if I can make this \
+constant work\[RightDoubleBracket]\
 \>", "Text",
  CellChangeTimes->{{3.770550051272262*^9, 3.7705501522586517`*^9}, {
   3.770629943190651*^9, 3.7706299482682285`*^9}, {3.77063046981975*^9, 
-  3.7706304712657213`*^9}, {3.7706682661197395`*^9, 
-  3.7706682677005157`*^9}},ExpressionUUID->"5010a2fc-2ddc-45a8-af03-\
+  3.7706304712657213`*^9}, {3.7706682661197395`*^9, 3.7706682677005157`*^9}, {
+  3.7706707641508064`*^9, 
+  3.7706707837364993`*^9}},ExpressionUUID->"5010a2fc-2ddc-45a8-af03-\
 a40660a5ac9e"],
 
 Cell["\<\
@@ -573,13 +575,14 @@ If you would like to study the behaviour of some simple irrational numbers, \
 try typing them in the window below (be careful to press Enter and not \
 Shift+Enter when you\[CloseCurlyQuote]re done typing!). The plot also \
 demonstrates quite nicely how quickly continued fractions converge- in fact \
-there is a very precise way in which the convergents are \
-\[OpenCurlyDoubleQuote]the best\[CloseCurlyDoubleQuote] rational \
-approximations for irrational number they converge to!\
+there is a very precise way in which the convergents are the \
+\[OpenCurlyDoubleQuote]best\[CloseCurlyDoubleQuote] rational approximations \
+for the irrational number they converge to!\
 \>", "Text",
  CellChangeTimes->{{3.7706682735478826`*^9, 3.770668276317478*^9}, {
   3.770668317521286*^9, 3.770668505022854*^9}, {3.7706685813936176`*^9, 
-  3.770668641479926*^9}},ExpressionUUID->"93f48ef6-4b58-4c67-b606-\
+  3.770668641479926*^9}, {3.7706707199590316`*^9, 
+  3.7706707354036846`*^9}},ExpressionUUID->"93f48ef6-4b58-4c67-b606-\
 9c53a822584f"],
 
 Cell[BoxData[{
@@ -624,7 +627,7 @@ Cell[BoxData[
  DynamicBox[ToBoxes[
    ListPlot[
     Convergents[$CellContext`q, 20]], StandardForm],
-  ImageSizeCache->{360., {103., 108.}}]], "Output",
+  ImageSizeCache->{360., {101., 106.}}]], "Output",
  CellChangeTimes->{3.7706685293637495`*^9, 3.770668560207265*^9},
  CellLabel->
   "Out[334]=",ExpressionUUID->"39345223-62e8-4039-8a72-632da1d0ff37"]
@@ -638,10 +641,185 @@ Cell["Khinchin\[CloseCurlyQuote]s Constant", "Section",
   3.770510675570605*^9}},ExpressionUUID->"3ace0394-c053-4c68-84eb-\
 a4407a7cb6e5"],
 
-Cell["In ", "Text",
- CellChangeTimes->{{3.7706661786283283`*^9, 
-  3.7706661802230725`*^9}},ExpressionUUID->"ff4585a5-f166-40da-b37d-\
+Cell["\<\
+In 1935 A. Khinchin proved, via a rather complicated measure-theoretic \
+argument, the following result:\
+\>", "Text",
+ CellChangeTimes->{{3.7706661786283283`*^9, 3.7706661802230725`*^9}, {
+  3.7706690736081038`*^9, 
+  3.7706691693550496`*^9}},ExpressionUUID->"ff4585a5-f166-40da-b37d-\
 b7b398292387"],
+
+Cell[TextData[{
+ StyleBox["Theorem (Khinchin)",
+  FontVariations->{"Underline"->True}],
+ "\nFor Lebesgue almost every real number \[Alpha] =[",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "0"], TraditionalForm]],ExpressionUUID->
+  "dcf4454b-c56c-4c75-8c6e-e9a79d7b70d7"],
+ "; ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "1"], TraditionalForm]],ExpressionUUID->
+  "82426f6f-de32-4636-a6d4-0979a4b8a6dd"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "2"], TraditionalForm]],ExpressionUUID->
+  "73553a33-6b89-4651-88c4-ea4702fbcd8d"],
+ ", ...] the geometric means of the coefficients of the k-th segments of \
+\[Alpha] converge to an absolute constant ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["K", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d56e606c-be1f-42b3-a393-206b025a282e"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.7706661786283283`*^9, 3.7706661802230725`*^9}, {
+  3.7706690736081038`*^9, 3.770669177607009*^9}, {3.7706692117915697`*^9, 
+  3.77066928021658*^9}, {3.770669310224334*^9, 3.7706694712686424`*^9}, {
+  3.770670181570052*^9, 3.7706701838439693`*^9}, {3.7706708153190393`*^9, 
+  3.770670823187006*^9}},
+ Background->GrayLevel[
+  0.85],ExpressionUUID->"f47d2123-e9d0-4000-97a7-9ce1d3efe6fe"],
+
+Cell[TextData[{
+ "This might seem a bit complicated, so let\[CloseCurlyQuote]s unpack it bit \
+by bit. If you\[CloseCurlyQuote]re not familiar with measure theory you can \
+take the \[OpenCurlyDoubleQuote]Lebesgue almost every\[CloseCurlyDoubleQuote] \
+part to mean that if you were to randomly pick a real number you are \
+guaranteed to choose one for which the theorem holds. The geometric mean of a \
+set of n numbers is the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["n", "th"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "94f133bd-1868-4c0e-be4b-48d8311f41a9"],
+ " root of their product. Finally, when we say the constant is \
+\[OpenCurlyDoubleQuote]absolute\[CloseCurlyDoubleQuote] we mean that it is \
+independent of the chosen real number. So what the theorem is saying, is that \
+for almost every real number \[Alpha] =[",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "0"], TraditionalForm]],ExpressionUUID->
+  "bfff7959-3413-477d-86d8-44437b082d68"],
+ "; ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "1"], TraditionalForm]],ExpressionUUID->
+  "6cc5f371-772a-4dff-a486-97a203ac1d5c"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "2"], TraditionalForm]],ExpressionUUID->
+  "5befd18e-64f0-480b-8c84-95d8323f88e3"],
+ ", ...], the sequence ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    SubscriptBox["a", "0"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "23f68e2b-057b-4e1c-91ce-eb38759b0e58"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    RowBox[{
+     SubscriptBox["a", "0"], 
+     SubscriptBox["a", "1"]}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "7ceacd64-9094-41ea-96b8-bece7332a647"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RadicalBox[
+    RowBox[{
+     SubscriptBox["a", "0"], 
+     SubscriptBox["a", "1"], 
+     SubscriptBox["a", "2"]}], "3"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "3adb09ab-14aa-4808-99c7-74388cc60294"],
+ ",...} converges to ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["K", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "55082156-f2f9-4626-98d9-dbbba1371316"],
+ ". The proof of this theorem was significantly simplified in 1951 by \
+Ryll-Nardzewski, who used elementary techniques from ergodic theory to obtain \
+the same result."
+}], "Text",
+ CellChangeTimes->{{3.7706661786283283`*^9, 3.7706661802230725`*^9}, {
+  3.7706690736081038`*^9, 3.770669177607009*^9}, {3.7706692117915697`*^9, 
+  3.77066928021658*^9}, {3.770669310224334*^9, 3.7706696532868843`*^9}, {
+  3.77066975939612*^9, 3.770669932280778*^9}, {3.770669966339693*^9, 
+  3.7706699832165556`*^9}, {3.770670041620315*^9, 3.770670101140134*^9}, {
+  3.770670851534194*^9, 
+  3.770671069731678*^9}},ExpressionUUID->"ce15b1ea-64d9-42b8-bd42-\
+a493adcccfbc"],
+
+Cell[TextData[{
+ "Khinchin was able to find a rather simple formula for the constant ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["K", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "eb9b41c4-3a98-442e-bd19-2cd70e0c89d9"],
+ ". He showed that:"
+}], "Text",
+ CellChangeTimes->{{3.7706661786283283`*^9, 3.7706661802230725`*^9}, {
+  3.7706690736081038`*^9, 3.770669177607009*^9}, {3.7706692117915697`*^9, 
+  3.77066928021658*^9}, {3.770669310224334*^9, 3.7706696532868843`*^9}, {
+  3.77066975939612*^9, 3.770669932280778*^9}, {3.770669966339693*^9, 
+  3.7706699832165556`*^9}, {3.770670041620315*^9, 3.770670198776037*^9}, {
+  3.7706702326524405`*^9, 3.770670235219574*^9}, {3.7706709579775333`*^9, 
+  3.770670958012436*^9}},ExpressionUUID->"3b060f3e-cbcb-4514-96d0-\
+081f5d1e8ce1"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["K", "0"], "=", 
+   RowBox[{
+    TemplateBox[{SuperscriptBox[
+       RowBox[{"(", 
+         RowBox[{
+           UnderoverscriptBox["\[Product]", 
+            RowBox[{"i", "=", "0"}], "n"], 
+           SubscriptBox["a", "i"]}], ")"}], 
+       RowBox[{"1", "/", "n"}]],"n","\[Infinity]"},
+     "Limit2Arg",
+     DisplayFunction->(RowBox[{
+        TagBox[
+         UnderscriptBox[
+          StyleBox["\"lim\"", ShowStringCharacters -> False], 
+          RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], Identity, 
+         SyntaxForm -> "\[Limit]", Tooltip -> "Limit"], #}]& ),
+     InterpretationFunction->(RowBox[{"Limit", "[", 
+        RowBox[{#, ",", 
+          RowBox[{#2, "->", #3}]}], "]"}]& )], "=", 
+    RowBox[{
+     UnderoverscriptBox["\[Product]", 
+      RowBox[{"r", "=", "1"}], "\[Infinity]"], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox["1", 
+         RowBox[{"r", "(", 
+          RowBox[{"r", "+", "2"}], ")"}]], "+", "1"}], ")"}], 
+      RowBox[{
+       SubscriptBox["log", "2"], "(", "r", ")"}]]}]}]}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.7706702578420677`*^9, 
+  3.770670484741274*^9}},ExpressionUUID->"d50d71f2-acba-4008-ab37-\
+154d55ea16f6"],
+
+Cell["The final expression can be evaluated as follows:", "Text",
+ CellChangeTimes->{{3.770670509216861*^9, 
+  3.770670537342614*^9}},ExpressionUUID->"f5207e94-c291-43a4-bf07-\
+ee22dec33697"],
 
 Cell[CellGroupData[{
 
@@ -672,10 +850,19 @@ Cell[BoxData["2.6854520010653062`"], "Output",
  CellLabel->"Out[9]=",ExpressionUUID->"7fa32c55-2046-47c2-a9e0-b33bf57d5c8c"]
 }, Open  ]],
 
-Cell["", "Text",
+Cell["\<\
+Interestingly enough, while the result holds for almost every real number, it \
+has not actually been proven for any numbers not specifically constructed to \
+satisfy the theorem. It is immediately obvious that it is not true for \
+rational numbers, since they have finite continued fractions, but it is also \
+easy to find irrational numbers (for example the golden ratio) for which the \
+theorem is also false. \
+\>", "Text",
  CellChangeTimes->{{3.7705106872483644`*^9, 3.7705107441032696`*^9}, {
-   3.77051114110999*^9, 3.770511206582883*^9}, 
-   3.7705506932680097`*^9},ExpressionUUID->"b683e5ef-1cc0-49da-be5d-\
+   3.77051114110999*^9, 3.770511206582883*^9}, 3.7705506932680097`*^9, {
+   3.770670553716815*^9, 3.770670622336311*^9}, {3.770670653836822*^9, 
+   3.7706706908777633`*^9}, {3.7706711038145323`*^9, 
+   3.770671269502466*^9}},ExpressionUUID->"b683e5ef-1cc0-49da-be5d-\
 95fe9eac5514"]
 }, Open  ]],
 
@@ -703,11 +890,9 @@ properties of continued fractions. In particular, he proved the following:\
   0.5,ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"],
 
 Cell[BoxData[{
- RowBox[{
-  StyleBox["Theorem",
-   FontVariations->{"Underline"->True}], 
-  StyleBox[" ",
-   FontVariations->{"Underline"->True}]}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{"Theorem", " "}],
+  FontVariations->{"Underline"->True}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Let", " ", 
    FormBox[
@@ -821,7 +1006,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 31412, 816}
+ {"Title", 38659, 1001}
  }
 *)
 (*NotebookFileOutline
@@ -834,55 +1019,60 @@ Cell[CellGroupData[{
 Cell[1574, 42, 404, 5, 67, "Section",ExpressionUUID->"c118bb02-e7a5-4344-a96c-0a8c9cb5a937"],
 Cell[1981, 49, 609, 8, 34, "Text",ExpressionUUID->"cef6a0ba-b89b-4bd9-9566-70b53195f786"],
 Cell[2593, 59, 1012, 27, 61, "Input",ExpressionUUID->"2813800a-7e90-4369-ab42-397cf3161143"],
-Cell[3608, 88, 5216, 129, 144, "Text",ExpressionUUID->"bcdcdc72-8db7-4e1b-8dcf-99b64734e334"],
-Cell[8827, 219, 4253, 109, 195, "Text",ExpressionUUID->"a8ae94b5-a86b-4a6b-b35a-85d31e04531d"],
-Cell[13083, 330, 1895, 39, 78, "Text",ExpressionUUID->"1f616c6e-4ec3-4ba4-bc65-6c82ec6624f5"],
+Cell[3608, 88, 5216, 129, 78, "Text",ExpressionUUID->"bcdcdc72-8db7-4e1b-8dcf-99b64734e334"],
+Cell[8827, 219, 4253, 109, 107, "Text",ExpressionUUID->"a8ae94b5-a86b-4a6b-b35a-85d31e04531d"],
+Cell[13083, 330, 1895, 39, 56, "Text",ExpressionUUID->"1f616c6e-4ec3-4ba4-bc65-6c82ec6624f5"],
 Cell[14981, 371, 338, 8, 35, "Text",ExpressionUUID->"59d946b8-30e8-45af-b5f9-f46dd059af91"],
-Cell[15322, 381, 1055, 20, 144, "Text",ExpressionUUID->"9fdc6668-5c52-4582-8cdf-49b7949b8c68"],
-Cell[16380, 403, 722, 16, 78, "Text",ExpressionUUID->"9a244c90-5f05-41bc-8535-9454bc67130a"],
+Cell[15322, 381, 1055, 20, 78, "Text",ExpressionUUID->"9fdc6668-5c52-4582-8cdf-49b7949b8c68"],
+Cell[16380, 403, 722, 16, 34, "Text",ExpressionUUID->"9a244c90-5f05-41bc-8535-9454bc67130a"],
 Cell[CellGroupData[{
 Cell[17127, 423, 530, 13, 28, "Input",ExpressionUUID->"7b07ffaf-9bf5-4187-89a6-20815b92fe10"],
-Cell[17660, 438, 1024, 26, 85, "Output",ExpressionUUID->"dd8d702b-421d-4253-90d9-8af54489d1aa"]
+Cell[17660, 438, 1024, 26, 49, "Output",ExpressionUUID->"dd8d702b-421d-4253-90d9-8af54489d1aa"]
 }, Open  ]],
 Cell[18699, 467, 255, 6, 34, "Text",ExpressionUUID->"2a6a2170-6498-4d33-9195-a3e69937443a"],
 Cell[CellGroupData[{
 Cell[18979, 477, 202, 4, 28, "Input",ExpressionUUID->"1be68880-7052-41d6-a2c3-72fe5b8fdcfa"],
-Cell[19184, 483, 802, 16, 52, "Output",ExpressionUUID->"8bf4cade-0e06-443f-a5c7-fa7ee4a7f680"]
+Cell[19184, 483, 802, 16, 32, "Output",ExpressionUUID->"8bf4cade-0e06-443f-a5c7-fa7ee4a7f680"]
 }, Open  ]],
-Cell[20001, 502, 467, 9, 56, "Text",ExpressionUUID->"ec829243-145e-4b76-9b50-4540a48766cb"],
+Cell[20001, 502, 467, 9, 34, "Text",ExpressionUUID->"ec829243-145e-4b76-9b50-4540a48766cb"],
 Cell[CellGroupData[{
 Cell[20493, 515, 381, 6, 48, "Input",ExpressionUUID->"2b81051a-dd34-4a06-9bf4-b5c379c280df"],
-Cell[20877, 523, 921, 24, 85, "Output",ExpressionUUID->"bf12932d-1868-4f28-98f1-6000a0d62ef7"],
+Cell[20877, 523, 921, 24, 49, "Output",ExpressionUUID->"bf12932d-1868-4f28-98f1-6000a0d62ef7"],
 Cell[21801, 549, 271, 6, 32, "Output",ExpressionUUID->"a68763c4-97fb-4451-8ae3-06381d94ab60"]
 }, Open  ]],
-Cell[22087, 558, 546, 10, 78, "Text",ExpressionUUID->"5010a2fc-2ddc-45a8-af03-a40660a5ac9e"],
-Cell[22636, 570, 730, 12, 122, "Text",ExpressionUUID->"93f48ef6-4b58-4c67-b606-9c53a822584f"],
-Cell[23369, 584, 659, 15, 86, "Input",ExpressionUUID->"4652224a-6864-4fa1-976d-e6199022f54d"],
+Cell[22087, 558, 693, 12, 56, "Text",ExpressionUUID->"5010a2fc-2ddc-45a8-af03-a40660a5ac9e"],
+Cell[22783, 572, 787, 13, 56, "Text",ExpressionUUID->"93f48ef6-4b58-4c67-b606-9c53a822584f"],
+Cell[23573, 587, 659, 15, 86, "Input",ExpressionUUID->"4652224a-6864-4fa1-976d-e6199022f54d"],
 Cell[CellGroupData[{
-Cell[24053, 603, 359, 9, 37, InheritFromParent,ExpressionUUID->"c0a33b62-0c1e-4374-8781-fd931b2010df"],
-Cell[24415, 614, 288, 6, 32, "Output",ExpressionUUID->"fa32c017-2c8f-422e-a32e-fad0133e36ee"],
-Cell[24706, 622, 301, 7, 228, "Output",ExpressionUUID->"39345223-62e8-4039-8a72-632da1d0ff37"]
+Cell[24257, 606, 359, 9, 37, InheritFromParent,ExpressionUUID->"c0a33b62-0c1e-4374-8781-fd931b2010df"],
+Cell[24619, 617, 288, 6, 32, "Output",ExpressionUUID->"fa32c017-2c8f-422e-a32e-fad0133e36ee"],
+Cell[24910, 625, 301, 7, 224, "Output",ExpressionUUID->"39345223-62e8-4039-8a72-632da1d0ff37"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25056, 635, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
-Cell[25242, 640, 149, 3, 34, "Text",ExpressionUUID->"ff4585a5-f166-40da-b37d-b7b398292387"],
+Cell[25260, 638, 183, 3, 67, "Section",ExpressionUUID->"3ace0394-c053-4c68-84eb-a4407a7cb6e5"],
+Cell[25446, 643, 311, 7, 56, "Text",ExpressionUUID->"ff4585a5-f166-40da-b37d-b7b398292387"],
+Cell[25760, 652, 1260, 33, 94, "Text",ExpressionUUID->"f47d2123-e9d0-4000-97a7-9ce1d3efe6fe"],
+Cell[27023, 687, 2822, 73, 188, "Text",ExpressionUUID->"ce15b1ea-64d9-42b8-bd42-a493adcccfbc"],
+Cell[29848, 762, 807, 16, 34, "Text",ExpressionUUID->"3b060f3e-cbcb-4514-96d0-081f5d1e8ce1"],
+Cell[30658, 780, 1269, 36, 58, "Input",ExpressionUUID->"d50d71f2-acba-4008-ab37-154d55ea16f6"],
+Cell[31930, 818, 191, 3, 34, "Text",ExpressionUUID->"f5207e94-c291-43a4-bf07-ee22dec33697"],
 Cell[CellGroupData[{
-Cell[25416, 647, 688, 20, 28, "Input",ExpressionUUID->"5a2dd7e3-06b0-4fb1-96dc-30fbd1064738"],
-Cell[26107, 669, 190, 2, 32, "Output",ExpressionUUID->"7fa32c55-2046-47c2-a9e0-b33bf57d5c8c"]
+Cell[32146, 825, 688, 20, 28, "Input",ExpressionUUID->"5a2dd7e3-06b0-4fb1-96dc-30fbd1064738"],
+Cell[32837, 847, 190, 2, 32, "Output",ExpressionUUID->"7fa32c55-2046-47c2-a9e0-b33bf57d5c8c"]
 }, Open  ]],
-Cell[26312, 674, 220, 4, 34, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[26569, 683, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
-Cell[26749, 688, 927, 14, 100, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"],
-Cell[27679, 704, 1637, 45, 113, "Text",ExpressionUUID->"e0a62b1b-2b24-44ae-b290-5a5a2607db99"]
+Cell[33042, 852, 791, 13, 100, "Text",ExpressionUUID->"b683e5ef-1cc0-49da-be5d-95fe9eac5514"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29353, 754, 157, 3, 67, "Section",ExpressionUUID->"c01c782a-d183-41d9-b103-7c824d08cc63"],
-Cell[29513, 759, 486, 11, 56, "Text",ExpressionUUID->"4520251f-7506-4217-a509-02c699192f1f"],
-Cell[30002, 772, 319, 9, 34, "Text",ExpressionUUID->"034da641-c8b6-4ae7-91a2-efc048376dae"],
-Cell[30324, 783, 301, 7, 56, "Text",ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-70481cb1c7c7"]
+Cell[33870, 870, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
+Cell[34050, 875, 927, 14, 100, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"],
+Cell[34980, 891, 1583, 43, 113, "Text",ExpressionUUID->"e0a62b1b-2b24-44ae-b290-5a5a2607db99"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36600, 939, 157, 3, 67, "Section",ExpressionUUID->"c01c782a-d183-41d9-b103-7c824d08cc63"],
+Cell[36760, 944, 486, 11, 56, "Text",ExpressionUUID->"4520251f-7506-4217-a509-02c699192f1f"],
+Cell[37249, 957, 319, 9, 34, "Text",ExpressionUUID->"034da641-c8b6-4ae7-91a2-efc048376dae"],
+Cell[37571, 968, 301, 7, 56, "Text",ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-70481cb1c7c7"]
 }, Open  ]]
 }, Open  ]]
 }
