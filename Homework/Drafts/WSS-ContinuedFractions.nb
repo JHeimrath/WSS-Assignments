@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     48417,       1209]
-NotebookOptionsPosition[     42657,       1108]
-NotebookOutlinePosition[     43626,       1141]
-CellTagsIndexPosition[     43557,       1136]
+NotebookDataLength[     48522,       1212]
+NotebookOptionsPosition[     42762,       1111]
+NotebookOutlinePosition[     43731,       1144]
+CellTagsIndexPosition[     43662,       1139]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1019,9 +1019,11 @@ properties of continued fractions. In particular, he proved the following:\
   0.5,ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"],
 
 Cell[BoxData[{
- StyleBox[
-  RowBox[{"Theorem", " "}],
-  FontVariations->{"Underline"->True}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox["Theorem",
+   FontVariations->{"Underline"->True}], 
+  StyleBox[" ",
+   FontVariations->{"Underline"->True}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Let", " ", 
    FormBox[
@@ -1058,7 +1060,8 @@ Cell[BoxData[{
   3.7705098880631356`*^9, 3.7705099820290976`*^9}, {3.7705101302794952`*^9, 
   3.770510138517493*^9}, {3.770510262474875*^9, 3.770510326190834*^9}, {
   3.770510400521988*^9, 3.770510548771824*^9}, {3.770510588820682*^9, 
-  3.7705106311295*^9}, {3.7706045787819304`*^9, 3.7706047353178005`*^9}},
+  3.7705106311295*^9}, {3.7706045787819304`*^9, 3.7706047353178005`*^9}, {
+  3.7706754570361767`*^9, 3.770675457908881*^9}},
  TextJustification->0.5,
  Background->GrayLevel[
   0.85],ExpressionUUID->"e0a62b1b-2b24-44ae-b290-5a5a2607db99"]
@@ -1135,7 +1138,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 43418, 1130}
+ {"Title", 43523, 1133}
  }
 *)
 (*NotebookFileOutline
@@ -1202,13 +1205,13 @@ Cell[37963, 978, 589, 15, 32, "Output",ExpressionUUID->"39173d96-2504-483a-80e3-
 Cell[CellGroupData[{
 Cell[38601, 999, 177, 3, 67, "Section",ExpressionUUID->"c488e2e5-09cd-4b8e-8253-0516bdf7d724"],
 Cell[38781, 1004, 927, 14, 56, "Text",ExpressionUUID->"132479e8-9371-4a76-a40a-8fb0798b2d8b"],
-Cell[39711, 1020, 1583, 43, 89, "Text",ExpressionUUID->"e0a62b1b-2b24-44ae-b290-5a5a2607db99"]
+Cell[39711, 1020, 1688, 46, 89, "Text",ExpressionUUID->"e0a62b1b-2b24-44ae-b290-5a5a2607db99"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41331, 1068, 157, 3, 67, "Section",ExpressionUUID->"c01c782a-d183-41d9-b103-7c824d08cc63"],
-Cell[41491, 1073, 512, 11, 34, "Text",ExpressionUUID->"4520251f-7506-4217-a509-02c699192f1f"],
-Cell[42006, 1086, 319, 9, 34, "Text",ExpressionUUID->"034da641-c8b6-4ae7-91a2-efc048376dae"],
-Cell[42328, 1097, 301, 7, 34, "Text",ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-70481cb1c7c7"]
+Cell[41436, 1071, 157, 3, 67, "Section",ExpressionUUID->"c01c782a-d183-41d9-b103-7c824d08cc63"],
+Cell[41596, 1076, 512, 11, 34, "Text",ExpressionUUID->"4520251f-7506-4217-a509-02c699192f1f"],
+Cell[42111, 1089, 319, 9, 34, "Text",ExpressionUUID->"034da641-c8b6-4ae7-91a2-efc048376dae"],
+Cell[42433, 1100, 301, 7, 34, "Text",ExpressionUUID->"96add8e9-dcf5-4fc7-89a0-70481cb1c7c7"]
 }, Open  ]]
 }, Open  ]]
 }
