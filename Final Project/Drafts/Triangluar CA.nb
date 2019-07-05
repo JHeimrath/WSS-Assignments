@@ -10,71 +10,84 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     75768,       1790]
-NotebookOptionsPosition[     74226,       1759]
-NotebookOutlinePosition[     74570,       1774]
-CellTagsIndexPosition[     74527,       1771]
+NotebookDataLength[    106238,       2533]
+NotebookOptionsPosition[    102911,       2472]
+NotebookOutlinePosition[    103255,       2487]
+CellTagsIndexPosition[    103212,       2484]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["Initial Conditions:", "Text",
- CellChangeTimes->{{3.7710871683007174`*^9, 
-  3.7710871763172827`*^9}},ExpressionUUID->"06f80f39-4485-41d5-a982-\
+
+Cell[CellGroupData[{
+Cell["1D CellPlot:", "Section",
+ CellChangeTimes->{{3.7710871683007174`*^9, 3.7710871763172827`*^9}, {
+  3.7713442122579145`*^9, 
+  3.7713442250267253`*^9}},ExpressionUUID->"06f80f39-4485-41d5-a982-\
 053f07c7cab1"],
 
-Cell[BoxData[
+Cell["Initial Conditions:", "Text",
+ CellChangeTimes->{{3.7713442018188095`*^9, 
+  3.7713442074906054`*^9}},ExpressionUUID->"a6060fd5-1ee8-448e-bcb6-\
+1e43ce205ec1"],
+
+Cell[BoxData[{
  RowBox[{
-  RowBox[{"basis", "=", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"1", ",", "0"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"0.5", ",", 
-       RowBox[{
-        RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}]}], "}"}]}], "}"}]}], ";", 
-  " ", 
+  RowBox[{
+   RowBox[{"basis", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.5", ",", 
+        RowBox[{
+         RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}]}], "}"}]}], "}"}]}], 
+   ";"}], " ", 
   RowBox[{"(*", " ", 
    RowBox[{
    "A", " ", "basis", " ", "generating", " ", "the", " ", "lattice", " ", 
     RowBox[{"points", ".", " ", "Length"}], " ", "equal", " ", "to", " ", 
     "dimension", " ", "of", " ", 
-    RowBox[{"lattice", "."}]}], "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"c", "=", 
-   RowBox[{"{", 
-    RowBox[{
-    "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "1",
-      ",", "0", ",", "0", ",", "0", ",", "1", ",", "0", ",", "0", ",", "0"}], 
-    "}"}]}], ";", " ", 
+    RowBox[{"lattice", "."}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"initialConditions1D", "=", 
+    RowBox[{"{", 
+     RowBox[{
+     "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+      "1", ",", "0", ",", "0", ",", "0", ",", "1", ",", "0", ",", "0", ",", 
+      "0"}], "}"}]}], ";"}], " ", 
   RowBox[{"(*", " ", 
    RowBox[{"Initial", " ", 
-    RowBox[{"conditions", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"conditions", "."}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
-   RowBox[{"rowLength", "[", "n_Integer", "]"}], ":=", 
-   RowBox[{"If", "[", 
-    RowBox[{
-     RowBox[{"EvenQ", "[", "n", "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"n", "/", "2"}], ",", 
-       RowBox[{"n", "/", "2"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
+   RowBox[{
+    RowBox[{"rowLength", "[", "n_Integer", "]"}], ":=", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"EvenQ", "[", "n", "]"}], ",", 
+      RowBox[{"{", 
        RowBox[{
-        RowBox[{"(", 
-         RowBox[{"n", "+", "1"}], ")"}], "/", "2"}], ",", 
+        RowBox[{"n", "/", "2"}], ",", 
+        RowBox[{"n", "/", "2"}]}], "}"}], ",", 
+      RowBox[{"{", 
        RowBox[{
-        RowBox[{"(", 
-         RowBox[{"n", "-", "1"}], ")"}], "/", "2"}]}], "}"}]}], "]"}]}], ";", 
-  " ", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"n", "+", "1"}], ")"}], "/", "2"}], ",", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"n", "-", "1"}], ")"}], "/", "2"}]}], "}"}]}], "]"}]}], 
+   ";"}], " ", 
   RowBox[{"(*", 
    RowBox[{
    "Specifies", " ", "how", " ", "many", " ", "\"\<odd\>\"", " ", "and", " ", 
     "\"\<even\>\"", " ", "triangles", " ", "are", " ", "in", " ", "our", " ", 
     RowBox[{"graphic", ".", " ", "First"}], " ", "value", " ", "is", " ", 
     "odd", " ", 
-    RowBox[{"trangles", "."}]}], " ", "*)"}]}]], "Input",
+    RowBox[{"trangles", "."}]}], " ", "*)"}]}]}], "Input",
  CellChangeTimes->{{3.7710308077051983`*^9, 3.7710308081565504`*^9}, {
    3.7710309864904556`*^9, 3.7710310268908434`*^9}, {3.771031240313371*^9, 
    3.7710312829361286`*^9}, {3.7710317303218117`*^9, 
@@ -115,9 +128,9 @@ Cell[BoxData[
    3.7712757364703255`*^9}, {3.771276489383954*^9, 3.771276490158969*^9}, {
    3.7712769825748415`*^9, 3.771277000935299*^9}, {3.771277451208208*^9, 
    3.7712774656308556`*^9}, 3.771278953224353*^9, {3.771278983916849*^9, 
-   3.7712789985505733`*^9}, 3.771279099071159*^9},
- CellLabel->
-  "In[314]:=",ExpressionUUID->"fd3286c3-9ba6-4a26-b3d3-e9efba84f80b"],
+   3.7712789985505733`*^9}, 3.771279099071159*^9, {3.7713354461760626`*^9, 
+   3.771335451603551*^9}, {3.7713443048613176`*^9, 3.7713443053309956`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"fd3286c3-9ba6-4a26-b3d3-e9efba84f80b"],
 
 Cell["Triangular Cells 1D Case:", "Text",
  CellChangeTimes->{{3.7710871826772327`*^9, 3.7710871878265114`*^9}, {
@@ -127,85 +140,79 @@ Cell["Triangular Cells 1D Case:", "Text",
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"oddTriangles", "[", 
-    RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
-   RowBox[{"Module", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"b1", "=", 
-        RowBox[{"basis", "[", 
-         RowBox[{"[", "1", "]"}], "]"}]}], ",", 
-       RowBox[{"b2", "=", 
-        RowBox[{"basis", "[", 
-         RowBox[{"[", "2", "]"}], "]"}]}], ",", 
-       RowBox[{"r", "=", 
-        RowBox[{
+   RowBox[{
+    RowBox[{"oddTriangles", "[", 
+     RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"b1", "=", 
+         RowBox[{"basis", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+        RowBox[{"b2", "=", 
+         RowBox[{"basis", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], ",", 
+        RowBox[{"r", "=", 
          RowBox[{
-          RowBox[{"rowLength", "[", 
-           RowBox[{"Length", "[", "initialConditions", "]"}], "]"}], "[", 
-          RowBox[{"[", "1", "]"}], "]"}], "-", "1"}]}]}], "}"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Table", "[", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"FaceForm", "[", 
-          RowBox[{"GrayLevel", "[", 
-           RowBox[{"1", "-", 
-            RowBox[{"initialConditions", "[", 
-             RowBox[{"[", 
-              RowBox[{
-               RowBox[{"2", "*", "i"}], "+", "1"}], "]"}], "]"}]}], "]"}], 
-          "]"}], ",", 
-         RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
-         RowBox[{"Triangle", "[", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"i", "*", "b1"}], ",", 
+          RowBox[{
+           RowBox[{"rowLength", "[", 
+            RowBox[{"Length", "[", "initialConditions", "]"}], "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "-", "1"}]}]}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"FaceForm", "[", 
+           RowBox[{"GrayLevel", "[", 
+            RowBox[{"1", "-", 
+             RowBox[{"initialConditions", "[", 
+              RowBox[{"[", 
+               RowBox[{
+                RowBox[{"2", "*", "i"}], "+", "1"}], "]"}], "]"}]}], "]"}], 
+           "]"}], ",", 
+          RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+          RowBox[{"Triangle", "[", 
+           RowBox[{"{", 
             RowBox[{
-             RowBox[{"(", 
-              RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], ",", 
-            RowBox[{
-             RowBox[{"i", "*", "b1"}], "+", "b2"}]}], "}"}], "]"}]}], "}"}], 
-       ",", "\[IndentingNewLine]", 
-       RowBox[{"{", 
-        RowBox[{"i", ",", "0", ",", "r"}], "}"}]}], "]"}]}], 
-    "\[IndentingNewLine]", "]"}]}], ";", " ", 
+             RowBox[{"i", "*", "b1"}], ",", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], ",", 
+             RowBox[{
+              RowBox[{"i", "*", "b1"}], "+", "b2"}]}], "}"}], "]"}]}], "}"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "0", ",", "r"}], "}"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}], " ", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Generates", " ", "the", " ", "\"\<odd\>\"", " ", "traingles", " ", "that",
      " ", "can", " ", "then", " ", "be", " ", "interpreted", " ", "as", " ", 
     "Graphics", " ", 
-    RowBox[{"objects", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"Graphics", "[", 
-   RowBox[{
-    RowBox[{"oddTriangles", "[", 
-     RowBox[{"basis", ",", "c"}], "]"}], ",", 
-    RowBox[{"ImageSize", "\[Rule]", 
-     RowBox[{"100", "*", 
-      RowBox[{
-       RowBox[{"rowLength", "[", 
-        RowBox[{"Length", "[", "c", "]"}], "]"}], "[", 
-       RowBox[{"[", "1", "]"}], "]"}]}]}]}], "]"}]}]], "Input",
+    RowBox[{"objects", "."}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{"oddTriangles", "[", 
+   RowBox[{"basis", ",", "initialConditions1D"}], "]"}], "]"}]}], "Input",
  CellChangeTimes->CompressedData["
-1:eJwd0ltIk3EYBvCvL3I11vAQy81RDq1cZhfBYrgunIqHKernslFMScfcmqSC
-ZCstXKDDlFIITDwkakW5QyKDbRclOFZINlnd1KQhmeZhkGhBw0Pf8794+d08
-z8UDr6SmoVxPUxR1hj240/N3dCJxQ9lMHxqD85OlHjhr0b6FKRzuV+jbrvwO
-C4pVAhsrJ7ZNDLW++8lwTzEgh7ed30pglYGrg/SNiJHkBq0muNvKa4A212AT
-PBtjuAN/nyx7AHM/JXXC4IC2CxpPZDyBUubYM1ibd+4F7N+UvoL+9rsOYtaE
-Ez6113rgeKdmGur71nyw0Ev54cMF7kf4mHYFYLWS9wXW74XC8KJSuQRfdtiJ
-dQzvD5w6co8ov6X7B29uPY/CVMsKZWdNNOUcgDX8Fg6kbC18yOx8jofRxSWi
-qC8khL8CQRFUBcUS2LQlI152Z56Cj9QZF2COojEbGq/vF8NlpldNegqTBpYb
-33TADabICj/MZw7DK/0VI1Ae5b6G3fVCoiKw7vazTnIcXiipM8/CgqEfc/D8
-1Z+78J1mMeY99s3wBURpuhDmpy1EUoTsPyTEbUPVQQudynp01XUYXrtk5sHj
-pjAf2mTq07DZOpUO/wPz3idM
+1:eJwl0ltIk3EYBvDPL3Q11qwMcybl0Mq59EIwhvPCpXiYpn0uG8qU0tQ5SQPR
+rFW4QIcppiB4mFZoGubmAZmoiAobK6SarLzwgEuys0KyFTQ89D3/Ll5+N89z
+8cArzC/PLKQpihKzB3ea//QMBmzKqmjvXrgwmjEJ53WqGRjC4S5Bqzt3DSan
+yf2NrJwjNUFQZX0QDPekBgm8PbycDvOKuQWQLtlSk1yXXgN37/HKodHcVQHD
+fYrvwF+nLz+ECe9O1kOHQdUA1aciWqGIOf4UFiWe74cd26IBaKu9O0SMGxyG
+7aaiSfi8XjkHC9t+WGHKFGWDj1a5b+Bj2myH12W8D7Bsb8UJL8hkG/BFnYlY
+yvB+w7FD94mSyoK/8KarzwNDdV8pE2uAJt4L5vO1HEgZtXzI7Lw/Bj3rG8TA
+thUB/GZ3BEK5I0gIK1zRxCsTMWdgkyIiCsZLb12E6mv7afAL06IgPalGCTPV
+I3Vwk0nVw9cLMU/g1Y6sZ1Di4b6EjWUCotT+c8LGOsoZmoLC0up5mNz96S2M
+zP68C2eV6z6vsM/C9yeKxAKYFLa6FSJg/8HvqBvKD+joUNbD380HYU5sNQ+e
+0Dj50BitOAur9GNiuOjXfSOOtXHA8l9F03gCa6zFQEz3XZqGrppLM7DTneGE
+hnPaj/AfoKNFmQ==
   "],
- CellLabel->
-  "In[315]:=",ExpressionUUID->"6ae6cf5d-77de-4ed1-a8df-3a0d38bd1ed3"],
+ CellLabel->"In[40]:=",ExpressionUUID->"6ae6cf5d-77de-4ed1-a8df-3a0d38bd1ed3"],
 
 Cell[BoxData[
  GraphicsBox[{
@@ -257,102 +264,76 @@ Cell[BoxData[
       NCache[{{7, 0}, {8, 0}, {7.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7, 
         0}, {8, 0}, {7.5, 0.8660254037844386}}]],
      "Triangle"]}},
-  ImageSize->800]], "Output",
- CellChangeTimes->{
-  3.771032992079731*^9, 3.7710330595635433`*^9, 3.771033091130973*^9, 
-   3.7710331280220413`*^9, {3.771033194629648*^9, 3.7710332141279163`*^9}, {
-   3.7710332496253057`*^9, 3.7710333433102245`*^9}, 3.771033384222962*^9, 
-   3.771033559400634*^9, 3.771033610553548*^9, {3.771033674633481*^9, 
-   3.771033716281459*^9}, 3.7710337518156705`*^9, 3.7710338176095905`*^9, {
-   3.771033903815015*^9, 3.771033914042471*^9}, {3.771033961006937*^9, 
-   3.771033969174988*^9}, 3.771034003373826*^9, {3.7710341393227234`*^9, 
-   3.77103422271807*^9}, {3.7710342902667503`*^9, 3.77103433732094*^9}, 
-   3.7710344506057587`*^9, 3.771034682881085*^9, {3.7710348552806544`*^9, 
-   3.7710348832621403`*^9}, 3.771034961451042*^9, {3.77108628048602*^9, 
-   3.7710862942831383`*^9}, 3.771086507841565*^9, 3.77108683595033*^9, {
-   3.7710870382005277`*^9, 3.7710870569803495`*^9}, 3.7710872104918556`*^9, 
-   3.7710872564629374`*^9, 3.771256334307725*^9, 3.7712599520792823`*^9, 
-   3.7712607980795774`*^9, 3.7712746206440625`*^9, {3.7712750110574427`*^9, 
-   3.771275067448691*^9}, 3.771275187722066*^9, 3.7712752567244225`*^9, 
-   3.77127535532133*^9, 3.771275432292842*^9, 3.7712770035824623`*^9, {
-   3.7712771877901807`*^9, 3.7712772175360823`*^9}, 3.771277273787133*^9, 
-   3.7712773907274485`*^9, {3.7712774231265907`*^9, 3.7712774317326884`*^9}, 
-   3.771277620465808*^9, 3.7712776630591836`*^9, 3.7712790007716055`*^9, 
-   3.7712791016451917`*^9},
- CellLabel->
-  "Out[315]=",ExpressionUUID->"fbfdaecd-4b5b-47d9-a59e-a337bb71e372"]
+  ImageSize->Medium]], "Output",
+ CellChangeTimes->{{3.7713443499976196`*^9, 3.771344402838309*^9}, 
+   3.7713444497624884`*^9, {3.7713446310826745`*^9, 3.771344644145747*^9}},
+ CellLabel->"Out[41]=",ExpressionUUID->"13f3fde0-0a4e-4edb-b97e-66d4dcf640f0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"evenTriangles", "[", 
-    RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
-   RowBox[{"Module", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"b1", "=", 
-        RowBox[{"basis", "[", 
-         RowBox[{"[", "1", "]"}], "]"}]}], ",", 
-       RowBox[{"b2", "=", 
-        RowBox[{"basis", "[", 
-         RowBox[{"[", "2", "]"}], "]"}]}], ",", 
-       RowBox[{"r", "=", 
-        RowBox[{
+   RowBox[{
+    RowBox[{"evenTriangles", "[", 
+     RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"b1", "=", 
+         RowBox[{"basis", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+        RowBox[{"b2", "=", 
+         RowBox[{"basis", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], ",", 
+        RowBox[{"r", "=", 
          RowBox[{
-          RowBox[{"rowLength", "[", 
-           RowBox[{"Length", "[", "initialConditions", "]"}], "]"}], "[", 
-          RowBox[{"[", "2", "]"}], "]"}], "-", "1"}]}]}], "}"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Table", "[", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"FaceForm", "[", 
-          RowBox[{"GrayLevel", "[", 
-           RowBox[{"1", "-", 
-            RowBox[{"initialConditions", "[", 
-             RowBox[{"[", 
-              RowBox[{"2", "*", 
-               RowBox[{"(", 
-                RowBox[{"i", "+", "1"}], ")"}]}], "]"}], "]"}]}], "]"}], 
-          "]"}], ",", 
-         RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"Triangle", "[", 
-          RowBox[{"{", 
-           RowBox[{
+          RowBox[{
+           RowBox[{"rowLength", "[", 
+            RowBox[{"Length", "[", "initialConditions", "]"}], "]"}], "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "-", "1"}]}]}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"FaceForm", "[", 
+           RowBox[{"GrayLevel", "[", 
+            RowBox[{"1", "-", 
+             RowBox[{"initialConditions", "[", 
+              RowBox[{"[", 
+               RowBox[{"2", "*", 
+                RowBox[{"(", 
+                 RowBox[{"i", "+", "1"}], ")"}]}], "]"}], "]"}]}], "]"}], 
+           "]"}], ",", 
+          RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Triangle", "[", 
+           RowBox[{"{", 
             RowBox[{
              RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], "+", "b2"}], ",", 
+             RowBox[{
               RowBox[{"(", 
-               RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], "+", "b2"}], ",", 
-            RowBox[{
-             RowBox[{"(", 
-              RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], ",", 
-            RowBox[{
-             RowBox[{"i", "*", "b1"}], "+", "b2"}]}], "}"}], "]"}]}], "}"}], 
-       ",", "\[IndentingNewLine]", 
-       RowBox[{"{", 
-        RowBox[{"i", ",", "0", ",", "r"}], "}"}]}], "]"}]}], 
-    "\[IndentingNewLine]", "]"}]}], ";", 
+               RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], ",", 
+             RowBox[{
+              RowBox[{"i", "*", "b1"}], "+", "b2"}]}], "}"}], "]"}]}], "}"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "0", ",", "r"}], "}"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}], 
   RowBox[{"(*", " ", 
    RowBox[{
    "Generates", " ", "the", " ", "\"\<even\>\"", " ", "traingles", " ", 
     "that", " ", "can", " ", "then", " ", "be", " ", "interpreted", " ", "as",
      " ", "Graphics", " ", 
-    RowBox[{"objects", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"Graphics", "[", 
-   RowBox[{
-    RowBox[{"evenTriangles", "[", 
-     RowBox[{"basis", ",", "c"}], "]"}], ",", 
-    RowBox[{"ImageSize", "\[Rule]", 
-     RowBox[{"100", "*", 
-      RowBox[{
-       RowBox[{"rowLength", "[", 
-        RowBox[{"Length", "[", "c", "]"}], "]"}], "[", 
-       RowBox[{"[", "2", "]"}], "]"}]}]}]}], "]"}]}]], "Input",
+    RowBox[{"objects", "."}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{"evenTriangles", "[", 
+   RowBox[{"basis", ",", "initialConditions1D"}], "]"}], "]"}]}], "Input",
  CellChangeTimes->{{3.7710340392845383`*^9, 3.771034094307173*^9}, {
   3.7710342305627565`*^9, 3.771034260180462*^9}, {3.771034466499201*^9, 
   3.7710346012006826`*^9}, {3.7710346450857573`*^9, 3.771034850125148*^9}, {
@@ -360,9 +341,11 @@ Cell[BoxData[
   3.771086465078902*^9}, {3.771277062165777*^9, 3.7712770696239805`*^9}, {
   3.771277102727334*^9, 3.771277107735692*^9}, {3.771277248469022*^9, 
   3.7712772813469143`*^9}, {3.7712774765713177`*^9, 3.771277583422576*^9}, {
-  3.7712777002635684`*^9, 3.7712777017975135`*^9}},
- CellLabel->
-  "In[316]:=",ExpressionUUID->"65b7d7a3-5d16-41cf-95e7-01bca75762c3"],
+  3.7712777002635684`*^9, 3.7712777017975135`*^9}, {3.7713354666802387`*^9, 
+  3.771335468404628*^9}, {3.7713442849335794`*^9, 3.77134428512108*^9}, {
+  3.7713443214649067`*^9, 3.7713443223016787`*^9}, {3.771344377464172*^9, 
+  3.7713443778401203`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"65b7d7a3-5d16-41cf-95e7-01bca75762c3"],
 
 Cell[BoxData[
  GraphicsBox[{
@@ -414,28 +397,26 @@ Cell[BoxData[
       NCache[{{7.5, Rational[1, 2] 3^Rational[1, 2]}, {7, 0}, {
         6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7.5, 0.8660254037844386}, {
         7, 0}, {6.5, 0.8660254037844386}}]],
-     "Triangle"]}},
-  ImageSize->700]], "Output",
- CellChangeTimes->{{3.7712775436765146`*^9, 3.7712775452224884`*^9}, 
-   3.7712775841135945`*^9, 3.7712776710041614`*^9, 3.771277703079612*^9, 
-   3.7712790076144953`*^9, {3.7712790950884657`*^9, 3.7712791036175957`*^9}},
- CellLabel->
-  "Out[316]=",ExpressionUUID->"cdf6fbad-e756-4a7a-965a-930bf78c82b5"]
+     "Triangle"]}}]], "Output",
+ CellChangeTimes->{3.771344396593011*^9, 3.771344453067652*^9, 
+  3.7713446459768853`*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"212fd73c-dfb8-4881-99c3-24b502b66af4"]
 }, Open  ]],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{"triangleCAList", "[", 
-    RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
-   "\[IndentingNewLine]", 
-   RowBox[{"Riffle", "[", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"oddTriangles", "[", 
-      RowBox[{"basis", ",", "initialConditions"}], "]"}], ",", 
-     RowBox[{"evenTriangles", "[", 
-      RowBox[{"basis", ",", "initialConditions"}], "]"}]}], 
-    "\[IndentingNewLine]", "]"}]}], ";", "  ", 
+   RowBox[{
+    RowBox[{"triangleCAList", "[", 
+     RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Riffle", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"oddTriangles", "[", 
+       RowBox[{"basis", ",", "initialConditions"}], "]"}], ",", 
+      RowBox[{"evenTriangles", "[", 
+       RowBox[{"basis", ",", "initialConditions"}], "]"}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}], "  ", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Combines", " ", "the", " ", "lists", " ", "of", " ", "\"\<odd\>\"", " ", 
@@ -444,32 +425,38 @@ Cell[BoxData[
     RowBox[{"list", "."}]}], " ", "*)"}]}]], "Input",
  CellChangeTimes->{{3.7712623541914153`*^9, 3.7712624271628313`*^9}, {
   3.7712768979116364`*^9, 3.771276921391487*^9}, {3.771277730041706*^9, 
-  3.771277739501504*^9}, {3.771278250019471*^9, 3.771278270982277*^9}},
- CellLabel->
-  "In[300]:=",ExpressionUUID->"9cbe7f99-1b49-4def-a4f1-2c5891b59e48"],
+  3.771277739501504*^9}, {3.771278250019471*^9, 3.771278270982277*^9}, {
+  3.7712882726174765`*^9, 3.771288286867358*^9}, {3.771337979969363*^9, 
+  3.7713379805478187`*^9}, {3.7713380155266266`*^9, 3.771338030225355*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"9cbe7f99-1b49-4def-a4f1-2c5891b59e48"],
 
 Cell["New generation rule:", "Text",
  CellChangeTimes->{{3.7712563673846784`*^9, 
   3.7712563763106794`*^9}},ExpressionUUID->"d887f79a-c51b-4c2e-b050-\
 e3d89ea5d47f"],
 
-Cell[BoxData[
+Cell[CellGroupData[{
+
+Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"ruleTable", "[", 
-    RowBox[{"rule_Integer", ",", 
-     RowBox[{"neighborCount_Integer:", "5"}]}], "]"}], ":=", 
-   RowBox[{"Reverse", "[", 
-    RowBox[{"PadLeft", "[", 
-     RowBox[{
-      RowBox[{"IntegerDigits", "[", 
-       RowBox[{"rule", ",", "2"}], "]"}], ",", 
-      RowBox[{"2", "^", "neighborCount"}]}], "]"}], "]"}]}], ";", " ", 
+   RowBox[{
+    RowBox[{"ruleTable", "[", 
+     RowBox[{"rule_Integer", ",", 
+      RowBox[{"neighborCount_Integer:", "5"}]}], "]"}], ":=", 
+    RowBox[{"Reverse", "[", 
+     RowBox[{"PadLeft", "[", 
+      RowBox[{
+       RowBox[{"IntegerDigits", "[", 
+        RowBox[{"rule", ",", "2"}], "]"}], ",", 
+       RowBox[{"2", "^", "neighborCount"}]}], "]"}], "]"}]}], ";"}], " ", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Given", " ", "a", " ", "number", " ", "and", " ", "Moore", " ", 
     "neighborhood", " ", "size", " ", "generates", " ", "a", " ", "rule", " ", 
-    RowBox[{"table", "."}]}], " ", "*)"}]}]], "Input",
+    RowBox[{"table", "."}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ruleTable", "[", 
+  RowBox[{"30", ",", "3"}], "]"}]}], "Input",
  CellChangeTimes->{{3.7712572147913127`*^9, 3.771257242855857*^9}, {
    3.7712572969665213`*^9, 3.7712573283239574`*^9}, {3.7712573598853164`*^9, 
    3.7712573607561545`*^9}, {3.7712575586815276`*^9, 3.771257572825941*^9}, {
@@ -480,72 +467,83 @@ Cell[BoxData[
    3.7712757582571936`*^9}, {3.771275806463606*^9, 3.771275806635392*^9}, {
    3.7712769302548556`*^9, 3.771276931141763*^9}, {3.7712783250355635`*^9, 
    3.7712783321381445`*^9}, {3.771278671958815*^9, 3.7712786724062147`*^9}, 
-   3.7712787110208488`*^9, {3.771278773417505*^9, 3.7712787740246973`*^9}},
- CellLabel->
-  "In[271]:=",ExpressionUUID->"8ff06fd8-b765-414a-896d-b7c6b47fd625"],
+   3.7712787110208488`*^9, {3.771278773417505*^9, 3.7712787740246973`*^9}, {
+   3.7712882914470873`*^9, 3.771288298194048*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"8ff06fd8-b765-414a-896d-b7c6b47fd625"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "1", ",", "1", ",", "1", ",", "1", ",", "0", ",", "0", ",", "0"}],
+   "}"}]], "Output",
+ CellChangeTimes->{3.771288299149502*^9, 3.7712884765134554`*^9, 
+  3.7712886052500076`*^9, 3.771288816561202*^9, 3.7713353700924945`*^9, 
+  3.771335488545508*^9, 3.7713444660988092`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"4db1c2eb-4bbc-4b4d-a41e-ba498b221e61"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{"nextStep", "[", 
-    RowBox[{"initialConditions_List", ",", "rule_Integer", ",", 
-     RowBox[{"neighborCount_Integer:", "5"}]}], "]"}], ":=", 
-   RowBox[{"Table", "[", "\[IndentingNewLine]", 
-    RowBox[{
+   RowBox[{
+    RowBox[{"nextStep", "[", 
+     RowBox[{"initialConditions_List", ",", "rule_Integer", ",", 
+      RowBox[{"neighborCount_Integer:", "5"}]}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
      RowBox[{
-      RowBox[{"ruleTable", "[", 
-       RowBox[{"rule", ",", "neighborCount"}], "]"}], "[", 
-      RowBox[{"[", 
+      RowBox[{"{", 
        RowBox[{
-        RowBox[{"FromDigits", "[", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"If", "[", 
-           RowBox[{
-            RowBox[{"i", "<", 
-             RowBox[{"neighborCount", "/", "2"}]}], ",", 
-            RowBox[{"PadLeft", "[", 
-             RowBox[{
-              RowBox[{"Take", "[", 
-               RowBox[{"initialConditions", ",", 
-                RowBox[{"{", 
-                 RowBox[{"1", ",", 
-                  RowBox[{"i", "+", 
-                   RowBox[{"Floor", "[", 
-                    RowBox[{"neighborCount", "/", "2"}], "]"}]}]}], "}"}]}], 
-               "]"}], ",", "neighborCount"}], "]"}], ",", 
-            RowBox[{"If", "[", 
-             RowBox[{
-              RowBox[{"i", ">", 
-               RowBox[{
-                RowBox[{"Total", "[", "r", "]"}], "-", 
-                RowBox[{"neighborCount", "/", "2"}]}]}], ",", 
-              RowBox[{"PadRight", "[", 
-               RowBox[{
-                RowBox[{"Take", "[", 
-                 RowBox[{"initialConditions", ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"i", "-", 
-                    RowBox[{"Floor", "[", 
-                    RowBox[{"neighborCount", "/", "2"}], "]"}]}], ",", 
-                    RowBox[{"Total", "[", "r", "]"}]}], "}"}]}], "]"}], ",", 
-                "neighborCount"}], "]"}], ",", 
-              RowBox[{"Take", "[", 
-               RowBox[{"initialConditions", ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"i", "-", 
-                   RowBox[{"Floor", "[", 
-                    RowBox[{"neighborCount", "/", "2"}], "]"}]}], ",", 
-                  RowBox[{"i", "+", 
-                   RowBox[{"Floor", "[", 
-                    RowBox[{"neighborCount", "/", "2"}], "]"}]}]}], "}"}]}], 
-               "]"}]}], "]"}]}], "]"}], ",", "2"}], "]"}], "+", "1"}], "]"}], 
-      "]"}], "\[IndentingNewLine]", ",", 
-     RowBox[{"{", 
-      RowBox[{"i", ",", "1", ",", 
-       RowBox[{"Length", "[", "initialConditions", "]"}]}], "}"}]}], "]"}]}], 
-  ";", " ", 
+        RowBox[{"a", "=", 
+         RowBox[{"neighborCount", "/", "2"}]}], ",", 
+        RowBox[{"b", "=", 
+         RowBox[{"Floor", "[", 
+          RowBox[{"neighborCount", "/", "2"}], "]"}]}], ",", 
+        RowBox[{"l", "=", 
+         RowBox[{"Length", "[", "initialConditions", "]"}]}]}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"ruleTable", "[", 
+          RowBox[{"rule", ",", "neighborCount"}], "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{
+           RowBox[{"FromDigits", "[", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{"i", "<", "a"}], ",", 
+               RowBox[{"PadLeft", "[", 
+                RowBox[{
+                 RowBox[{"Take", "[", 
+                  RowBox[{"initialConditions", ",", 
+                   RowBox[{"{", 
+                    RowBox[{"1", ",", 
+                    RowBox[{"i", "+", "b"}]}], "}"}]}], "]"}], ",", 
+                 "neighborCount"}], "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"If", "[", 
+                RowBox[{
+                 RowBox[{"i", ">", 
+                  RowBox[{"l", "-", "a"}]}], ",", 
+                 RowBox[{"PadRight", "[", 
+                  RowBox[{
+                   RowBox[{"Take", "[", 
+                    RowBox[{"initialConditions", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"i", "-", "b"}], ",", "l"}], "}"}]}], "]"}], ",", 
+                   "neighborCount"}], "]"}], ",", 
+                 RowBox[{"Take", "[", 
+                  RowBox[{"initialConditions", ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"i", "-", "b"}], ",", 
+                    RowBox[{"i", "+", "b"}]}], "}"}]}], "]"}]}], "]"}]}], 
+              "]"}], ",", "2"}], "]"}], "+", "1"}], "]"}], "]"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", "l"}], "}"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}], " ", 
   RowBox[{"(*", 
    RowBox[{
     RowBox[{
@@ -572,88 +570,93 @@ Cell[BoxData[
    3.771260403295305*^9}, {3.771260922196931*^9, 3.771260943386712*^9}, {
    3.7712619429621353`*^9, 3.7712619503243065`*^9}, {3.771278337203535*^9, 
    3.7712783630221896`*^9}, {3.7712784825277076`*^9, 
-   3.7712785155874634`*^9}, {3.7712787803271303`*^9, 3.7712787807905207`*^9}},
- CellLabel->
-  "In[297]:=",ExpressionUUID->"7fc6b41d-12fc-47c8-8b5e-4d578273081f"],
+   3.7712785155874634`*^9}, {3.7712787803271303`*^9, 
+   3.7712787807905207`*^9}, {3.771288314333929*^9, 3.771288363273039*^9}, 
+   3.771288501346103*^9, {3.7712885338302307`*^9, 3.7712885393405027`*^9}, {
+   3.7712885785832663`*^9, 3.771288582874791*^9}, {3.771288623740568*^9, 
+   3.7712887554772906`*^9}, {3.7712888727599382`*^9, 
+   3.7712888759962845`*^9}, {3.7712906120474873`*^9, 3.7712906478557425`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"7fc6b41d-12fc-47c8-8b5e-4d578273081f"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[{
+Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{
-    RowBox[{"triangularCA", "[", 
-     RowBox[{
-     "basis_", ",", "initialConditions_List", ",", "iterations_Integer", ",", 
-      "rule_Integer", ",", 
-      RowBox[{"neighborCount_Integer:", "5"}]}], "]"}], ":=", 
-    RowBox[{"Module", "[", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"d", "=", 
-         RowBox[{
-          RowBox[{
-           RowBox[{
-            RowBox[{"basis", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", "2", "]"}], "]"}], "/", "2"}], "-", 
-          RowBox[{
-           RowBox[{"basis", "[", 
-            RowBox[{"[", "2", "]"}], "]"}], "[", 
-           RowBox[{"[", "2", "]"}], "]"}]}]}], ",", 
-        RowBox[{"r", "=", 
-         RowBox[{"rowLength", "[", 
-          RowBox[{"Length", "[", "initialConditions", "]"}], "]"}]}]}], "}"}],
-       ",", "\[IndentingNewLine]", 
-      RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"Table", "[", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"Translate", "[", 
-           RowBox[{
-            RowBox[{"triangleCAList", "[", 
-             RowBox[{"basis", ",", 
-              RowBox[{"Nest", "[", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"nextStep", "[", 
-                  RowBox[{"#", ",", "rule", ",", "neighborCount"}], "]"}], 
-                 "&"}], ",", "initialConditions", ",", "i"}], "]"}]}], "]"}], 
-            ",", 
-            RowBox[{"{", 
-             RowBox[{"0", ",", 
-              RowBox[{"d", "*", "i"}]}], "}"}]}], "]"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"i", ",", "0", ",", "iterations"}], "}"}]}], 
-         "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
-        RowBox[{"ImageSize", "\[Rule]", 
-         RowBox[{"100", "*", 
-          RowBox[{"r", "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}]}]}], "]"}]}], 
-     "\[IndentingNewLine]", "]"}]}], ";"}], " ", 
-  RowBox[{"(*", " ", 
-   RowBox[{"Plots", " ", "a", " ", "triangular", " ", "CA"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{"triangularCA", "[", 
-  RowBox[{
-   RowBox[{"{", 
+   RowBox[{"triangularCA", "[", 
+    RowBox[{
+    "basis_", ",", "initialConditions_List", ",", "iterations_Integer", ",", 
+     "rule_Integer", ",", 
+     RowBox[{"neighborCount_Integer:", "5"}]}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"1", ",", "0"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"0.5", ",", 
-       RowBox[{
-        RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}]}], "}"}]}], "}"}], ",", 
-   "c", ",", "10", ",", "30", ",", "3"}], "]"}]}], "Input",
+      RowBox[{
+       RowBox[{"d", "=", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"basis", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "/", "2"}], "-", 
+         RowBox[{
+          RowBox[{"basis", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}]}], ",", 
+       RowBox[{"r", "=", 
+        RowBox[{"rowLength", "[", 
+         RowBox[{"Length", "[", "initialConditions", "]"}], "]"}]}]}], "}"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Table", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"triangleCAList", "[", 
+            RowBox[{"basis", ",", 
+             RowBox[{"Nest", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"nextStep", "[", 
+                 RowBox[{"#", ",", "rule", ",", "neighborCount"}], "]"}], 
+                "&"}], ",", "initialConditions", ",", "i"}], "]"}]}], "]"}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{"d", "*", "i"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "0", ",", "iterations"}], "}"}]}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"ImageSize", "\[Rule]", 
+        RowBox[{"100", "*", 
+         RowBox[{"r", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}]}]}], "]"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Plots", " ", "a", " ", "triangular", " ", "CA"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"triangularCA", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.5", ",", 
+        RowBox[{
+         RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}]}], "}"}]}], "}"}], ",", 
+    "initialConditions1D", ",", "5", ",", "30", ",", "3"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.771275910851821*^9, 3.7712762966683903`*^9}, {
-  3.7712763426793594`*^9, 3.771276484614922*^9}, {3.7712765423828273`*^9, 
-  3.7712766113862906`*^9}, {3.7712766767829714`*^9, 3.7712768634829655`*^9}, {
-  3.7712777741514945`*^9, 3.771277800061203*^9}, {3.771278583222898*^9, 
-  3.771278659351655*^9}, {3.771278798751616*^9, 3.7712789185471354`*^9}, {
-  3.7712790486652317`*^9, 3.771279089024322*^9}},
- CellLabel->
-  "In[311]:=",ExpressionUUID->"8e5582cf-e8bf-48cf-91c6-13219b9cd797"],
+   3.7712763426793594`*^9, 3.771276484614922*^9}, {3.7712765423828273`*^9, 
+   3.7712766113862906`*^9}, {3.7712766767829714`*^9, 
+   3.7712768634829655`*^9}, {3.7712777741514945`*^9, 3.771277800061203*^9}, {
+   3.771278583222898*^9, 3.771278659351655*^9}, {3.771278798751616*^9, 
+   3.7712789185471354`*^9}, {3.7712790486652317`*^9, 3.771279089024322*^9}, {
+   3.7713355007279344`*^9, 3.7713355263574066`*^9}, 3.77133708283904*^9, {
+   3.771344477305888*^9, 3.7713444776958294`*^9}, {3.77134458903714*^9, 
+   3.7713445954319983`*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"8e5582cf-e8bf-48cf-91c6-13219b9cd797"],
 
 Cell[BoxData[
  GraphicsBox[{GeometricTransformationBox[{
@@ -1247,514 +1250,1224 @@ Cell[BoxData[
         NCache[{{7, 0}, {8, 0}, {7.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7, 
           0}, {8, 0}, {7.5, 0.8660254037844386}}]],
        "Triangle"]}}, 
-    NCache[{0, Rational[-5, 2] 3^Rational[1, 2]}, {0, -4.330127018922193}]], 
-   GeometricTransformationBox[{
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{0, 0}, {1, 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{0, 
-          0}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {1, 0}, {
-          0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1.5, 
-          0.8660254037844386}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1, 0}, {2, 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1, 
-          0}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {2, 0}, {
-          1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2.5, 
-          0.8660254037844386}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2, 0}, {3, 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2, 
-          0}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {3, 0}, {
-          2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3.5, 
-          0.8660254037844386}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3, 0}, {4, 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3, 
-          0}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {4, 0}, {
-          3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4.5, 
-          0.8660254037844386}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4, 0}, {5, 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4, 
-          0}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {5, 0}, {
-          4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5.5, 
-          0.8660254037844386}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5, 0}, {6, 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5, 
-          0}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6.5, Rational[1, 2] 3^Rational[1, 2]}, {6, 0}, {
-          5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6.5, 
-          0.8660254037844386}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6, 0}, {7, 0}, {6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6, 
-          0}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7.5, Rational[1, 2] 3^Rational[1, 2]}, {7, 0}, {
-          6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7.5, 
-          0.8660254037844386}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7, 0}, {8, 0}, {7.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7, 
-          0}, {8, 0}, {7.5, 0.8660254037844386}}]],
-       "Triangle"]}}, 
-    NCache[{0, (-3) 3^Rational[1, 2]}, {0, -5.196152422706632}]], 
-   GeometricTransformationBox[{
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{0, 0}, {1, 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{0, 
-          0}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {1, 0}, {
-          0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1.5, 
-          0.8660254037844386}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1, 0}, {2, 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1, 
-          0}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {2, 0}, {
-          1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2.5, 
-          0.8660254037844386}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2, 0}, {3, 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2, 
-          0}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {3, 0}, {
-          2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3.5, 
-          0.8660254037844386}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3, 0}, {4, 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3, 
-          0}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {4, 0}, {
-          3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4.5, 
-          0.8660254037844386}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4, 0}, {5, 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4, 
-          0}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {5, 0}, {
-          4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5.5, 
-          0.8660254037844386}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5, 0}, {6, 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5, 
-          0}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6.5, Rational[1, 2] 3^Rational[1, 2]}, {6, 0}, {
-          5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6.5, 
-          0.8660254037844386}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6, 0}, {7, 0}, {6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6, 
-          0}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7.5, Rational[1, 2] 3^Rational[1, 2]}, {7, 0}, {
-          6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7.5, 
-          0.8660254037844386}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7, 0}, {8, 0}, {7.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7, 
-          0}, {8, 0}, {7.5, 0.8660254037844386}}]],
-       "Triangle"]}}, 
-    NCache[{0, Rational[-7, 2] 3^Rational[1, 2]}, {0, -6.06217782649107}]], 
-   GeometricTransformationBox[{
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{0, 0}, {1, 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{0, 
-          0}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {1, 0}, {
-          0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1.5, 
-          0.8660254037844386}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1, 0}, {2, 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1, 
-          0}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {2, 0}, {
-          1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2.5, 
-          0.8660254037844386}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2, 0}, {3, 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2, 
-          0}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {3, 0}, {
-          2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3.5, 
-          0.8660254037844386}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3, 0}, {4, 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3, 
-          0}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {4, 0}, {
-          3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4.5, 
-          0.8660254037844386}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4, 0}, {5, 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4, 
-          0}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {5, 0}, {
-          4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5.5, 
-          0.8660254037844386}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5, 0}, {6, 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5, 
-          0}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6.5, Rational[1, 2] 3^Rational[1, 2]}, {6, 0}, {
-          5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6.5, 
-          0.8660254037844386}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6, 0}, {7, 0}, {6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6, 
-          0}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7.5, Rational[1, 2] 3^Rational[1, 2]}, {7, 0}, {
-          6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7.5, 
-          0.8660254037844386}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7, 0}, {8, 0}, {7.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7, 
-          0}, {8, 0}, {7.5, 0.8660254037844386}}]],
-       "Triangle"]}}, 
-    NCache[{0, (-4) 3^Rational[1, 2]}, {0, -6.928203230275509}]], 
-   GeometricTransformationBox[{
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{0, 0}, {1, 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{0, 
-          0}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {1, 0}, {
-          0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1.5, 
-          0.8660254037844386}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1, 0}, {2, 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1, 
-          0}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {2, 0}, {
-          1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2.5, 
-          0.8660254037844386}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2, 0}, {3, 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2, 
-          0}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {3, 0}, {
-          2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3.5, 
-          0.8660254037844386}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3, 0}, {4, 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3, 
-          0}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {4, 0}, {
-          3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4.5, 
-          0.8660254037844386}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4, 0}, {5, 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4, 
-          0}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {5, 0}, {
-          4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5.5, 
-          0.8660254037844386}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5, 0}, {6, 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5, 
-          0}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6.5, Rational[1, 2] 3^Rational[1, 2]}, {6, 0}, {
-          5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6.5, 
-          0.8660254037844386}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6, 0}, {7, 0}, {6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6, 
-          0}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7.5, Rational[1, 2] 3^Rational[1, 2]}, {7, 0}, {
-          6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7.5, 
-          0.8660254037844386}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7, 0}, {8, 0}, {7.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7, 
-          0}, {8, 0}, {7.5, 0.8660254037844386}}]],
-       "Triangle"]}}, 
-    NCache[{0, Rational[-9, 2] 3^Rational[1, 2]}, {0, -7.794228634059947}]], 
-   GeometricTransformationBox[{
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{0, 0}, {1, 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{0, 
-          0}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {1, 0}, {
-          0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1.5, 
-          0.8660254037844386}, {1, 0}, {0.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{1, 0}, {2, 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1, 
-          0}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {2, 0}, {
-          1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2.5, 
-          0.8660254037844386}, {2, 0}, {1.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{2, 0}, {3, 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2, 
-          0}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {3, 0}, {
-          2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3.5, 
-          0.8660254037844386}, {3, 0}, {2.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{3, 0}, {4, 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3, 
-          0}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {4, 0}, {
-          3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4.5, 
-          0.8660254037844386}, {4, 0}, {3.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{4, 0}, {5, 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4, 
-          0}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {5, 0}, {
-          4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5.5, 
-          0.8660254037844386}, {5, 0}, {4.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{5, 0}, {6, 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5, 
-          0}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6.5, Rational[1, 2] 3^Rational[1, 2]}, {6, 0}, {
-          5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6.5, 
-          0.8660254037844386}, {6, 0}, {5.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{6, 0}, {7, 0}, {6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{6, 
-          0}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7.5, Rational[1, 2] 3^Rational[1, 2]}, {7, 0}, {
-          6.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7.5, 
-          0.8660254037844386}, {7, 0}, {6.5, 0.8660254037844386}}]],
-       "Triangle"]}, 
-     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-      TagBox[
-       PolygonBox[
-        NCache[{{7, 0}, {8, 0}, {7.5, Rational[1, 2] 3^Rational[1, 2]}}, {{7, 
-          0}, {8, 0}, {7.5, 0.8660254037844386}}]],
-       "Triangle"]}}, 
-    NCache[{0, (-5) 3^Rational[1, 2]}, {0, -8.660254037844386}]]},
+    NCache[{0, Rational[-5, 2] 3^Rational[1, 2]}, {0, -4.330127018922193}]]},
   ImageSize->800]], "Output",
- CellChangeTimes->{{3.771276389776413*^9, 3.771276414958373*^9}, {
-   3.7712764795239134`*^9, 3.771276505194313*^9}, {3.7712766119694953`*^9, 
-   3.7712766144221663`*^9}, 3.7712767076681023`*^9, 3.7712767485203342`*^9, {
-   3.771276794451582*^9, 3.7712768119808035`*^9}, 3.7712768647732763`*^9, 
-   3.771276933726115*^9, {3.771277775973054*^9, 3.7712778004886227`*^9}, 
-   3.771278383204819*^9, 3.771278524498082*^9, {3.7712786514632807`*^9, 
-   3.77127866029613*^9}, {3.771278808391695*^9, 3.771278828019556*^9}, {
-   3.7712788581161184`*^9, 3.771278919062453*^9}, {3.7712789633345504`*^9, 
-   3.771278992043285*^9}, {3.7712790237139945`*^9, 3.7712790894836974`*^9}},
- CellLabel->
-  "Out[312]=",ExpressionUUID->"d3b32593-55b9-4a71-9e54-f2d589c78bd0"]
+ CellChangeTimes->{{3.771288586022442*^9, 3.771288608476338*^9}, 
+   3.771288681349489*^9, {3.771288733134029*^9, 3.7712887500468464`*^9}, 
+   3.771288786546263*^9, 3.771288821250663*^9, 3.771288881923436*^9, 
+   3.771290652186195*^9, 3.7713353734176035`*^9, {3.7713354911964197`*^9, 
+   3.7713355271502876`*^9}, 3.771337083326736*^9, {3.7713380251498957`*^9, 
+   3.771338032827368*^9}, {3.7713444711692505`*^9, 3.771344477965091*^9}, {
+   3.7713445901491613`*^9, 3.7713445957491846`*^9}, 3.7713446486268106`*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"c612d2b2-41fa-495c-b779-a6c293814862"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2D CellPlot:", "Section",
+ CellChangeTimes->{{3.7713353850744357`*^9, 3.7713354234548144`*^9}, {
+  3.771336121654503*^9, 3.771336125188055*^9}, {3.771344228796633*^9, 
+  3.771344230033369*^9}},ExpressionUUID->"115ccd10-f741-4ae9-9bae-\
+a10c631f283c"],
+
+Cell["2D Initial Conditions:", "Text",
+ CellChangeTimes->{{3.7713445180169897`*^9, 
+  3.771344526429497*^9}},ExpressionUUID->"cfa4a448-5e54-427b-a42e-\
+c83bc716b149"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"initialConditions2D", "=", 
+   RowBox[{"SparseArray", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1"}], "}"}], "\[Rule]", "1"}], ",", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"2", ",", "5"}], "}"}], "\[Rule]", "1"}], ",", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"3", ",", "10"}], "}"}], "\[Rule]", "1"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "11"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.771346341191843*^9, 3.7713463527698865`*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"262de0b3-de21-49c0-b991-65ba2c681e5c"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"latticePoints", "[", 
+    RowBox[{"basis_", ",", "dimensions_"}], "]"}], ":=", 
+   RowBox[{"Flatten", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"i", "*", 
+          RowBox[{"basis", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], "+", 
+         RowBox[{"j", "*", 
+          RowBox[{"basis", "[", 
+           RowBox[{"[", "2", "]"}], "]"}]}]}], ")"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "0", ",", 
+         RowBox[{
+          RowBox[{"dimensions", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "-", "1"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"j", ",", "0", ",", 
+         RowBox[{
+          RowBox[{"dimensions", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "-", "1"}]}], "}"}]}], "]"}], 
+     "\[IndentingNewLine]", ",", "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"latticePointsPlot", "[", "points_", "]"}], ":=", 
+    RowBox[{"ListPlot", "[", 
+     RowBox[{"points", ",", 
+      RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Generates", " ", "a", " ", "list", " ", "of", " ", "2", "D", " ", 
+    "lattice", " ", "points", " ", "given", " ", "a", " ", 
+    RowBox[{"basis", "."}]}], " ", "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.771335541907828*^9, 3.7713355583019943`*^9}, {
+  3.771336132564362*^9, 3.7713361359123807`*^9}, {3.771336226078218*^9, 
+  3.7713363365448527`*^9}, {3.7713365286428547`*^9, 3.7713365323260064`*^9}, {
+  3.771336568480337*^9, 3.7713365705956807`*^9}, {3.771336636418685*^9, 
+  3.7713367915439105`*^9}, {3.771337389886126*^9, 3.7713374317701516`*^9}, {
+  3.7713434845915217`*^9, 3.7713435071472116`*^9}, {3.771344247245305*^9, 
+  3.771344248232709*^9}},
+ CellLabel->"In[58]:=",ExpressionUUID->"a1942bd6-108e-421c-a36e-f0739dc63652"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"oddTriangleCells", "[", 
+    RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"b1", "=", 
+        RowBox[{"basis", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+       RowBox[{"b2", "=", 
+        RowBox[{"basis", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], ",", 
+       RowBox[{"c", "=", 
+        RowBox[{"Reverse", "[", 
+         RowBox[{"initialConditions", ",", "1"}], "]"}]}], ",", 
+       RowBox[{"d1", "=", 
+        RowBox[{
+         RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"d2", "=", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"EvenQ", "[", 
+           RowBox[{
+            RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+            RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+             RowBox[{"[", "2", "]"}], "]"}], ")"}], "/", "2"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+              RowBox[{"[", "2", "]"}], "]"}], "+", "1"}], ")"}], "/", "2"}]}],
+          "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Flatten", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Table", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"FaceForm", "[", 
+            RowBox[{"GrayLevel", "[", 
+             RowBox[{"1", "-", 
+              RowBox[{
+               RowBox[{"c", "[", 
+                RowBox[{"[", 
+                 RowBox[{"j", "+", "1"}], "]"}], "]"}], "[", 
+               RowBox[{"[", 
+                RowBox[{
+                 RowBox[{"2", "i"}], "+", "1"}], "]"}], "]"}]}], "]"}], "]"}],
+            ",", 
+           RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+           RowBox[{"Triangle", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"i", "*", "b1"}], "+", 
+               RowBox[{"j", "*", "b2"}]}], ",", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], "+", 
+               RowBox[{"j", "*", "b2"}]}], ",", 
+              RowBox[{
+               RowBox[{"i", "*", "b1"}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"j", "+", "1"}], ")"}], "*", "b2"}]}]}], "}"}], 
+            "]"}]}], "}"}], "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "0", ",", 
+           RowBox[{"d2", "-", "1"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "0", ",", 
+           RowBox[{"d1", "-", "1"}]}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+       ",", "1"}], "]"}]}], "\[IndentingNewLine]", "]"}]}], ";", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Generates", " ", "a", " ", "list", " ", "of", " ", "\"\<odd\>\"", " ", 
+     "triangular", " ", "cells", " ", "of", " ", "a", " ", "2", "D", " ", 
+     "CA"}], ",", " ", 
+    RowBox[{
+    "given", " ", "a", " ", "lattice", " ", "basis", " ", "and", " ", 
+     "initial", " ", 
+     RowBox[{"conditions", "."}]}]}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7713378382263556`*^9, 3.7713378632304993`*^9}, {
+   3.771338180525483*^9, 3.7713381944601946`*^9}, {3.7713382992520046`*^9, 
+   3.7713383595906687`*^9}, {3.771338451675474*^9, 3.771338566860472*^9}, {
+   3.7713386162643766`*^9, 3.7713386450025363`*^9}, {3.7713387098910666`*^9, 
+   3.771338774593038*^9}, {3.7713388247579064`*^9, 3.7713388249663486`*^9}, {
+   3.7713388603896675`*^9, 3.7713388627124243`*^9}, {3.771338909696807*^9, 
+   3.7713389456287527`*^9}, {3.7713391220498905`*^9, 3.771339213660898*^9}, {
+   3.7713392613693357`*^9, 3.7713393558108187`*^9}, {3.771339523725876*^9, 
+   3.7713395289428988`*^9}, 3.771339589538937*^9, {3.771339907029577*^9, 
+   3.771339913540169*^9}, {3.771340573616809*^9, 3.771340588253771*^9}, 
+   3.771340827981799*^9, {3.7713410432047496`*^9, 3.7713410454707336`*^9}, {
+   3.771341390876176*^9, 3.771341425982839*^9}, {3.7713416517402096`*^9, 
+   3.771341685614636*^9}, {3.7713417716705723`*^9, 3.7713417758503637`*^9}, {
+   3.7713418483435783`*^9, 3.7713418493957853`*^9}, {3.771341982036112*^9, 
+   3.771342022047195*^9}, {3.771342066375804*^9, 3.771342111397665*^9}, {
+   3.7713421821105967`*^9, 3.771342185976259*^9}, {3.7713422579597635`*^9, 
+   3.771342297335478*^9}, {3.7713423408970027`*^9, 3.7713423452703094`*^9}, {
+   3.7713424354612007`*^9, 3.7713424393776855`*^9}, {3.7713427538116465`*^9, 
+   3.771342757725181*^9}, {3.771342837045892*^9, 3.7713428416835103`*^9}, {
+   3.7713431351069465`*^9, 3.7713432090273237`*^9}, {3.771343335448265*^9, 
+   3.7713433360865583`*^9}, {3.771343524138811*^9, 3.7713436024822702`*^9}, {
+   3.7713462661298018`*^9, 3.771346289526985*^9}, {3.7713464623888273`*^9, 
+   3.771346517730857*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"74bfa3ad-d0e3-4f2d-9663-35d6165cad2b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"oddTriangleCells", "[", 
+   RowBox[{"basis", ",", "initialConditions2D"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"oddTriangleCells", "[", 
+    RowBox[{"basis", ",", "initialConditions2D"}], "]"}], ",", 
+   RowBox[{"Background", "\[Rule]", "LightBlue"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7713423469847956`*^9, 3.7713423565720906`*^9}, {
+   3.7713427031641006`*^9, 3.7713427069539323`*^9}, {3.7713428318637486`*^9, 
+   3.771342865938697*^9}, {3.771343033185489*^9, 3.7713430426990175`*^9}, 
+   3.77134334095155*^9, 3.7713436101587796`*^9, {3.771344491462028*^9, 
+   3.7713444952010374`*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"206ba3de-67bf-44db-8ac7-b7b4f4482f4c"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{0., 0}, {1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        0., 0}, {1., 0}, {0.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}, {1., 3^Rational[1, 2]}}, {{0.5,
+        0.8660254037844386}, {1.5, 0.8660254037844386}, {1., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}, {
+        1.5, Rational[3, 2] 3^Rational[1, 2]}}, {{1., 1.7320508075688772`}, {
+       2., 1.7320508075688772`}, {1.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {2., 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        1., 0}, {2., 0}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[1, 2] 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5,
+        0.8660254037844386}, {2.5, 0.8660254037844386}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}}, {{2., 1.7320508075688772`}, {
+       3., 1.7320508075688772`}, {2.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 0}, {3., 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        2., 0}, {3., 0}, {2.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[1, 2] 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}}, {{2.5,
+        0.8660254037844386}, {3.5, 0.8660254037844386}, {3., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}}, {{3., 1.7320508075688772`}, {
+       4., 1.7320508075688772`}, {3.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 0}, {4., 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        3., 0}, {4., 0}, {3.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[1, 2] 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}}, {{3.5,
+        0.8660254037844386}, {4.5, 0.8660254037844386}, {4., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}}, {{4., 1.7320508075688772`}, {
+       5., 1.7320508075688772`}, {4.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 0}, {5., 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        4., 0}, {5., 0}, {4.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[1, 2] 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}}, {{4.5,
+        0.8660254037844386}, {5.5, 0.8660254037844386}, {5., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}}, {{5., 1.7320508075688772`}, {
+       6., 1.7320508075688772`}, {5.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 0}, {6., 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        5., 0}, {6., 0}, {5.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        6.5, Rational[1, 2] 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}}, {{5.5,
+        0.8660254037844386}, {6.5, 0.8660254037844386}, {6., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{6., 3^Rational[1, 2]}, {7., 3^Rational[1, 2]}, {
+        6.5, Rational[3, 2] 3^Rational[1, 2]}}, {{6., 1.7320508075688772`}, {
+       7., 1.7320508075688772`}, {6.5, 2.598076211353316}}]],
+     "Triangle"]}},
+  Background->RGBColor[0.87, 0.94, 1]]], "Output",
+ CellChangeTimes->{
+  3.7713423570019403`*^9, 3.7713424430977774`*^9, 3.7713427072940235`*^9, 
+   3.7713427602045946`*^9, {3.771342843408879*^9, 3.771342866505123*^9}, {
+   3.7713430381800995`*^9, 3.771343043178734*^9}, {3.7713433390506754`*^9, 
+   3.771343341266734*^9}, 3.7713436116946383`*^9, 3.771344487028881*^9, 
+   3.7713445411302557`*^9, 3.7713462924711475`*^9, 3.771346358785843*^9, 
+   3.7713465220003986`*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"06c5ac5e-2a15-4ed6-9e50-76e8782f4c69"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"evenTriangleCells", "[", 
+    RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"b1", "=", 
+        RowBox[{"basis", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+       RowBox[{"b2", "=", 
+        RowBox[{"basis", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], ",", 
+       RowBox[{"c", "=", 
+        RowBox[{"Reverse", "[", 
+         RowBox[{"initialConditions", ",", "1"}], "]"}]}], ",", 
+       RowBox[{"d1", "=", 
+        RowBox[{
+         RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"d2", "=", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"EvenQ", "[", 
+           RowBox[{
+            RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+            RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+             RowBox[{"[", "2", "]"}], "]"}], ")"}], "/", "2"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+              RowBox[{"[", "2", "]"}], "]"}], "-", "1"}], ")"}], "/", "2"}]}],
+          "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Flatten", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Table", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"FaceForm", "[", 
+            RowBox[{"GrayLevel", "[", 
+             RowBox[{"1", "-", 
+              RowBox[{
+               RowBox[{"c", "[", 
+                RowBox[{"[", 
+                 RowBox[{"j", "+", "1"}], "]"}], "]"}], "[", 
+               RowBox[{"[", 
+                RowBox[{"2", 
+                 RowBox[{"(", 
+                  RowBox[{"i", "+", "1"}], ")"}]}], "]"}], "]"}]}], "]"}], 
+            "]"}], ",", 
+           RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+           RowBox[{"Triangle", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], "+", 
+               RowBox[{"j", "*", "b2"}]}], ",", 
+              RowBox[{
+               RowBox[{"i", "*", "b1"}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"j", "+", "1"}], ")"}], "*", "b2"}]}], ",", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"i", "+", "1"}], ")"}], "*", "b1"}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"j", "+", "1"}], ")"}], "*", "b2"}]}]}], "}"}], 
+            "]"}]}], "}"}], "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "0", ",", 
+           RowBox[{"d2", "-", "1"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "0", ",", 
+           RowBox[{"d1", "-", "1"}]}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+       ",", "1"}], "]"}]}], "\[IndentingNewLine]", "]"}]}], ";", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Generates", " ", "a", " ", "list", " ", "of", " ", "\"\<even\>\"", " ", 
+     "triangular", " ", "cells", " ", "of", " ", "a", " ", "2", "D", " ", 
+     "CA"}], ",", " ", 
+    RowBox[{
+    "given", " ", "a", " ", "lattice", " ", "basis", " ", "and", " ", 
+     "initial", " ", 
+     RowBox[{"conditions", "."}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{
+    RowBox[{"evenTriangleCells", "[", 
+     RowBox[{"basis", ",", "initialConditions2D"}], "]"}], ",", 
+    RowBox[{"Background", "\[Rule]", "LightBlue"}]}], "]"}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQAWIQveHqDD8nyTeOfG3ZASD6cNv8EBD9rL4nHEQf4tmZ
+AqKrz89LB9Gnj9nkgegQFYEiEM3y2H0yiF7yQHIJiP5px/QcROeln/0E1s+u
+KO8MpC+ZLgDT10pUq0H0Ev5VYDri8I7zIHrPqcN3QPScsxWPQfT0M+VPQPQB
+pedsLkB6y9YMdhBt5dejD6KLdd4aguiM7INmIFr5hpE5iH7ndNYaRJsHdduB
+6E02/Qkg2lnwM5jm9uC9CqKZNkmCaZkVE1a4Aul/j4NWguhFYbwbQfSuiKVg
+2tvn1EEQndfjchhE2/8WOQOis2LKz4JoANeMjm4=
+  "],
+ CellLabel->"In[74]:=",ExpressionUUID->"2c442d88-f6c9-4697-9fdd-b2b99779e9a5"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1., 0}, {0.5, 
+        0.8660254037844386}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5, 
+       0.8660254037844386}, {1., 1.7320508075688772`}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 3^Rational[1, 2]}, {
+        1.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}}, {{2., 1.7320508075688772`}, {
+       1.5, 2.598076211353316}, {2.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2., 0}, {1.5, 
+        0.8660254037844386}, {2.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2., 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}}, {{2.5, 
+       0.8660254037844386}, {2., 1.7320508075688772`}, {3., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}}, {{3., 1.7320508075688772`}, {
+       2.5, 2.598076211353316}, {3.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3., 0}, {2.5, 
+        0.8660254037844386}, {3.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3., 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}}, {{3.5, 
+       0.8660254037844386}, {3., 1.7320508075688772`}, {4., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}}, {{4., 1.7320508075688772`}, {
+       3.5, 2.598076211353316}, {4.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4., 0}, {3.5, 
+        0.8660254037844386}, {4.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4., 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}}, {{4.5, 
+       0.8660254037844386}, {4., 1.7320508075688772`}, {5., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}}, {{5., 1.7320508075688772`}, {
+       4.5, 2.598076211353316}, {5.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5., 0}, {4.5, 
+        0.8660254037844386}, {5.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5., 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}}, {{5.5, 
+       0.8660254037844386}, {5., 1.7320508075688772`}, {6., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{6., 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        6.5, Rational[3, 2] 3^Rational[1, 2]}}, {{6., 1.7320508075688772`}, {
+       5.5, 2.598076211353316}, {6.5, 2.598076211353316}}]],
+     "Triangle"]}},
+  Background->RGBColor[0.87, 0.94, 1]]], "Output",
+ CellChangeTimes->{
+  3.771342628036994*^9, {3.7713428987030473`*^9, 3.7713429085317955`*^9}, 
+   3.7713432479023457`*^9, 3.7713432921999025`*^9, {3.771343328650476*^9, 
+   3.7713433487427187`*^9}, 3.771343624113469*^9, {3.7713445470194426`*^9, 
+   3.771344553144102*^9}, 3.771346252418412*^9, 3.7713463178812375`*^9, 
+   3.7713463618586273`*^9, 3.7713464585072007`*^9, 3.7713465407203875`*^9},
+ CellLabel->"Out[74]=",ExpressionUUID->"dc086bb7-eb46-4f3c-85ab-4fa5ad4c4437"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"triangleCells", "[", 
+     RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
+    RowBox[{"Riffle", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"oddTriangleCells", "[", 
+       RowBox[{"basis", ",", "initialConditions"}], "]"}], ",", 
+      RowBox[{"evenTriangleCells", "[", 
+       RowBox[{"basis", ",", "initialConditions"}], "]"}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Combines", " ", "the", " ", "lists", " ", "of", " ", "\"\<odd' and \>\"", 
+    "even", "\"\< trianular cells to make a 2D triangular CA. \>"}], 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.771340739775601*^9, 3.771340790060192*^9}, {
+  3.771341794158487*^9, 3.771341803337943*^9}, {3.7713433602878494`*^9, 
+  3.7713433691213017`*^9}, {3.7713436636048417`*^9, 3.771343704446638*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"d7a503cc-9b84-46d7-bb01-b0388a4cbe2f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"triangleCells", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}]}], "}"}]}], "}"}], ",", 
+     "initialConditions2D"}], "]"}], ",", 
+   RowBox[{"Background", "\[Rule]", "LightBlue"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7713407951366043`*^9, 3.7713408021558094`*^9}, {
+  3.7713410863813066`*^9, 3.7713410941585093`*^9}, {3.771341812472513*^9, 
+  3.771341815903346*^9}, {3.7713425765685983`*^9, 3.7713425785083694`*^9}, {
+  3.771344557785699*^9, 3.7713445580629187`*^9}, {3.771344657190895*^9, 
+  3.771344663284626*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"8cd91e42-8b3f-498c-be34-e05cde40cc56"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{0., 0}, {1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        0., 0}, {1., 0}, {0.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1., 0}, {0.5, 
+        0.8660254037844386}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}, {1., 3^Rational[1, 2]}}, {{0.5,
+        0.8660254037844386}, {1.5, 0.8660254037844386}, {1., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5, 
+       0.8660254037844386}, {1., 1.7320508075688772`}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}, {
+        1.5, Rational[3, 2] 3^Rational[1, 2]}}, {{1., 1.7320508075688772`}, {
+       2., 1.7320508075688772`}, {1.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 3^Rational[1, 2]}, {
+        1.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}}, {{2., 1.7320508075688772`}, {
+       1.5, 2.598076211353316}, {2.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {2., 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        1., 0}, {2., 0}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2., 0}, {1.5, 
+        0.8660254037844386}, {2.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[1, 2] 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5,
+        0.8660254037844386}, {2.5, 0.8660254037844386}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2., 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}}, {{2.5, 
+       0.8660254037844386}, {2., 1.7320508075688772`}, {3., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}}, {{2., 1.7320508075688772`}, {
+       3., 1.7320508075688772`}, {2.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}}, {{3., 1.7320508075688772`}, {
+       2.5, 2.598076211353316}, {3.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 0}, {3., 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        2., 0}, {3., 0}, {2.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3., 0}, {2.5, 
+        0.8660254037844386}, {3.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[1, 2] 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}}, {{2.5,
+        0.8660254037844386}, {3.5, 0.8660254037844386}, {3., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3., 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}}, {{3.5, 
+       0.8660254037844386}, {3., 1.7320508075688772`}, {4., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}}, {{3., 1.7320508075688772`}, {
+       4., 1.7320508075688772`}, {3.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}}, {{4., 1.7320508075688772`}, {
+       3.5, 2.598076211353316}, {4.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 0}, {4., 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        3., 0}, {4., 0}, {3.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4., 0}, {3.5, 
+        0.8660254037844386}, {4.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[1, 2] 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}}, {{3.5,
+        0.8660254037844386}, {4.5, 0.8660254037844386}, {4., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4., 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}}, {{4.5, 
+       0.8660254037844386}, {4., 1.7320508075688772`}, {5., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}}, {{4., 1.7320508075688772`}, {
+       5., 1.7320508075688772`}, {4.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}}, {{5., 1.7320508075688772`}, {
+       4.5, 2.598076211353316}, {5.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 0}, {5., 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        4., 0}, {5., 0}, {4.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5., 0}, {4.5, 
+        0.8660254037844386}, {5.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[1, 2] 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}}, {{4.5,
+        0.8660254037844386}, {5.5, 0.8660254037844386}, {5., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5., 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}}, {{5.5, 
+       0.8660254037844386}, {5., 1.7320508075688772`}, {6., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}}, {{5., 1.7320508075688772`}, {
+       6., 1.7320508075688772`}, {5.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{6., 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        6.5, Rational[3, 2] 3^Rational[1, 2]}}, {{6., 1.7320508075688772`}, {
+       5.5, 2.598076211353316}, {6.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 0}, {6., 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        5., 0}, {6., 0}, {5.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1., 0}, {0.5, 
+        0.8660254037844386}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        6.5, Rational[1, 2] 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}}, {{5.5,
+        0.8660254037844386}, {6.5, 0.8660254037844386}, {6., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5, 
+       0.8660254037844386}, {1., 1.7320508075688772`}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{6., 3^Rational[1, 2]}, {7., 3^Rational[1, 2]}, {
+        6.5, Rational[3, 2] 3^Rational[1, 2]}}, {{6., 1.7320508075688772`}, {
+       7., 1.7320508075688772`}, {6.5, 2.598076211353316}}]],
+     "Triangle"]}},
+  Background->RGBColor[0.87, 0.94, 1]]], "Output",
+ CellChangeTimes->{
+  3.7713408024181423`*^9, 3.771340849988912*^9, 3.7713410954969664`*^9, 
+   3.7713418169445386`*^9, 3.77134186206489*^9, {3.771342572663041*^9, 
+   3.7713425790848274`*^9}, 3.771343376131503*^9, 3.7713437094502945`*^9, {
+   3.7713445583521423`*^9, 3.7713445618727646`*^9}, 3.771344663865057*^9, 
+   3.771346321532444*^9, 3.7713463677089844`*^9, 3.7713465456052833`*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"4e69e415-7be4-4531-a56c-32e57d1669c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"triangleCellPlot", "[", 
+    RowBox[{"basis_", ",", "initialConditions_"}], "]"}], ":=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"triangleCells", "[", 
+      RowBox[{"basis", ",", "initialConditions"}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", 
+      RowBox[{"50", "*", 
+       RowBox[{
+        RowBox[{"Dimensions", "[", "initialConditions", "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"triangleCellPlot", "[", 
+  RowBox[{"basis", ",", "initialConditions2D"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.771343418381531*^9, 3.7713434415356092`*^9}, {
+   3.7713437547880783`*^9, 3.7713437883453355`*^9}, {3.771343824261278*^9, 
+   3.771343912929201*^9}, {3.7713445700289207`*^9, 3.771344570398942*^9}, 
+   3.771346370352873*^9, {3.7713464187016363`*^9, 3.7713464395887785`*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"2d1ac79f-24ec-4ca6-8fd6-3e9ab791e0e5"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{0., 0}, {1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        0., 0}, {1., 0}, {0.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1., 0}, {0.5, 
+        0.8660254037844386}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}, {1., 3^Rational[1, 2]}}, {{0.5,
+        0.8660254037844386}, {1.5, 0.8660254037844386}, {1., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5, 
+       0.8660254037844386}, {1., 1.7320508075688772`}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}, {
+        1.5, Rational[3, 2] 3^Rational[1, 2]}}, {{1., 1.7320508075688772`}, {
+       2., 1.7320508075688772`}, {1.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 3^Rational[1, 2]}, {
+        1.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}}, {{2., 1.7320508075688772`}, {
+       1.5, 2.598076211353316}, {2.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {2., 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        1., 0}, {2., 0}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 0}, {1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{2., 0}, {1.5, 
+        0.8660254037844386}, {2.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2.5, Rational[1, 2] 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5,
+        0.8660254037844386}, {2.5, 0.8660254037844386}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        2., 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}}, {{2.5, 
+       0.8660254037844386}, {2., 1.7320508075688772`}, {3., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}}, {{2., 1.7320508075688772`}, {
+       3., 1.7320508075688772`}, {2.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 3^Rational[1, 2]}, {
+        2.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}}, {{3., 1.7320508075688772`}, {
+       2.5, 2.598076211353316}, {3.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2., 0}, {3., 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        2., 0}, {3., 0}, {2.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 0}, {2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{3., 0}, {2.5, 
+        0.8660254037844386}, {3.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{2.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3.5, Rational[1, 2] 3^Rational[1, 2]}, {3., 3^Rational[1, 2]}}, {{2.5,
+        0.8660254037844386}, {3.5, 0.8660254037844386}, {3., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        3., 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}}, {{3.5, 
+       0.8660254037844386}, {3., 1.7320508075688772`}, {4., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}}, {{3., 1.7320508075688772`}, {
+       4., 1.7320508075688772`}, {3.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 3^Rational[1, 2]}, {
+        3.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}}, {{4., 1.7320508075688772`}, {
+       3.5, 2.598076211353316}, {4.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3., 0}, {4., 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        3., 0}, {4., 0}, {3.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 0}, {3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{4., 0}, {3.5, 
+        0.8660254037844386}, {4.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{3.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4.5, Rational[1, 2] 3^Rational[1, 2]}, {4., 3^Rational[1, 2]}}, {{3.5,
+        0.8660254037844386}, {4.5, 0.8660254037844386}, {4., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        4., 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}}, {{4.5, 
+       0.8660254037844386}, {4., 1.7320508075688772`}, {5., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}}, {{4., 1.7320508075688772`}, {
+       5., 1.7320508075688772`}, {4.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 3^Rational[1, 2]}, {
+        4.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}}, {{5., 1.7320508075688772`}, {
+       4.5, 2.598076211353316}, {5.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4., 0}, {5., 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        4., 0}, {5., 0}, {4.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 0}, {4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{5., 0}, {4.5, 
+        0.8660254037844386}, {5.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{4.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5.5, Rational[1, 2] 3^Rational[1, 2]}, {5., 3^Rational[1, 2]}}, {{4.5,
+        0.8660254037844386}, {5.5, 0.8660254037844386}, {5., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        5., 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}}, {{5.5, 
+       0.8660254037844386}, {5., 1.7320508075688772`}, {6., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}}, {{5., 1.7320508075688772`}, {
+       6., 1.7320508075688772`}, {5.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{6., 3^Rational[1, 2]}, {
+        5.5, Rational[3, 2] 3^Rational[1, 2]}, {
+        6.5, Rational[3, 2] 3^Rational[1, 2]}}, {{6., 1.7320508075688772`}, {
+       5.5, 2.598076211353316}, {6.5, 2.598076211353316}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5., 0}, {6., 0}, {5.5, Rational[1, 2] 3^Rational[1, 2]}}, {{
+        5., 0}, {6., 0}, {5.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1., 0}, {0.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1.5, Rational[1, 2] 3^Rational[1, 2]}}, {{1., 0}, {0.5, 
+        0.8660254037844386}, {1.5, 0.8660254037844386}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{5.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        6.5, Rational[1, 2] 3^Rational[1, 2]}, {6., 3^Rational[1, 2]}}, {{5.5,
+        0.8660254037844386}, {6.5, 0.8660254037844386}, {6., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{1.5, Rational[1, 2] 3^Rational[1, 2]}, {
+        1., 3^Rational[1, 2]}, {2., 3^Rational[1, 2]}}, {{1.5, 
+       0.8660254037844386}, {1., 1.7320508075688772`}, {2., 
+       1.7320508075688772`}}]],
+     "Triangle"]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    TagBox[
+     PolygonBox[
+      NCache[{{6., 3^Rational[1, 2]}, {7., 3^Rational[1, 2]}, {
+        6.5, Rational[3, 2] 3^Rational[1, 2]}}, {{6., 1.7320508075688772`}, {
+       7., 1.7320508075688772`}, {6.5, 2.598076211353316}}]],
+     "Triangle"]}},
+  ImageSize->550]], "Output",
+ CellChangeTimes->{{3.7713438880547323`*^9, 3.7713439133132377`*^9}, 
+   3.771344570644275*^9, 3.7713463246580772`*^9, 3.7713463725709763`*^9, 
+   3.771346428721841*^9, 3.7713465476857567`*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"cea94910-c376-44dc-89eb-f70a0eec328f"]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1500, 917},
@@ -1773,24 +2486,54 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[561, 20, 165, 3, 34, "Text",ExpressionUUID->"06f80f39-4485-41d5-a982-053f07c7cab1"],
-Cell[729, 25, 4849, 94, 86, "Input",ExpressionUUID->"fd3286c3-9ba6-4a26-b3d3-e9efba84f80b"],
-Cell[5581, 121, 220, 4, 34, "Text",ExpressionUUID->"ded48aa5-11e4-46fd-9250-9c3d5b9bfb8e"],
 Cell[CellGroupData[{
-Cell[5826, 129, 3048, 78, 124, "Input",ExpressionUUID->"6ae6cf5d-77de-4ed1-a8df-3a0d38bd1ed3"],
-Cell[8877, 209, 3431, 73, 132, "Output",ExpressionUUID->"fbfdaecd-4b5b-47d9-a59e-a337bb71e372"]
+Cell[583, 22, 214, 4, 67, "Section",ExpressionUUID->"06f80f39-4485-41d5-a982-053f07c7cab1"],
+Cell[800, 28, 165, 3, 34, "Text",ExpressionUUID->"a6060fd5-1ee8-448e-bcb6-1e43ce205ec1"],
+Cell[968, 33, 5064, 99, 86, "Input",ExpressionUUID->"fd3286c3-9ba6-4a26-b3d3-e9efba84f80b"],
+Cell[6035, 134, 220, 4, 34, "Text",ExpressionUUID->"ded48aa5-11e4-46fd-9250-9c3d5b9bfb8e"],
+Cell[CellGroupData[{
+Cell[6280, 142, 2940, 72, 124, "Input",ExpressionUUID->"6ae6cf5d-77de-4ed1-a8df-3a0d38bd1ed3"],
+Cell[9223, 216, 2116, 53, 69, "Output",ExpressionUUID->"13f3fde0-0a4e-4edb-b97e-66d4dcf640f0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12345, 287, 3100, 77, 143, "Input",ExpressionUUID->"65b7d7a3-5d16-41cf-95e7-01bca75762c3"],
-Cell[15448, 366, 2386, 56, 128, "Output",ExpressionUUID->"cdf6fbad-e756-4a7a-965a-930bf78c82b5"]
+Cell[11376, 274, 3145, 73, 143, "Input",ExpressionUUID->"65b7d7a3-5d16-41cf-95e7-01bca75762c3"],
+Cell[14524, 349, 2233, 53, 74, "Output",ExpressionUUID->"212fd73c-dfb8-4881-99c3-24b502b66af4"]
 }, Open  ]],
-Cell[17849, 425, 1029, 23, 86, "Input",ExpressionUUID->"9cbe7f99-1b49-4def-a4f1-2c5891b59e48"],
-Cell[18881, 450, 166, 3, 34, "Text",ExpressionUUID->"d887f79a-c51b-4c2e-b050-e3d89ea5d47f"],
-Cell[19050, 455, 1519, 29, 48, "Input",ExpressionUUID->"8ff06fd8-b765-414a-896d-b7c6b47fd625"],
-Cell[20572, 486, 4230, 90, 143, "Input",ExpressionUUID->"7fc6b41d-12fc-47c8-8b5e-4d578273081f"],
+Cell[16772, 405, 1198, 25, 86, "Input",ExpressionUUID->"9cbe7f99-1b49-4def-a4f1-2c5891b59e48"],
+Cell[17973, 432, 166, 3, 34, "Text",ExpressionUUID->"d887f79a-c51b-4c2e-b050-e3d89ea5d47f"],
 Cell[CellGroupData[{
-Cell[24827, 580, 2942, 75, 181, "Input",ExpressionUUID->"8e5582cf-e8bf-48cf-91c6-13219b9cd797"],
-Cell[27772, 657, 46438, 1099, 962, "Output",ExpressionUUID->"d3b32593-55b9-4a71-9e54-f2d589c78bd0"]
+Cell[18164, 439, 1678, 32, 48, "Input",ExpressionUUID->"8ff06fd8-b765-414a-896d-b7c6b47fd625"],
+Cell[19845, 473, 406, 8, 32, "Output",ExpressionUUID->"4db1c2eb-4bbc-4b4d-a41e-ba498b221e61"]
+}, Open  ]],
+Cell[20266, 484, 4506, 94, 143, "Input",ExpressionUUID->"7fc6b41d-12fc-47c8-8b5e-4d578273081f"],
+Cell[CellGroupData[{
+Cell[24797, 582, 3082, 76, 181, "Input",ExpressionUUID->"8e5582cf-e8bf-48cf-91c6-13219b9cd797"],
+Cell[27882, 660, 25513, 601, 547, "Output",ExpressionUUID->"c612d2b2-41fa-495c-b779-a6c293814862"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53444, 1267, 256, 4, 67, "Section",ExpressionUUID->"115ccd10-f741-4ae9-9bae-a10c631f283c"],
+Cell[53703, 1273, 166, 3, 34, "Text",ExpressionUUID->"cfa4a448-5e54-427b-a42e-c83bc716b149"],
+Cell[53872, 1278, 693, 19, 28, "Input",ExpressionUUID->"262de0b3-de21-49c0-b991-65ba2c681e5c"],
+Cell[54568, 1299, 1952, 47, 105, "Input",ExpressionUUID->"a1942bd6-108e-421c-a36e-f0739dc63652"],
+Cell[56523, 1348, 5293, 116, 181, "Input",ExpressionUUID->"74bfa3ad-d0e3-4f2d-9663-35d6165cad2b"],
+Cell[CellGroupData[{
+Cell[61841, 1468, 765, 15, 48, "Input",ExpressionUUID->"206ba3de-67bf-44db-8ac7-b7b4f4482f4c"],
+Cell[62609, 1485, 5799, 136, 160, "Output",ExpressionUUID->"06c5ac5e-2a15-4ed6-9e50-76e8782f4c69"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68445, 1626, 4403, 111, 181, "Input",ExpressionUUID->"2c442d88-f6c9-4697-9fdd-b2b99779e9a5"],
+Cell[72851, 1739, 5233, 124, 181, "Output",ExpressionUUID->"dc086bb7-eb46-4f3c-85ab-4fa5ad4c4437"]
+}, Open  ]],
+Cell[78099, 1866, 971, 21, 67, "Input",ExpressionUUID->"d7a503cc-9b84-46d7-bb01-b0388a4cbe2f"],
+Cell[CellGroupData[{
+Cell[79095, 1891, 860, 20, 28, "Input",ExpressionUUID->"8cd91e42-8b3f-498c-be34-e05cde40cc56"],
+Cell[79958, 1913, 11054, 265, 160, "Output",ExpressionUUID->"4e69e415-7be4-4531-a56c-32e57d1669c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91049, 2183, 994, 21, 48, "Input",ExpressionUUID->"2d1ac79f-24ec-4ca6-8fd6-3e9ab791e0e5"],
+Cell[92046, 2206, 10837, 262, 235, "Output",ExpressionUUID->"cea94910-c376-44dc-89eb-f70a0eec328f"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
