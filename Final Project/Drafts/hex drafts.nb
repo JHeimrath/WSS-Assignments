@@ -1,0 +1,1612 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[     81446,       1604]
+NotebookOptionsPosition[     79756,       1566]
+NotebookOutlinePosition[     80128,       1582]
+CellTagsIndexPosition[     80085,       1579]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"hexagonCell", "[", 
+    RowBox[{
+     RowBox[{"offset_:", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], ",", 
+     RowBox[{"basis_List:", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}], ",", 
+          RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}]}], "]"}], ":=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"a", "=", 
+        RowBox[{"basis", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+       RowBox[{"b", "=", 
+        RowBox[{"basis", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Translate", "[", 
+      RowBox[{
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
+          RowBox[{"a", "-", "b"}], ",", 
+          RowBox[{
+           RowBox[{"2", "*", "a"}], "-", "b"}], ",", 
+          RowBox[{"2", "*", "a"}], ",", 
+          RowBox[{"a", "+", "b"}], ",", "b"}], "}"}], "]"}], ",", "offset"}], 
+      "]"}]}], "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+       RowBox[{"FaceForm", "[", "White", "]"}], ",", 
+       RowBox[{"hexagonCell", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+       RowBox[{"FaceForm", "[", "White", "]"}], ",", 
+       RowBox[{"hexagonCell", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"2", ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+       RowBox[{"FaceForm", "[", "White", "]"}], ",", 
+       RowBox[{"hexagonCell", "[", 
+        RowBox[{
+         RowBox[{"2", "*", 
+          RowBox[{"{", 
+           RowBox[{"2", ",", 
+            RowBox[{"-", "1"}]}], "}"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "200"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.773513941457896*^9, 3.7735139689804883`*^9}, {
+   3.7735140105059423`*^9, 3.7735140952936296`*^9}, {3.7735141638522096`*^9, 
+   3.773514476379662*^9}, {3.773514531827999*^9, 3.773514601662486*^9}, {
+   3.773514689228818*^9, 3.7735146939519334`*^9}, {3.7735147520033646`*^9, 
+   3.7735148430968456`*^9}, {3.7735149296055746`*^9, 3.773514971783205*^9}, {
+   3.773515469583127*^9, 3.7735154838603396`*^9}, {3.7735155403530717`*^9, 
+   3.7735155405455537`*^9}, {3.773516075857309*^9, 3.7735160982997017`*^9}, {
+   3.774103623504775*^9, 3.7741036841863213`*^9}, {3.7741039420519238`*^9, 
+   3.77410394546793*^9}, {3.7741039791752887`*^9, 3.774104034543399*^9}, {
+   3.7741041243506975`*^9, 3.774104137765459*^9}, {3.7741042375153446`*^9, 
+   3.7741042404864025`*^9}, {3.7741043148966537`*^9, 3.77410431806754*^9}, {
+   3.774104372471837*^9, 3.7741044155472584`*^9}, {3.77410446521607*^9, 
+   3.774104540035356*^9}, {3.774104582828144*^9, 3.7741045882161245`*^9}, {
+   3.7741046335461245`*^9, 3.7741046510085163`*^9}, {3.7741046843673687`*^9, 
+   3.774104697338503*^9}, {3.774104743144738*^9, 3.774104760882044*^9}, {
+   3.77410482302351*^9, 3.774104911680442*^9}, {3.7741049568256645`*^9, 
+   3.7741050608332567`*^9}, {3.7741051110132895`*^9, 3.7741051543401165`*^9}, 
+   3.774105218474552*^9, {3.7741052510979786`*^9, 3.7741054595124607`*^9}, {
+   3.77410548994751*^9, 3.7741055980832744`*^9}, {3.774465410499865*^9, 
+   3.7744654540741234`*^9}, {3.7744655122433677`*^9, 3.774465624536168*^9}, {
+   3.7744656573437586`*^9, 3.7744656621519566`*^9}, {3.7744657212298203`*^9, 
+   3.774465721748435*^9}, {3.774465752556981*^9, 3.77446576104434*^9}, {
+   3.774700232738866*^9, 3.7747002582542815`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"48832e24-d97e-4fd9-94af-2f4c07662357"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    GeometricTransformationBox[
+     PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {0, 0}]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    GeometricTransformationBox[
+     PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {
+     2, -1}]}, 
+   {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    GeometricTransformationBox[
+     PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {
+     4, -2}]}},
+  Axes->True,
+  ImageSize->200]], "Output",
+ CellChangeTimes->{
+  3.7735148097946453`*^9, 3.7735148442068744`*^9, {3.7735149326364155`*^9, 
+   3.773514972240926*^9}, 3.7735155082421246`*^9, 3.7735155419359455`*^9, 
+   3.7735160986746607`*^9, 3.7741039965995183`*^9, 3.7741041991157813`*^9, 
+   3.7741042411586413`*^9, 3.7741043198377924`*^9, {3.7741043940845575`*^9, 
+   3.774104416866721*^9}, {3.7741044687700157`*^9, 3.774104492453165*^9}, 
+   3.7741045406856375`*^9, 3.774104588583191*^9, {3.7741047499589796`*^9, 
+   3.7741047612132025`*^9}, 3.7741048725505176`*^9, 3.7741049609032907`*^9, {
+   3.774105035142191*^9, 3.7741050613488903`*^9}, {3.7741051212095423`*^9, 
+   3.7741051700797296`*^9}, 3.774105218919363*^9, {3.774105315118001*^9, 
+   3.774105385947914*^9}, {3.774105433395325*^9, 3.774105460155982*^9}, {
+   3.774105493031804*^9, 3.7741055024735928`*^9}, {3.7741055472930813`*^9, 
+   3.7741055580064015`*^9}, 3.774105601557043*^9, 3.7744654561260796`*^9, {
+   3.7744655219701395`*^9, 3.774465567085764*^9}, 3.7744656645523157`*^9, 
+   3.774465731175945*^9, 3.7744657614990697`*^9, 3.7747003015062757`*^9, 
+   3.7748059703521013`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"2a478b49-ace2-4aad-ae3b-b261984294cf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+      RowBox[{"FaceForm", "[", "White", "]"}], ",", 
+      RowBox[{"hexagonCell", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"i", "*", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", "3", "]"}], ",", "0"}], "}"}]}], "-", 
+          RowBox[{"j", "*", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{"3", "/", "2"}]}], "}"}]}], "+", 
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"EvenQ", "[", "j", "]"}], ",", "0", ",", "1"}], "]"}], 
+           "*", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}], ",", "0"}], 
+            "}"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}], ",", 
+            RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", "5"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "0", ",", "5"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.773515018932739*^9, 3.77351506460279*^9}, {
+  3.7735151031920137`*^9, 3.7735152179012747`*^9}, {3.77410381093377*^9, 
+  3.7741038111082745`*^9}, {3.774466941068481*^9, 3.7744671096933985`*^9}, {
+  3.774467170383893*^9, 3.7744673008949146`*^9}, {3.7744673461024632`*^9, 
+  3.77446742067225*^9}, {3.7744674522412024`*^9, 3.774467458853348*^9}, {
+  3.7744676955365443`*^9, 3.774467765162957*^9}, {3.774699016185078*^9, 
+  3.7746990354408455`*^9}, {3.7746990799176507`*^9, 3.774699152591736*^9}, {
+  3.7746994354148607`*^9, 3.7746994579250736`*^9}, {3.7746994984959927`*^9, 
+  3.7746995427773347`*^9}, {3.7747053145502124`*^9, 3.7747053147197585`*^9}},
+ CellLabel->
+  "In[157]:=",ExpressionUUID->"1532c791-09e0-4c77-bf6c-237362b680d6"],
+
+Cell[BoxData[
+ GraphicsBox[{{
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{0, 
+      0}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       0.8660254037844386, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{
+      0, -3}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       0.8660254037844386, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{
+      0, -6}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       0.8660254037844386, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], 0}}}, {{{1.7320508075688772`, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       2.598076211353316, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], -3}}}, {{{1.7320508075688772`, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       2.598076211353316, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], -6}}}, {{{1.7320508075688772`, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       2.598076211353316, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], 0}}}, {{{3.4641016151377544`, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       4.330127018922193, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], -3}}}, {{{3.4641016151377544`, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       4.330127018922193, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], -6}}}, {{{3.4641016151377544`, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       4.330127018922193, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], 0}}}, {{{5.196152422706632, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       6.06217782649107, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], -3}}}, {{{5.196152422706632, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       6.06217782649107, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], -6}}}, {{{5.196152422706632, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       6.06217782649107, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], 0}}}, {{{6.928203230275509, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       7.794228634059947, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], -3}}}, {{{6.928203230275509, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       7.794228634059947, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], -6}}}, {{{6.928203230275509, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       7.794228634059947, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], 0}}}, {{{8.660254037844386, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       9.526279441628825, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], -3}}}, {{{8.660254037844386, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       9.526279441628825, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], -6}}}, {{{8.660254037844386, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       9.526279441628825, -7.5}}}]]}}}]], "Output",
+ CellChangeTimes->{{3.773515200501663*^9, 3.7735152303482723`*^9}, {
+   3.7735155459178743`*^9, 3.7735155849494333`*^9}, 3.774467302251293*^9, 
+   3.774467388529241*^9, {3.7744674460332317`*^9, 3.7744674599643745`*^9}, 
+   3.774467766552244*^9, {3.7746990261297655`*^9, 3.774699035925518*^9}, 
+   3.77469915467432*^9, 3.7746995736788034`*^9, 3.7747003049293222`*^9, 
+   3.774705315105691*^9},
+ CellLabel->
+  "Out[157]=",ExpressionUUID->"ea44eb02-175f-40ed-9e35-97d0014da3e5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"basis", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}], ",", 
+       RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Graphics", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+        RowBox[{"FaceForm", "[", "White", "]"}], ",", 
+        RowBox[{"hexagonCell", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"i", "*", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"2", "*", 
+                RowBox[{"basis", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}]}], "-", 
+               RowBox[{"basis", "[", 
+                RowBox[{"[", "2", "]"}], "]"}]}], ")"}]}], "-", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{"EvenQ", "[", "j", "]"}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"j", "/", "2"}], "*", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", 
+                 RowBox[{"basis", "[", 
+                  RowBox[{"[", 
+                   RowBox[{"2", ",", "2"}], "]"}], "]"}]}], "}"}]}], ",", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"3", "*", 
+                  RowBox[{"j", "/", "2"}]}], ")"}], "*", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", 
+                  RowBox[{"basis", "[", 
+                   RowBox[{"[", 
+                    RowBox[{"2", ",", "2"}], "]"}], "]"}]}], "}"}]}], "+", 
+               RowBox[{
+                RowBox[{"1", "/", "2"}], 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", 
+                  RowBox[{
+                   RowBox[{"basis", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"2", ",", "2"}], "]"}], "]"}], "-", 
+                   RowBox[{"2", 
+                    RowBox[{"basis", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"1", ",", "2"}], "]"}], "]"}]}]}]}], "}"}]}]}]}], 
+             "]"}], "+", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{"EvenQ", "[", "j", "]"}], ",", "0", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"basis", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", "0"}], "}"}]}], 
+             "]"}]}], "}"}], ",", "basis"}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "0", ",", "5"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"j", ",", "0", ",", "5"}], "}"}]}], "]"}], ",", 
+    RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"This", " ", "formula", " ", 
+    RowBox[{"works", "!"}], " ", "Now", " ", "just", " ", "to", " ", 
+    "simplify", " ", "and", " ", "add", " ", "this", " ", "to", " ", "the", 
+    " ", "general", " ", 
+    RowBox[{"function", "!"}]}], " ", "*)"}]}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwdzVsoQwEAxvFRarXSQuRSh1E8rG3ayCXJWRIhQymSy9DS4mlEUazZWcqT
+XJpG2ZNtXoZse1gKjRyWFMklFtnMbTFzK+c7D1+/t++f0dlf3x3N4XAIZrDY
+HeFaiGDZQ9YdH2q6q5Kg4SArFdIhHwHr3p0CeKzxCeELfSOBccmqPCh8asmH
+WoujGJK+ChJSs7pKyJPqaqC1IdAL50r0/TAn0z8IT+U/rNXqXB0ctdGsXWKZ
+ERZQZwvsv6rNDk35tets1xbrgpGw+xCqlVqHjfHqr8kJm7n2bbhr9e/DbF7U
+EaQ8lBdKRcuncLJm8RKW8zvuIGm0sk6nJQbg7fPcIwxfFIagx6T/gPsr4tRV
+xuBYAWsg9EpAcqdVAE/WvmWsDfNF8Py+rxTKP4dZ+2LoARfj0sXtEBwVvemh
+eUdpgF5F+hQUqPwmeH9kNsMRdfwGnJnYc8Hj9i03TJCch68Ye1I2v+B4o4J/
+zfhroOPhP7HiAKQ=
+  "],
+ CellLabel->"In[11]:=",ExpressionUUID->"d2a07902-a4c3-440d-a27d-fd2429d7817a"],
+
+Cell[BoxData[
+ GraphicsBox[{{
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{0, 
+      0}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       0.8660254037844386, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{
+      0, -3}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       0.8660254037844386, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{
+      0, -6}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       0.8660254037844386, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], 0}}}, {{{1.7320508075688772`, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       2.598076211353316, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], -3}}}, {{{1.7320508075688772`, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       2.598076211353316, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], -6}}}, {{{1.7320508075688772`, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       2.598076211353316, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], 0}}}, {{{3.4641016151377544`, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       4.330127018922193, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], -3}}}, {{{3.4641016151377544`, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       4.330127018922193, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], -6}}}, {{{3.4641016151377544`, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       4.330127018922193, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], 0}}}, {{{5.196152422706632, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       6.06217782649107, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], -3}}}, {{{5.196152422706632, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       6.06217782649107, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], -6}}}, {{{5.196152422706632, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       6.06217782649107, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], 0}}}, {{{6.928203230275509, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       7.794228634059947, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], -3}}}, {{{6.928203230275509, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       7.794228634059947, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], -6}}}, {{{6.928203230275509, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       7.794228634059947, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], 0}}}, {{{8.660254037844386, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       9.526279441628825, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], -3}}}, {{{8.660254037844386, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       9.526279441628825, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], -6}}}, {{{8.660254037844386, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       9.526279441628825, -7.5}}}]]}}},
+  Axes->True]], "Output",
+ CellChangeTimes->{{3.7746997160419006`*^9, 3.7746997393132296`*^9}, {
+   3.77469977885754*^9, 3.774699798439767*^9}, {3.7746998931395283`*^9, 
+   3.7746999122701397`*^9}, {3.77469994834011*^9, 3.7746999551997814`*^9}, {
+   3.7746999984285517`*^9, 3.7747000505705767`*^9}, {3.7747001121137085`*^9, 
+   3.774700133708828*^9}, {3.774700298457408*^9, 3.77470030706422*^9}, 
+   3.7747003778890715`*^9, 3.774700412564395*^9, 3.774700480126263*^9, {
+   3.7747005859124517`*^9, 3.774700591001884*^9}, 3.7747008078960867`*^9, {
+   3.7747009591813154`*^9, 3.7747009716390038`*^9}, {3.774701018568246*^9, 
+   3.7747010490295296`*^9}, {3.77470108466162*^9, 3.774701174641178*^9}, 
+   3.7747051073653097`*^9, {3.7747051909591284`*^9, 3.774705239639439*^9}, {
+   3.7747053494105787`*^9, 3.7747053826429768`*^9}, {3.774705435087637*^9, 
+   3.774705454379311*^9}, {3.7747054900397496`*^9, 3.77470550396993*^9}, 
+   3.7747055557729645`*^9, 3.774705882872867*^9, {3.7747059206926413`*^9, 
+   3.7747059392424927`*^9}, {3.7747060890075464`*^9, 3.77470613329114*^9}, 
+   3.77470617218932*^9, {3.7747334911982574`*^9, 3.7747335595652065`*^9}, {
+   3.774733633708769*^9, 3.774733744951064*^9}, {3.774805966896413*^9, 
+   3.774805972819798*^9}, {3.7748061477578864`*^9, 3.7748061748768797`*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"117e4015-5235-4cec-88cd-661236d61e5c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", "*", "1"}], "+", "b"}], "\[Equal]", "2"}], "&&", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", "*", "3"}], "+", "b"}], "\[Equal]", "5"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.774705827357005*^9, 3.7747059285715075`*^9}, {
+  3.7747063020654583`*^9, 3.7747063030059385`*^9}},
+ CellLabel->
+  "In[204]:=",ExpressionUUID->"224c5754-0c86-454c-b427-4740a46787c2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"a", "\[Rule]", 
+     FractionBox["3", "2"]}], ",", 
+    RowBox[{"b", "\[Rule]", 
+     FractionBox["1", "2"]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.77470587433049*^9, {3.7747059157335205`*^9, 3.7747059309650946`*^9}, 
+   3.7747063165007057`*^9},
+ CellLabel->
+  "Out[204]=",ExpressionUUID->"87342386-2811-48fa-855b-8d08afb87924"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"basis", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}], ",", 
+       RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+       RowBox[{"FaceForm", "[", "White", "]"}], ",", 
+       RowBox[{"hexagonCell", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"i", "*", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", "*", 
+               RowBox[{"basis", "[", 
+                RowBox[{"[", "1", "]"}], "]"}]}], "-", 
+              RowBox[{"basis", "[", 
+               RowBox[{"[", "2", "]"}], "]"}]}], ")"}]}], "-", 
+           RowBox[{"j", "*", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", 
+              RowBox[{
+               RowBox[{"basis", "[", 
+                RowBox[{"[", 
+                 RowBox[{"1", ",", "2"}], "]"}], "]"}], "+", 
+               RowBox[{"basis", "[", 
+                RowBox[{"[", 
+                 RowBox[{"2", ",", "2"}], "]"}], "]"}]}]}], "}"}]}], "+", 
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{"EvenQ", "[", "j", "]"}], ",", "0", ",", "1"}], "]"}], 
+            "*", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"basis", "[", 
+               RowBox[{"[", 
+                RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", "0"}], "}"}]}]}], 
+          "}"}], ",", "basis"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "0", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "0", ",", "5"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.77446750367769*^9, 3.774467506796336*^9}, {
+   3.774467551696088*^9, 3.77446756010221*^9}, {3.774467613832136*^9, 
+   3.7744676697771034`*^9}, {3.774467707638171*^9, 3.7744677137478824`*^9}, {
+   3.774706218315564*^9, 3.77470623016325*^9}, 3.7747062664562225`*^9},
+ CellLabel->
+  "In[201]:=",ExpressionUUID->"38c557f5-2401-47c0-907f-64372460e419"],
+
+Cell[BoxData[
+ GraphicsBox[{{
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{0, 
+      0}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       0.8660254037844386, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{
+      0, -3}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       0.8660254037844386, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], {{{
+      0, -6}}}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[1, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       0.8660254037844386, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], 0}}}, {{{1.7320508075688772`, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       2.598076211353316, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], -3}}}, {{{1.7320508075688772`, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       2.598076211353316, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3^Rational[1, 2], -6}}}, {{{1.7320508075688772`, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[3, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       2.598076211353316, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], 0}}}, {{{3.4641016151377544`, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       4.330127018922193, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], -3}}}, {{{3.4641016151377544`, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       4.330127018922193, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{2 3^Rational[1, 2], -6}}}, {{{3.4641016151377544`, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[5, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       4.330127018922193, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], 0}}}, {{{5.196152422706632, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       6.06217782649107, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], -3}}}, {{{5.196152422706632, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       6.06217782649107, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{3 3^Rational[1, 2], -6}}}, {{{5.196152422706632, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[7, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       6.06217782649107, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], 0}}}, {{{6.928203230275509, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       7.794228634059947, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], -3}}}, {{{6.928203230275509, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       7.794228634059947, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{4 3^Rational[1, 2], -6}}}, {{{6.928203230275509, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[9, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       7.794228634059947, -7.5}}}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], 0}}}, {{{8.660254037844386, 0}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-3, 2]}}}, {{{
+       9.526279441628825, -1.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], -3}}}, {{{8.660254037844386, -3}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-9, 2]}}}, {{{
+       9.526279441628825, -4.5}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{5 3^Rational[1, 2], -6}}}, {{{8.660254037844386, -6}}}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+     GeometricTransformationBox[
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         3^Rational[1, 2], 0}, {3^Rational[1, 2], 1}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 1}}, {{0, 0}, {
+         0.8660254037844386, -0.5}, {1.7320508075688772`, 0}, {
+         1.7320508075688772`, 1}, {0.8660254037844386, 1.5}, {0, 1}}]], 
+      NCache[{{{Rational[11, 2] 3^Rational[1, 2], Rational[-15, 2]}}}, {{{
+       9.526279441628825, -7.5}}}]]}}},
+  Axes->True]], "Output",
+ CellChangeTimes->{
+  3.77446746490216*^9, {3.774467643464015*^9, 3.774467670362647*^9}, 
+   3.7744677141398354`*^9, 3.7747005132794867`*^9, 3.774706230927171*^9, 
+   3.7747062668721037`*^9},
+ CellLabel->
+  "Out[202]=",ExpressionUUID->"6bebc5a5-72b8-4b87-a267-1a86665e5875"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<hex.jpg\>\"", ",", "hex"}], "]"}]], "Input",
+ CellChangeTimes->{{3.773516125560416*^9, 3.773516174554579*^9}, {
+  3.7735162259010887`*^9, 
+  3.7735162285460086`*^9}},ExpressionUUID->"0bfd789b-8457-489b-9c0d-\
+116d25e81b5e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["Gray"], "Input",
+ CellChangeTimes->{{3.7735165439191647`*^9, 3.773516545112638*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"1e5b82fd-63ba-46bf-88d2-e9bd4cef92a7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  ButtonBox[
+   TooltipBox[
+    GraphicsBox[{
+      {GrayLevel[0], RectangleBox[{0, 0}]}, 
+      {GrayLevel[0], RectangleBox[{1, -1}]}, 
+      {GrayLevel[0.5], RectangleBox[{0, -1}, {2, 1}]}},
+     AspectRatio->1,
+     DefaultBaseStyle->"ColorSwatchGraphics",
+     Frame->True,
+     FrameStyle->GrayLevel[0.33333333333333337`],
+     FrameTicks->None,
+     ImageSize->
+      Dynamic[{Automatic, 1.35 CurrentValue["FontCapHeight"]/
+        AbsoluteCurrentValue[Magnification]}],
+     PlotRangePadding->None],
+    StyleBox[
+     RowBox[{"GrayLevel", "[", "0.5`", "]"}], NumberMarks -> False]],
+   Appearance->None,
+   BaseStyle->{},
+   BaselinePosition->Baseline,
+   ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+     If[
+      Not[
+       AbsoluteCurrentValue["Deployed"]], 
+      SelectionMove[Typeset`box$, All, Expression]; 
+      FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+      FrontEnd`Private`$ColorSelectorInitialColor = GrayLevel[0.5]; 
+      FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+      MathLink`CallFrontEnd[
+        FrontEnd`AttachCell[Typeset`box$, 
+         FrontEndResource["GrayLevelColorValueSelector"], {
+         0, {Left, Bottom}}, {Left, Top}, 
+         "ClosingActions" -> {
+          "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+   DefaultBaseStyle->{},
+   Evaluator->Automatic,
+   Method->"Preemptive"],
+  GrayLevel[0.5],
+  Editable->False,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.773516546796514*^9},
+ CellLabel->"Out[71]=",ExpressionUUID->"761716f8-5f68-40d9-a6b5-9e14bb950c9d"]
+}, Open  ]]
+},
+WindowSize->{748, 908},
+WindowMargins->{{-7, Automatic}, {Automatic, 0}},
+Magnification:>1.1 Inherited,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 11, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 4878, 117, 231, "Input",ExpressionUUID->"48832e24-d97e-4fd9-94af-2f4c07662357"],
+Cell[5464, 141, 1764, 31, 167, "Output",ExpressionUUID->"2a478b49-ace2-4aad-ae3b-b261984294cf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7265, 177, 2172, 53, 121, "Input",ExpressionUUID->"1532c791-09e0-4c77-bf6c-237362b680d6"],
+Cell[9440, 232, 20098, 351, 355, "Output",ExpressionUUID->"ea44eb02-175f-40ed-9e35-97d0014da3e5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29575, 588, 3807, 97, 231, "Input",ExpressionUUID->"d2a07902-a4c3-440d-a27d-fd2429d7817a"],
+Cell[33385, 687, 20988, 362, 349, "Output",ExpressionUUID->"117e4015-5235-4cec-88cd-661236d61e5c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54410, 1054, 529, 15, 32, "Input",ExpressionUUID->"224c5754-0c86-454c-b427-4740a46787c2"],
+Cell[54942, 1071, 412, 12, 53, "Output",ExpressionUUID->"87342386-2811-48fa-855b-8d08afb87924"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55391, 1088, 2341, 63, 165, "Input",ExpressionUUID->"38c557f5-2401-47c0-907f-64372460e419"],
+Cell[57735, 1153, 19911, 350, 349, "Output",ExpressionUUID->"6bebc5a5-72b8-4b87-a267-1a86665e5875"]
+}, Open  ]],
+Cell[77661, 1506, 277, 6, 32, "Input",ExpressionUUID->"0bfd789b-8457-489b-9c0d-116d25e81b5e"],
+Cell[CellGroupData[{
+Cell[77963, 1516, 177, 2, 32, "Input",ExpressionUUID->"1e5b82fd-63ba-46bf-88d2-e9bd4cef92a7"],
+Cell[78143, 1520, 1597, 43, 36, "Output",ExpressionUUID->"761716f8-5f68-40d9-a6b5-9e14bb950c9d"]
+}, Open  ]]
+}
+]
+*)
+
