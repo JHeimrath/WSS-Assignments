@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    224711,       4734]
-NotebookOptionsPosition[     93776,       2145]
-NotebookOutlinePosition[    215115,       4509]
-CellTagsIndexPosition[    214396,       4485]
+NotebookDataLength[    241036,       5065]
+NotebookOptionsPosition[    110072,       2476]
+NotebookOutlinePosition[    231423,       4840]
+CellTagsIndexPosition[    230704,       4816]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -77,7 +77,7 @@ Cell[BoxData[
   RowBox[{"(*", " ", 
    RowBox[{
    "Plots", " ", "the", " ", "tessellation", " ", "with", " ", "given", " ", 
-    "state", " ", "and", " ", "cell", " ", 
+    "cell", " ", "values", " ", "and", " ", 
     RowBox[{"shapes", "."}]}], " ", "*)"}], "\n", "\n", 
   RowBox[{
    RowBox[{
@@ -365,7 +365,8 @@ Cell[BoxData[
    3.775210895597118*^9, 3.775210899648805*^9}, 3.7752109395662313`*^9, {
    3.775211074756791*^9, 3.775211077308943*^9}, {3.775211146379218*^9, 
    3.7752111519855566`*^9}, 3.7752448978458853`*^9, {3.7752449580115404`*^9, 
-   3.7752449594616623`*^9}},
+   3.7752449594616623`*^9}, {3.7752450677958326`*^9, 3.775245075221757*^9}},
+ CellLabel->"In[4]:=",
  CellID->125929111,ExpressionUUID->"31a4336b-f7b7-4e17-9312-711c86f382c7"],
 
 Cell[BoxData[
@@ -396,6 +397,7 @@ Cell[BoxData[
    3.771603633891768*^9, {3.7716223868866057`*^9, 3.771622391053465*^9}, {
    3.7716926319185443`*^9, 3.7716926331113853`*^9}, {3.7749753133690495`*^9, 
    3.774975373388714*^9}, {3.7752093103702574`*^9, 3.7752093212180777`*^9}},
+ CellLabel->"In[3]:=",
  CellID->36493022,ExpressionUUID->"0da9ba0d-dc88-4e50-a2b4-72422e4df77f"]
 }, Open  ]],
 
@@ -1374,111 +1376,173 @@ Cell[BoxData[
  RowBox[{"TessellationPlot", "[", 
   RowBox[{
    RowBox[{"ConstantArray", "[", 
-    RowBox[{"0", ",", 
+    RowBox[{
+     RowBox[{"1", "/", "2"}], ",", 
      RowBox[{"{", 
       RowBox[{"5", ",", "6"}], "}"}]}], "]"}], ",", 
    RowBox[{"\"\<CellShape\>\"", "\[Rule]", "\"\<Triangle\>\""}]}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.7751633658905554`*^9, 3.7751633786961355`*^9}, 
-   3.7752104196127167`*^9},
+   3.7752104196127167`*^9, {3.775245117015127*^9, 3.7752451177890244`*^9}},
+ CellLabel->"In[6]:=",
  CellID->111068884,ExpressionUUID->"9a92f94f-f5db-400b-8b2f-09effe8b73f3"],
 
 Cell[BoxData[
  GraphicsBox[{{
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{0, 0}, {1, 0}, {0, -1}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, 0}, {0, -1}, {1, -1}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, 0}, {2, 0}, {1, -1}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, 0}, {1, -1}, {2, -1}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, 0}, {3, 0}, {2, -1}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{3, 0}, {2, -1}, {3, -1}}],
-      "Triangle"]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{0, -1}, {1, -1}, {0, -2}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -1}, {0, -2}, {1, -2}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -1}, {2, -1}, {1, -2}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -1}, {1, -2}, {2, -2}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -1}, {3, -1}, {2, -2}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{3, -1}, {2, -2}, {3, -2}}],
-      "Triangle"]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{0, -2}, {1, -2}, {0, -3}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -2}, {0, -3}, {1, -3}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -2}, {2, -2}, {1, -3}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -2}, {1, -3}, {2, -3}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -2}, {3, -2}, {2, -3}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{3, -2}, {2, -3}, {3, -3}}],
-      "Triangle"]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{0, -3}, {1, -3}, {0, -4}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -3}, {0, -4}, {1, -4}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -3}, {2, -3}, {1, -4}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -3}, {1, -4}, {2, -4}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -3}, {3, -3}, {2, -4}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{3, -3}, {2, -4}, {3, -4}}],
-      "Triangle"]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{0, -4}, {1, -4}, {0, -5}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -4}, {0, -5}, {1, -5}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{1, -4}, {2, -4}, {1, -5}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -4}, {1, -5}, {2, -5}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{2, -4}, {3, -4}, {2, -5}}],
-      "Triangle"]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[PolygonBox[{{3, -4}, {2, -5}, {3, -5}}],
-      "Triangle"]}}},
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {0, 
+      0}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      0, -1}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      0, -2}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      0, -3}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      0, -4}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      0, -5}]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {0, 
+      0}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      0, -1}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      0, -2}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      0, -3}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      0, -4}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      0, -5}]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {1, 
+      0}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      1, -1}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      1, -2}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      1, -3}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      1, -4}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      1, -5}]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {1, 
+      0}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      1, -1}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      1, -2}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      1, -3}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      1, -4}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{1, 0}, {0, 1}, {1, 1}}], {
+      1, -5}]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {2, 
+      0}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      2, -1}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      2, -2}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      2, -3}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      2, -4}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[1, 2], 0.5]]], 
+     GeometricTransformationBox[PolygonBox[{{0, 0}, {1, 0}, {0, 1}}], {
+      2, -5}]}}},
   ImageSize->300]], "Output",
- CellChangeTimes->{3.7751633802419825`*^9},
- CellLabel->"Out[37]=",
- CellID->492306951,ExpressionUUID->"b08112c8-3342-4290-a9ac-87ece23fbd1c"]
+ CellChangeTimes->{3.7751633802419825`*^9, 3.775245119045662*^9},
+ CellLabel->"Out[6]=",
+ CellID->750515358,ExpressionUUID->"7bc5ff18-f441-4e96-bd9c-2df8cc27f256"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1487,141 +1551,408 @@ Cell[BoxData[
  RowBox[{"TessellationPlot", "[", 
   RowBox[{
    RowBox[{"ConstantArray", "[", 
-    RowBox[{"0", ",", 
+    RowBox[{
+     RowBox[{"1", "/", "4"}], ",", 
      RowBox[{"{", 
       RowBox[{"5", ",", "6"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}], ",", 
+       RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}]}], "}"}], ",", 
    RowBox[{"\"\<CellShape\>\"", "\[Rule]", "\"\<Hexagon\>\""}]}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.77516339272158*^9, 3.775163408145953*^9}, 
-   3.7752111205695677`*^9},
+   3.7752111205695677`*^9, {3.7752451284188585`*^9, 3.77524515853208*^9}},
+ CellLabel->"In[9]:=",
  CellID->305874575,ExpressionUUID->"36f7d51f-9f35-43ed-b17f-4d785f89a411"],
 
 Cell[BoxData[
  GraphicsBox[{{
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      3, -3}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], {0, 
+      0}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      2, -4}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[1, 2] 3^Rational[1, 2], Rational[-3, 2]}, {
+       0.8660254037844386, -1.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      3, -6}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], {
+      0, -3}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      2, -7}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[1, 2] 3^Rational[1, 2], Rational[-9, 2]}, {
+       0.8660254037844386, -4.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      3, -9}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], {
+      0, -6}]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      2, -10}}}]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[1, 2] 3^Rational[1, 2], Rational[-15, 2]}, {
+       0.8660254037844386, -7.5}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      5, -4}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{3^Rational[1, 2], 0}, {1.7320508075688772`, 0}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      4, -5}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[3, 2] 3^Rational[1, 2], Rational[-3, 2]}, {
+       2.598076211353316, -1.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      5, -7}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{3^Rational[1, 2], -3}, {1.7320508075688772`, -3}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      4, -8}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[3, 2] 3^Rational[1, 2], Rational[-9, 2]}, {
+       2.598076211353316, -4.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      5, -10}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{3^Rational[1, 2], -6}, {1.7320508075688772`, -6}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      4, -11}}}]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[3, 2] 3^Rational[1, 2], Rational[-15, 2]}, {
+       2.598076211353316, -7.5}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      7, -5}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{2 3^Rational[1, 2], 0}, {3.4641016151377544`, 0}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      6, -6}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[5, 2] 3^Rational[1, 2], Rational[-3, 2]}, {
+       4.330127018922193, -1.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      7, -8}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{2 3^Rational[1, 2], -3}, {3.4641016151377544`, -3}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      6, -9}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[5, 2] 3^Rational[1, 2], Rational[-9, 2]}, {
+       4.330127018922193, -4.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      7, -11}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{2 3^Rational[1, 2], -6}, {3.4641016151377544`, -6}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      6, -12}}}]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[5, 2] 3^Rational[1, 2], Rational[-15, 2]}, {
+       4.330127018922193, -7.5}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      9, -6}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{3 3^Rational[1, 2], 0}, {5.196152422706632, 0}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      8, -7}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[7, 2] 3^Rational[1, 2], Rational[-3, 2]}, {
+       6.06217782649107, -1.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      9, -9}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{3 3^Rational[1, 2], -3}, {5.196152422706632, -3}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      8, -10}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[7, 2] 3^Rational[1, 2], Rational[-9, 2]}, {
+       6.06217782649107, -4.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      9, -12}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{3 3^Rational[1, 2], -6}, {5.196152422706632, -6}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      8, -13}}}]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[7, 2] 3^Rational[1, 2], Rational[-15, 2]}, {
+       6.06217782649107, -7.5}]]}}, {
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      11, -7}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{4 3^Rational[1, 2], 0}, {6.928203230275509, 0}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      10, -8}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[9, 2] 3^Rational[1, 2], Rational[-3, 2]}, {
+       7.794228634059947, -1.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      11, -10}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{4 3^Rational[1, 2], -3}, {6.928203230275509, -3}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      10, -11}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[9, 2] 3^Rational[1, 2], Rational[-9, 2]}, {
+       7.794228634059947, -4.5}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      11, -13}}}]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{4 3^Rational[1, 2], -6}, {6.928203230275509, -6}]]}, 
+    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[
+      NCache[
+       Rational[3, 4], 0.75]]], 
      GeometricTransformationBox[
-      PolygonBox[{{0, 0}, {1, -1}, {2, -1}, {2, 0}, {1, 1}, {0, 1}}], {{{
-      10, -14}}}]}}},
+      PolygonBox[
+       NCache[{{0, 0}, {Rational[1, 2] 3^Rational[1, 2], Rational[1, 2]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[3, 2]}, {0, 2}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[3, 2]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[1, 2]}}, {{0, 0}, {
+         0.8660254037844386, 0.5}, {0.8660254037844386, 1.5}, {0, 
+         2}, {-0.8660254037844386, 1.5}, {-0.8660254037844386, 0.5}}]], 
+      NCache[{Rational[9, 2] 3^Rational[1, 2], Rational[-15, 2]}, {
+       7.794228634059947, -7.5}]]}}},
   ImageSize->300]], "Output",
- CellChangeTimes->{3.775163408674526*^9},
- CellLabel->"Out[38]=",
- CellID->100890931,ExpressionUUID->"61afc76a-708a-4bbd-a400-6b835c60c6e3"]
+ CellChangeTimes->{
+  3.775163408674526*^9, {3.7752451290332155`*^9, 3.7752451600061383`*^9}},
+ CellLabel->"Out[9]=",
+ CellID->57747513,ExpressionUUID->"8f85c0af-f14a-44de-aa11-6fdd5032830a"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -4375,37 +4706,37 @@ CellTagsIndex->{
   Cell[1245, 34, 720, 12, 34, "Text",ExpressionUUID->"4b6e7310-64ab-4030-90ff-1d514489230b",
    CellTags->{"Description", "TabNext"},
    CellID->450900334],
-  Cell[20925, 457, 1283, 28, 31, "UsageInputs",ExpressionUUID->"b5da042b-a683-428b-ba97-19f5eeca1fc0",
+  Cell[21020, 459, 1283, 28, 31, "UsageInputs",ExpressionUUID->"b5da042b-a683-428b-ba97-19f5eeca1fc0",
    CellTags->"TabNext",
    CellID->410373307],
-  Cell[22211, 487, 2262, 55, 48, "UsageDescription",ExpressionUUID->"f333f74d-6e17-4c68-abab-da3614318aee",
+  Cell[22306, 489, 2262, 55, 48, "UsageDescription",ExpressionUUID->"f333f74d-6e17-4c68-abab-da3614318aee",
    CellTags->"TabNext",
    CellID->584004037],
-  Cell[28760, 650, 857, 14, 31, "Notes",ExpressionUUID->"4f03db6a-cf5b-4502-976c-91cb8b008c0e",
+  Cell[28855, 652, 857, 14, 31, "Notes",ExpressionUUID->"4f03db6a-cf5b-4502-976c-91cb8b008c0e",
    CellTags->"TabNext",
    CellID->521904482],
-  Cell[75535, 1672, 593, 9, 34, "Text",ExpressionUUID->"d7ed8bde-836b-4b62-aaf0-aedf253ba922",
+  Cell[91831, 2003, 593, 9, 34, "Text",ExpressionUUID->"d7ed8bde-836b-4b62-aaf0-aedf253ba922",
    CellTags->"TabNext",
    CellID->832483124],
-  Cell[76987, 1709, 595, 9, 31, "Item",ExpressionUUID->"19213d6a-1d2e-48f0-8c82-9854b69faad7",
+  Cell[93283, 2040, 595, 9, 31, "Item",ExpressionUUID->"19213d6a-1d2e-48f0-8c82-9854b69faad7",
    CellTags->"TabNext",
    CellID->123227828],
-  Cell[84375, 1910, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
+  Cell[100671, 2241, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
    CellTags->"TabNext",
    CellID->79477165],
-  Cell[85846, 1947, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
+  Cell[102142, 2278, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
    CellTags->"TabNext",
    CellID->960273585],
-  Cell[87929, 1994, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
+  Cell[104225, 2325, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
    CellTags->"TabNext",
    CellID->343081869],
-  Cell[89463, 2033, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
+  Cell[105759, 2364, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
    CellTags->"TabNext",
    CellID->485448166],
-  Cell[91526, 2093, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
+  Cell[107822, 2424, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
    CellTags->"TabNext",
    CellID->567921317],
-  Cell[92963, 2128, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
+  Cell[109259, 2459, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
    CellTags->"TabNext",
    CellID->920818074]},
  "Description"->{
@@ -4417,93 +4748,93 @@ CellTagsIndex->{
    CellTags->"Definition",
    CellID->474513213]},
  "Documentation"->{
-  Cell[18993, 403, 154, 3, 67, "Section",ExpressionUUID->"272b696a-02c5-4d0d-9a0c-fe0a3904bbaa",
+  Cell[19088, 405, 154, 3, 67, "Section",ExpressionUUID->"272b696a-02c5-4d0d-9a0c-fe0a3904bbaa",
    CellTags->"Documentation",
    CellID->855965831]},
  "Usage"->{
-  Cell[19172, 410, 1728, 43, 53, "Subsection",ExpressionUUID->"15d94756-46e7-48f3-93b2-2740ad45eb88",
+  Cell[19267, 412, 1728, 43, 53, "Subsection",ExpressionUUID->"15d94756-46e7-48f3-93b2-2740ad45eb88",
    CellTags->"Usage",
    CellID->310800389]},
  "Details & Options"->{
-  Cell[27491, 621, 1244, 25, 53, "Subsection",ExpressionUUID->"d26aecb0-d943-4966-90f3-ea428ba4c874",
+  Cell[27586, 623, 1244, 25, 53, "Subsection",ExpressionUUID->"d26aecb0-d943-4966-90f3-ea428ba4c874",
    CellTags->"Details & Options",
    CellID->66019318]},
  "Examples"->{
-  Cell[34360, 760, 6513, 144, 67, "Section",ExpressionUUID->"5384173b-1d94-4615-8a70-1d40aa8568d1",
+  Cell[34455, 762, 6513, 144, 67, "Section",ExpressionUUID->"5384173b-1d94-4615-8a70-1d40aa8568d1",
    CellTags->"Examples",
    CellID->180595041]},
  "Source & Additional Information"->{
-  Cell[74521, 1644, 190, 3, 67, "Section",ExpressionUUID->"6854a433-8e88-409a-9a8d-296e21f511bb",
+  Cell[90817, 1975, 190, 3, 67, "Section",ExpressionUUID->"6854a433-8e88-409a-9a8d-296e21f511bb",
    CellTags->"Source & Additional Information",
    CellID->318391102]},
  "Contributed By"->{
-  Cell[74736, 1651, 796, 19, 53, "Subsection",ExpressionUUID->"af03f237-8e63-4bca-8481-a976ebfd7842",
+  Cell[91032, 1982, 796, 19, 53, "Subsection",ExpressionUUID->"af03f237-8e63-4bca-8481-a976ebfd7842",
    CellTags->"Contributed By",
    CellID->127820888]},
  "Keywords"->{
-  Cell[76165, 1686, 797, 19, 53, "Subsection",ExpressionUUID->"63f170a9-8b61-4e39-ae8f-2cf8a1f401d7",
+  Cell[92461, 2017, 797, 19, 53, "Subsection",ExpressionUUID->"63f170a9-8b61-4e39-ae8f-2cf8a1f401d7",
    CellTags->"Keywords",
    CellID->547400482]},
  "Categories"->{
-  Cell[78862, 1746, 181, 4, 53, "Subsection",ExpressionUUID->"60263731-ed83-4799-8286-7c8326e72cab",
+  Cell[95158, 2077, 181, 4, 53, "Subsection",ExpressionUUID->"60263731-ed83-4799-8286-7c8326e72cab",
    CellTags->"Categories",
    CellID->749076926]},
  "CategoriesCell"->{
-  Cell[79046, 1752, 4515, 132, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
+  Cell[95342, 2083, 4515, 132, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
    CellTags->"CategoriesCell",
    CellID->379366600]},
  "Related Symbols"->{
-  Cell[83598, 1889, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
+  Cell[99894, 2220, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
    CellTags->"Related Symbols",
    CellID->161079978]},
  "Related Resource Objects"->{
-  Cell[84997, 1924, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
+  Cell[101293, 2255, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
    CellTags->"Related Resource Objects",
    CellID->588449267]},
  "Source/Reference Citation"->{
-  Cell[87051, 1972, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
+  Cell[103347, 2303, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
    CellTags->"Source/Reference Citation",
    CellID->642091068]},
  "Links"->{
-  Cell[88733, 2012, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
+  Cell[105029, 2343, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
    CellTags->"Links",
    CellID->521525586]},
  "Tests"->{
-  Cell[90040, 2046, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
+  Cell[106336, 2377, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
    CellTags->"Tests",
    CellID->74308299]},
  "Author Notes"->{
-  Cell[91341, 2087, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
+  Cell[107637, 2418, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
    CellTags->"Author Notes",
    CellID->795110225]},
  "Submission Notes"->{
-  Cell[92127, 2106, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
+  Cell[108423, 2437, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
    CellTags->"Submission Notes",
    CellID->843283583]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 209150, 4366},
- {"TabNext", 209316, 4370},
- {"Description", 211228, 4410},
- {"Definition", 211403, 4414},
- {"Documentation", 211571, 4418},
- {"Usage", 211734, 4422},
- {"Details & Options", 211906, 4426},
- {"Examples", 212080, 4430},
- {"Source & Additional Information", 212267, 4434},
- {"Contributed By", 212458, 4438},
- {"Keywords", 212630, 4442},
- {"Categories", 212798, 4446},
- {"CategoriesCell", 212971, 4450},
- {"Related Symbols", 213149, 4454},
- {"Related Resource Objects", 213338, 4458},
- {"Source/Reference Citation", 213537, 4462},
- {"Links", 213717, 4466},
- {"Tests", 213877, 4470},
- {"Author Notes", 214043, 4474},
- {"Submission Notes", 214217, 4478}
+ {"Title", 225446, 4697},
+ {"TabNext", 225612, 4701},
+ {"Description", 227530, 4741},
+ {"Definition", 227705, 4745},
+ {"Documentation", 227873, 4749},
+ {"Usage", 228036, 4753},
+ {"Details & Options", 228208, 4757},
+ {"Examples", 228382, 4761},
+ {"Source & Additional Information", 228569, 4765},
+ {"Contributed By", 228760, 4769},
+ {"Keywords", 228932, 4773},
+ {"Categories", 229100, 4777},
+ {"CategoriesCell", 229273, 4781},
+ {"Related Symbols", 229451, 4785},
+ {"Related Resource Objects", 229640, 4789},
+ {"Source/Reference Citation", 229840, 4793},
+ {"Links", 230021, 4797},
+ {"Tests", 230182, 4801},
+ {"Author Notes", 230349, 4805},
+ {"Submission Notes", 230524, 4809}
  }
 *)
 (*NotebookFileOutline
@@ -4519,219 +4850,219 @@ Cell[CellGroupData[{
 Cell[1990, 50, 1000, 22, 67, "Section",ExpressionUUID->"c33dbeb0-b520-41ce-968c-c9cd65b09aeb",
  CellTags->"Definition",
  CellID->474513213],
-Cell[2993, 74, 14686, 294, 699, "Code",ExpressionUUID->"31a4336b-f7b7-4e17-9312-711c86f382c7",
+Cell[2993, 74, 14758, 295, 699, "Code",ExpressionUUID->"31a4336b-f7b7-4e17-9312-711c86f382c7",
  CellID->125929111],
-Cell[17682, 370, 1274, 28, 87, "Code",ExpressionUUID->"0da9ba0d-dc88-4e50-a2b4-72422e4df77f",
+Cell[17754, 371, 1297, 29, 87, "Code",ExpressionUUID->"0da9ba0d-dc88-4e50-a2b4-72422e4df77f",
  CellID->36493022]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18993, 403, 154, 3, 67, "Section",ExpressionUUID->"272b696a-02c5-4d0d-9a0c-fe0a3904bbaa",
+Cell[19088, 405, 154, 3, 67, "Section",ExpressionUUID->"272b696a-02c5-4d0d-9a0c-fe0a3904bbaa",
  CellTags->"Documentation",
  CellID->855965831],
 Cell[CellGroupData[{
-Cell[19172, 410, 1728, 43, 53, "Subsection",ExpressionUUID->"15d94756-46e7-48f3-93b2-2740ad45eb88",
+Cell[19267, 412, 1728, 43, 53, "Subsection",ExpressionUUID->"15d94756-46e7-48f3-93b2-2740ad45eb88",
  CellTags->"Usage",
  CellID->310800389],
 Cell[CellGroupData[{
-Cell[20925, 457, 1283, 28, 31, "UsageInputs",ExpressionUUID->"b5da042b-a683-428b-ba97-19f5eeca1fc0",
+Cell[21020, 459, 1283, 28, 31, "UsageInputs",ExpressionUUID->"b5da042b-a683-428b-ba97-19f5eeca1fc0",
  CellTags->"TabNext",
  CellID->410373307],
-Cell[22211, 487, 2262, 55, 48, "UsageDescription",ExpressionUUID->"f333f74d-6e17-4c68-abab-da3614318aee",
+Cell[22306, 489, 2262, 55, 48, "UsageDescription",ExpressionUUID->"f333f74d-6e17-4c68-abab-da3614318aee",
  CellTags->"TabNext",
  CellID->584004037]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24510, 547, 1166, 27, 31, "UsageInputs",ExpressionUUID->"c2c23f12-ffca-40e2-bdd5-0e5b59b0e94b",
+Cell[24605, 549, 1166, 27, 31, "UsageInputs",ExpressionUUID->"c2c23f12-ffca-40e2-bdd5-0e5b59b0e94b",
  CellID->314426722],
-Cell[25679, 576, 1763, 39, 48, "UsageDescription",ExpressionUUID->"224f43e7-e9a6-4860-8d62-036e2c51957c",
+Cell[25774, 578, 1763, 39, 48, "UsageDescription",ExpressionUUID->"224f43e7-e9a6-4860-8d62-036e2c51957c",
  CellID->844091375]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27491, 621, 1244, 25, 53, "Subsection",ExpressionUUID->"d26aecb0-d943-4966-90f3-ea428ba4c874",
+Cell[27586, 623, 1244, 25, 53, "Subsection",ExpressionUUID->"d26aecb0-d943-4966-90f3-ea428ba4c874",
  CellTags->"Details & Options",
  CellID->66019318],
 Cell[CellGroupData[{
-Cell[28760, 650, 857, 14, 31, "Notes",ExpressionUUID->"4f03db6a-cf5b-4502-976c-91cb8b008c0e",
+Cell[28855, 652, 857, 14, 31, "Notes",ExpressionUUID->"4f03db6a-cf5b-4502-976c-91cb8b008c0e",
  CellTags->"TabNext",
  CellID->521904482],
-Cell[29620, 666, 1073, 20, 31, "Notes",ExpressionUUID->"9cfb2a22-a0a1-4a93-a004-51e3196ecde7",
+Cell[29715, 668, 1073, 20, 31, "Notes",ExpressionUUID->"9cfb2a22-a0a1-4a93-a004-51e3196ecde7",
  CellID->424626720],
-Cell[30696, 688, 803, 13, 31, "Notes",ExpressionUUID->"3b0ae342-dd80-4960-aaae-ec17205fb953",
+Cell[30791, 690, 803, 13, 31, "Notes",ExpressionUUID->"3b0ae342-dd80-4960-aaae-ec17205fb953",
  CellID->774087061],
-Cell[31502, 703, 1372, 23, 31, "Notes",ExpressionUUID->"7eb5ec64-e5e8-4a95-9bd4-c2d751dc4c11",
+Cell[31597, 705, 1372, 23, 31, "Notes",ExpressionUUID->"7eb5ec64-e5e8-4a95-9bd4-c2d751dc4c11",
  CellID->379098286],
-Cell[32877, 728, 299, 4, 31, "Notes",ExpressionUUID->"9df8a5c7-4284-4044-bf07-a395e61e779d",
+Cell[32972, 730, 299, 4, 31, "Notes",ExpressionUUID->"9df8a5c7-4284-4044-bf07-a395e61e779d",
  CellID->488837740],
-Cell[33179, 734, 1120, 19, 68, "TableNotes",ExpressionUUID->"b25d9d49-c8b5-4cc4-a4ad-b90d5cebd894",
+Cell[33274, 736, 1120, 19, 68, "TableNotes",ExpressionUUID->"b25d9d49-c8b5-4cc4-a4ad-b90d5cebd894",
  CellID->393815168]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34360, 760, 6513, 144, 67, "Section",ExpressionUUID->"5384173b-1d94-4615-8a70-1d40aa8568d1",
+Cell[34455, 762, 6513, 144, 67, "Section",ExpressionUUID->"5384173b-1d94-4615-8a70-1d40aa8568d1",
  CellTags->"Examples",
  CellID->180595041],
 Cell[CellGroupData[{
-Cell[40898, 908, 111, 1, 53, "Subsection",ExpressionUUID->"cbfda649-b212-4f70-b446-5567447d4b52",
+Cell[40993, 910, 111, 1, 53, "Subsection",ExpressionUUID->"cbfda649-b212-4f70-b446-5567447d4b52",
  CellID->462042388],
-Cell[41012, 911, 193, 2, 34, "Text",ExpressionUUID->"5d26ba23-eaa0-44e0-b7b1-164ebebfa409",
+Cell[41107, 913, 193, 2, 34, "Text",ExpressionUUID->"5d26ba23-eaa0-44e0-b7b1-164ebebfa409",
  CellID->13078159],
 Cell[CellGroupData[{
-Cell[41230, 917, 402, 9, 28, "Input",ExpressionUUID->"b21abf13-da6d-42ac-8e97-1235011cdaf3",
+Cell[41325, 919, 402, 9, 28, "Input",ExpressionUUID->"b21abf13-da6d-42ac-8e97-1235011cdaf3",
  CellID->443871870],
-Cell[41635, 928, 3540, 65, 269, "Output",ExpressionUUID->"8422bb85-f2f6-48ad-8588-c8636171a6ba",
+Cell[41730, 930, 3540, 65, 269, "Output",ExpressionUUID->"8422bb85-f2f6-48ad-8588-c8636171a6ba",
  CellID->45049236]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[45212, 998, 241, 5, 31, "ExampleDelimiter",ExpressionUUID->"475116fd-d87b-4771-9798-73f465f87f68",
+Cell[45307, 1000, 241, 5, 31, "ExampleDelimiter",ExpressionUUID->"475116fd-d87b-4771-9798-73f465f87f68",
  CellID->79546413],
-Cell[45456, 1005, 195, 2, 34, "Text",ExpressionUUID->"0d6d0a29-0a78-404f-8a5d-329ea08d9480",
+Cell[45551, 1007, 195, 2, 34, "Text",ExpressionUUID->"0d6d0a29-0a78-404f-8a5d-329ea08d9480",
  CellID->113336409],
 Cell[CellGroupData[{
-Cell[45676, 1011, 626, 18, 28, "Input",ExpressionUUID->"4cadf6c1-f4e4-48cd-b4cd-c82f6d20c677",
+Cell[45771, 1013, 626, 18, 28, "Input",ExpressionUUID->"4cadf6c1-f4e4-48cd-b4cd-c82f6d20c677",
  CellID->622303539],
-Cell[46305, 1031, 11927, 226, 471, "Output",ExpressionUUID->"66482b56-f883-47f8-b24c-96074a9afc35",
+Cell[46400, 1033, 11927, 226, 471, "Output",ExpressionUUID->"66482b56-f883-47f8-b24c-96074a9afc35",
  CellID->481749132]
 }, Open  ]]
 }, Open  ]],
-Cell[58259, 1261, 242, 5, 31, "ExampleDelimiter",ExpressionUUID->"fed52eb0-afe0-43ed-b859-bc4432350003",
+Cell[58354, 1263, 242, 5, 31, "ExampleDelimiter",ExpressionUUID->"fed52eb0-afe0-43ed-b859-bc4432350003",
  CellID->428006751]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[58538, 1271, 104, 1, 53, "Subsection",ExpressionUUID->"ec8616bf-d3b8-4c12-bc86-91079d92ec48",
+Cell[58633, 1273, 104, 1, 53, "Subsection",ExpressionUUID->"ec8616bf-d3b8-4c12-bc86-91079d92ec48",
  CellID->776923543],
 Cell[CellGroupData[{
-Cell[58667, 1276, 230, 3, 44, "Subsubsection",ExpressionUUID->"7a7d758f-f6ca-47dc-8862-9182028b4b3a",
+Cell[58762, 1278, 230, 3, 44, "Subsubsection",ExpressionUUID->"7a7d758f-f6ca-47dc-8862-9182028b4b3a",
  CellID->689189356],
-Cell[58900, 1281, 271, 3, 34, "Text",ExpressionUUID->"132f5330-e22c-4b57-abd0-99495a14b724",
+Cell[58995, 1283, 271, 3, 34, "Text",ExpressionUUID->"132f5330-e22c-4b57-abd0-99495a14b724",
  CellID->245577407],
 Cell[CellGroupData[{
-Cell[59196, 1288, 283, 7, 28, "Input",ExpressionUUID->"548bad4c-200f-4b3f-8588-a5c17a02a299",
+Cell[59291, 1290, 283, 7, 28, "Input",ExpressionUUID->"548bad4c-200f-4b3f-8588-a5c17a02a299",
  CellID->135245944],
-Cell[59482, 1297, 3539, 65, 269, "Output",ExpressionUUID->"4e103618-6eb5-4ba7-b595-190904211400",
+Cell[59577, 1299, 3539, 65, 269, "Output",ExpressionUUID->"4e103618-6eb5-4ba7-b595-190904211400",
  CellID->185181634]
 }, Open  ]],
-Cell[63036, 1365, 252, 3, 34, "Text",ExpressionUUID->"d61e1e96-7208-4c71-a4d9-db8ddeb077e2",
+Cell[63131, 1367, 252, 3, 34, "Text",ExpressionUUID->"d61e1e96-7208-4c71-a4d9-db8ddeb077e2",
  CellID->525666427],
 Cell[CellGroupData[{
-Cell[63313, 1372, 448, 11, 28, "Input",ExpressionUUID->"9a92f94f-f5db-400b-8b2f-09effe8b73f3",
+Cell[63408, 1374, 545, 13, 28, "Input",ExpressionUUID->"9a92f94f-f5db-400b-8b2f-09effe8b73f3",
  CellID->111068884],
-Cell[63764, 1385, 4042, 95, 508, "Output",ExpressionUUID->"b08112c8-3342-4290-a9ac-87ece23fbd1c",
- CellID->492306951]
+Cell[63956, 1389, 5747, 155, 604, "Output",ExpressionUUID->"7bc5ff18-f441-4e96-bd9c-2df8cc27f256",
+ CellID->750515358]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[67843, 1485, 442, 11, 28, "Input",ExpressionUUID->"36f7d51f-9f35-43ed-b17f-4d785f89a411",
+Cell[69740, 1549, 796, 22, 48, "Input",ExpressionUUID->"36f7d51f-9f35-43ed-b17f-4d785f89a411",
  CellID->305874575],
-Cell[68288, 1498, 5627, 125, 369, "Output",ExpressionUUID->"61afc76a-708a-4bbd-a400-6b835c60c6e3",
- CellID->100890931]
+Cell[70539, 1573, 19672, 381, 316, "Output",ExpressionUUID->"8f85c0af-f14a-44de-aa11-6fdd5032830a",
+ CellID->57747513]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[73954, 1628, 109, 1, 53, "Subsection",ExpressionUUID->"82d27920-3c71-4bd9-a1a1-7728f4f30ded",
+Cell[90250, 1959, 109, 1, 53, "Subsection",ExpressionUUID->"82d27920-3c71-4bd9-a1a1-7728f4f30ded",
  CellID->568056528],
-Cell[74066, 1631, 121, 1, 37, "Subsection",ExpressionUUID->"14011138-6484-48e9-84df-6e7be6a245fd",
+Cell[90362, 1962, 121, 1, 37, "Subsection",ExpressionUUID->"14011138-6484-48e9-84df-6e7be6a245fd",
  CellID->754506620],
-Cell[74190, 1634, 181, 2, 37, "Subsection",ExpressionUUID->"aad6b155-0298-4cb4-823d-a6442cf3a690",
+Cell[90486, 1965, 181, 2, 37, "Subsection",ExpressionUUID->"aad6b155-0298-4cb4-823d-a6442cf3a690",
  CellID->92483860],
-Cell[74374, 1638, 110, 1, 37, "Subsection",ExpressionUUID->"054e0384-10fd-4279-9d2a-147cc82228b1",
+Cell[90670, 1969, 110, 1, 37, "Subsection",ExpressionUUID->"054e0384-10fd-4279-9d2a-147cc82228b1",
  CellID->540091361]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[74521, 1644, 190, 3, 67, "Section",ExpressionUUID->"6854a433-8e88-409a-9a8d-296e21f511bb",
+Cell[90817, 1975, 190, 3, 67, "Section",ExpressionUUID->"6854a433-8e88-409a-9a8d-296e21f511bb",
  CellTags->"Source & Additional Information",
  CellID->318391102],
 Cell[CellGroupData[{
-Cell[74736, 1651, 796, 19, 53, "Subsection",ExpressionUUID->"af03f237-8e63-4bca-8481-a976ebfd7842",
+Cell[91032, 1982, 796, 19, 53, "Subsection",ExpressionUUID->"af03f237-8e63-4bca-8481-a976ebfd7842",
  CellTags->"Contributed By",
  CellID->127820888],
-Cell[75535, 1672, 593, 9, 34, "Text",ExpressionUUID->"d7ed8bde-836b-4b62-aaf0-aedf253ba922",
+Cell[91831, 2003, 593, 9, 34, "Text",ExpressionUUID->"d7ed8bde-836b-4b62-aaf0-aedf253ba922",
  CellTags->"TabNext",
  CellID->832483124]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[76165, 1686, 797, 19, 53, "Subsection",ExpressionUUID->"63f170a9-8b61-4e39-ae8f-2cf8a1f401d7",
+Cell[92461, 2017, 797, 19, 53, "Subsection",ExpressionUUID->"63f170a9-8b61-4e39-ae8f-2cf8a1f401d7",
  CellTags->"Keywords",
  CellID->547400482],
 Cell[CellGroupData[{
-Cell[76987, 1709, 595, 9, 31, "Item",ExpressionUUID->"19213d6a-1d2e-48f0-8c82-9854b69faad7",
+Cell[93283, 2040, 595, 9, 31, "Item",ExpressionUUID->"19213d6a-1d2e-48f0-8c82-9854b69faad7",
  CellTags->"TabNext",
  CellID->123227828],
-Cell[77585, 1720, 612, 9, 31, "Item",ExpressionUUID->"113edb06-14c9-4cc0-9684-083732fea97c",
+Cell[93881, 2051, 612, 9, 31, "Item",ExpressionUUID->"113edb06-14c9-4cc0-9684-083732fea97c",
  CellID->665460613],
-Cell[78200, 1731, 613, 9, 31, "Item",ExpressionUUID->"38741a45-ad16-4c9c-8df8-7768a00ddf6a",
+Cell[94496, 2062, 613, 9, 31, "Item",ExpressionUUID->"38741a45-ad16-4c9c-8df8-7768a00ddf6a",
  CellID->368664891]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[78862, 1746, 181, 4, 53, "Subsection",ExpressionUUID->"60263731-ed83-4799-8286-7c8326e72cab",
+Cell[95158, 2077, 181, 4, 53, "Subsection",ExpressionUUID->"60263731-ed83-4799-8286-7c8326e72cab",
  CellTags->"Categories",
  CellID->749076926],
-Cell[79046, 1752, 4515, 132, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
+Cell[95342, 2083, 4515, 132, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
  CellTags->"CategoriesCell",
  CellID->379366600]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[83598, 1889, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
+Cell[99894, 2220, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
  CellTags->"Related Symbols",
  CellID->161079978],
-Cell[84375, 1910, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
+Cell[100671, 2241, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
  CellTags->"TabNext",
  CellID->79477165]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[84997, 1924, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
+Cell[101293, 2255, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
  CellTags->"Related Resource Objects",
  CellID->588449267],
 Cell[CellGroupData[{
-Cell[85846, 1947, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
+Cell[102142, 2278, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
  CellTags->"TabNext",
  CellID->960273585],
-Cell[86435, 1958, 567, 8, 31, "Item",ExpressionUUID->"a7b1c97d-ee9d-4a7f-9475-446aad1b5bb6",
+Cell[102731, 2289, 567, 8, 31, "Item",ExpressionUUID->"a7b1c97d-ee9d-4a7f-9475-446aad1b5bb6",
  CellID->742077667]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[87051, 1972, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
+Cell[103347, 2303, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
  CellTags->"Source/Reference Citation",
  CellID->642091068],
-Cell[87929, 1994, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
+Cell[104225, 2325, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
  CellTags->"TabNext",
  CellID->343081869]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[88733, 2012, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
+Cell[105029, 2343, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
  CellTags->"Links",
  CellID->521525586],
-Cell[89463, 2033, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
+Cell[105759, 2364, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
  CellTags->"TabNext",
  CellID->485448166]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[90040, 2046, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
+Cell[106336, 2377, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
  CellTags->"Tests",
  CellID->74308299],
 Cell[CellGroupData[{
-Cell[90945, 2071, 184, 4, 28, "Input",ExpressionUUID->"188377da-9b7d-4e83-8db0-d1f8bdf4ccd4",
+Cell[107241, 2402, 184, 4, 28, "Input",ExpressionUUID->"188377da-9b7d-4e83-8db0-d1f8bdf4ccd4",
  CellID->667877521],
-Cell[91132, 2077, 148, 3, 32, "Output",ExpressionUUID->"3ceb6d10-4fb9-42b5-a2f6-66c37fa76a04",
+Cell[107428, 2408, 148, 3, 32, "Output",ExpressionUUID->"3ceb6d10-4fb9-42b5-a2f6-66c37fa76a04",
  CellID->993233288]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[91341, 2087, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
+Cell[107637, 2418, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
  CellTags->"Author Notes",
  CellID->795110225],
-Cell[91526, 2093, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
+Cell[107822, 2424, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
  CellTags->"TabNext",
  CellID->567921317]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[92127, 2106, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
+Cell[108423, 2437, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
  CellTags->"Submission Notes",
  CellID->843283583],
-Cell[92963, 2128, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
+Cell[109259, 2459, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
  CellTags->"TabNext",
  CellID->920818074]
 }, Open  ]]
