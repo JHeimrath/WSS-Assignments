@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    241036,       5065]
-NotebookOptionsPosition[    110072,       2476]
-NotebookOutlinePosition[    231423,       4840]
-CellTagsIndexPosition[    230704,       4816]
+NotebookDataLength[    197771,       4233]
+NotebookOptionsPosition[    110120,       2477]
+NotebookOutlinePosition[    188158,       4008]
+CellTagsIndexPosition[    187439,       3984]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -86,8 +86,8 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"\"\<CellShape\>\"", "\[Rule]", "\"\<Square\>\""}], ",", 
-       RowBox[{"ImageSize", "\[Rule]", "300"}]}], "}"}]}], ";"}], "\n", 
-   "\[IndentingNewLine]", 
+       RowBox[{"ImageSize", "\[Rule]", "300"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{
      RowBox[{"TessellationPlot", "[", 
@@ -2130,8 +2130,8 @@ Cell[BoxData[
        "\"Higher Mathematical Computation\""},
       "RowDefault"]},
     {
-     TemplateBox[{
-      CheckboxBox["Images", {False, "Images"}],"\" \"","\"Images\""},
+     TemplateBox[{CheckboxBox[False, {False, "Images"}],"\" \"","\"Images\""},
+      
       "RowDefault"], 
      TemplateBox[{
       CheckboxBox[False, {False, "Just For Fun"}],"\" \"","\"Just For Fun\""},
@@ -2211,7 +2211,8 @@ Cell[BoxData[
   "Grid"]], "Output",
  Editable->False,
  Deletable->False,
- CellChangeTimes->{{3.774977680835243*^9, 3.774977724561123*^9}},
+ CellChangeTimes->{{3.774977680835243*^9, 3.774977724561123*^9}, {
+  3.775247403315729*^9, 3.7752474034723406`*^9}},
  CellTags->"CategoriesCell",
  CellID->379366600,ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f"]
 }, Open  ]],
@@ -2475,7 +2476,7 @@ these functions were considered together.\
 }, Open  ]]
 },
 WindowSize->{748, 908},
-WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+WindowMargins->{{-7, Automatic}, {Automatic, 0}},
 DockedCells->{
   Cell[
    BoxData[
@@ -2490,842 +2491,7 @@ DockedCells->{
    CellFrameMargins -> {{39, 5}, {2, 2}}, CellFrame -> {{0, 0}, {1, 0}}, 
    CellFrameColor -> GrayLevel[0.75], CellOpen -> Dynamic[
      CurrentValue[
-      EvaluationNotebook[], {TaggingRules, "ToolsOpen"}, False]]], 
-  Cell[
-   BoxData[
-    StyleBox[
-     TagBox[
-      DynamicModuleBox[{Typeset`var$$ = False}, 
-       InterpretationBox[
-        StyleBox[
-         PaneSelectorBox[{False -> GridBox[{{
-               OpenerBox[
-                Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                Automatic, AutoAction -> False, ContinuousAction -> False], 
-               TagBox[
-                GridBox[{{
-                   StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.7752109448997919`17.329516212581172*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False], "\"   \"", 
-                   TagBox[
-                    
-                    GridBox[{{"\"Deployed for this session\"", "\"\""}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
-                   TagBox[
-                    GridBox[{{"\"ResourceFunction:\"", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False], 
-                    RawBoxes[
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False]]}, 
-                    "ClickToCopyTemplate"]}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-                    "Grid"], "\"\"", 
-                   TagBox[
-                    ButtonBox[
-                    TagBox[
-                    PaneSelectorBox[{False -> GraphicsBox[{
-                    GrayLevel[
-                    NCache[
-                    Rational[64, 85], 0.7529411764705882]], 
-                    
-                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                    0.42426406871192845`}, {0.42426406871192845`, 
-                    0.282842712474619}}], 
-                    
-                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                    0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                    0.42426406871192845`}}]}, ImageSize -> 18, 
-                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                    None], True -> GraphicsBox[{
-                    GrayLevel[
-                    NCache[
-                    Rational[128, 255], 0.5019607843137255]], 
-                    
-                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                    0.42426406871192845`}, {0.42426406871192845`, 
-                    0.282842712474619}}], 
-                    
-                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                    0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                    0.42426406871192845`}}]}, ImageSize -> 18, 
-                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                    None]}, 
-                    Dynamic[
-                    CurrentValue["MouseOver"]], ImageSize -> Automatic, 
-                    FrameMargins -> 0], 
-                    MouseAppearanceTag["LinkHand"]], 
-                    ButtonFunction :> (Symbol["System`ResourceFunction"]; 
-                    FunctionResource`DefinitionNotebook`Private`deleteMe[
-                    "559d2d5c-028b-4c26-864d-246999fe400e"]), Appearance -> 
-                    None, BoxID -> "559d2d5c-028b-4c26-864d-246999fe400e", 
-                    Evaluator -> Automatic, Method -> "Preemptive"], 
-                    MouseAppearanceTag["LinkHand"]]}}, 
-                 GridBoxAlignment -> {
-                  "Columns" -> {Left, Left, Left, Left, Right, Right}, 
-                   "Rows" -> {{Baseline}}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {"Columns" -> {Automatic, Automatic, 
-                    Scaled[0.35], Automatic, Fit, Automatic}, 
-                   "Rows" -> {{Automatic}}}], "Grid"]}}, 
-             GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False,
-              GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-             GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-             BaselinePosition -> {1, 1}], True -> GridBox[{{
-               OpenerBox[
-                Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                Automatic, AutoAction -> False, ContinuousAction -> False], 
-               TagBox[
-                GridBox[{{
-                   StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.7752109448997919`17.329516212581172*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False], "\"   \"", 
-                   TagBox[
-                    
-                    GridBox[{{"\"Deployed for this session\"", "\"\""}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
-                   TagBox[
-                    GridBox[{{"\"ResourceFunction:\"", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False], 
-                    RawBoxes[
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False]]}, 
-                    "ClickToCopyTemplate"]}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-                    "Grid"], "\"\"", 
-                   TagBox[
-                    ButtonBox[
-                    TagBox[
-                    PaneSelectorBox[{False -> GraphicsBox[{
-                    GrayLevel[
-                    NCache[
-                    Rational[64, 85], 0.7529411764705882]], 
-                    
-                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                    0.42426406871192845`}, {0.42426406871192845`, 
-                    0.282842712474619}}], 
-                    
-                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                    0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                    0.42426406871192845`}}]}, ImageSize -> 18, 
-                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                    None], True -> GraphicsBox[{
-                    GrayLevel[
-                    NCache[
-                    Rational[128, 255], 0.5019607843137255]], 
-                    
-                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                    0.42426406871192845`}, {0.42426406871192845`, 
-                    0.282842712474619}}], 
-                    
-                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                    0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                    0.42426406871192845`}}]}, ImageSize -> 18, 
-                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                    None]}, 
-                    Dynamic[
-                    CurrentValue["MouseOver"]], ImageSize -> Automatic, 
-                    FrameMargins -> 0], 
-                    MouseAppearanceTag["LinkHand"]], 
-                    ButtonFunction :> (Symbol["System`ResourceFunction"]; 
-                    FunctionResource`DefinitionNotebook`Private`deleteMe[
-                    "559d2d5c-028b-4c26-864d-246999fe400e"]), Appearance -> 
-                    None, BoxID -> "559d2d5c-028b-4c26-864d-246999fe400e", 
-                    Evaluator -> Automatic, Method -> "Preemptive"], 
-                    MouseAppearanceTag["LinkHand"]]}}, 
-                 GridBoxAlignment -> {
-                  "Columns" -> {Left, Left, Left, Left, Right, Right}, 
-                   "Rows" -> {{Baseline}}}, AutoDelete -> False, 
-                 GridBoxItemSize -> {"Columns" -> {Automatic, Automatic, 
-                    Scaled[0.35], Automatic, Fit, Automatic}, 
-                   "Rows" -> {{Automatic}}}], "Grid"]}, {"", 
-               PaneBox[
-                TagBox[
-                 GridBox[{{"\"\"", 
-                    StyleBox[
-                    TagBox[
-                    
-                    GridBox[{{
-                    "\"\[FilledVerySmallSquare]\"", "\"Resource object:\"", 
-                    TemplateBox[{
-                    TagBox[
-                    RowBox[{"ResourceObject", "[", 
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {"StandardForm", LineSpacing -> {0, 0}, 
-                    LineBreakWithin -> False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False], "]"}],
-                     Short[#, 0.75]& ], 
-                    RawBoxes[
-                    RowBox[{"ResourceObject", "[", 
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {"StandardForm", LineSpacing -> {0, 0}, 
-                    LineBreakWithin -> False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False], 
-                    "]"}]]}, "ClickToCopyTemplate"]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
-                    "Columns" -> {Automatic, Automatic, Fit}, 
-                    "Rows" -> {{Automatic}}}], "Grid"], FontColor -> 
-                    GrayLevel[0.5], FontSize -> 12, StripOnInput -> False]}}, 
-                  GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
-                  False, GridBoxDividers -> {
-                   "Columns" -> {{None}}, "RowsIndexed" -> {-1 -> GrayLevel[
-                    Rational[239, 255]]}}, 
-                  GridBoxItemSize -> {
-                   "Columns" -> {Automatic, Fit}, "Rows" -> {{Automatic}}}, 
-                  GridBoxSpacings -> {
-                   "Columns" -> {1, {}, 1}, "Rows" -> {1, {}, 2}}], "Grid"], 
-                ImageMargins -> 0]}}, 
-             GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False,
-              GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-             GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-             BaselinePosition -> {1, 1}]}, 
-          Dynamic[Typeset`var$$], Alignment -> Automatic, ImageSize -> 
-          Automatic, ImageMargins -> 0, BaseStyle -> {}, DefaultBaseStyle -> 
-          "OpenerView", BaselinePosition -> Baseline], Deployed -> False, 
-         StripOnInput -> False], 
-        OpenerView[{
-          Grid[{{
-             Style[
-              Dynamic[
-               DateString[
-                TimeZoneConvert[
-                 DateObject[
-                 3.7752109448997919`17.329516212581172*^9, TimeZone -> 0]], {
-                "MonthName", " ", "DayShort", ", ", "Year", " ", 
-                 "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-               SingleEvaluation -> True, Evaluator -> "System"], FontSlant -> 
-              Italic, FontColor -> GrayLevel[0.5], FontSize -> 0.9 Inherited],
-              "   ", 
-             Grid[{{"Deployed for this session", ""}}, Spacings -> 0.25], 
-             Grid[{{"ResourceFunction:", 
-                RawBoxes[
-                 TemplateBox[{
-                   InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False], 
-                   RawBoxes[
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False]]}, 
-                  "ClickToCopyTemplate"]]}}], "", 
-             MouseAppearance[
-              Button[
-               MouseAppearance[
-                Mouseover[
-                 Graphics[{
-                   GrayLevel[
-                    Rational[64, 85]], 
-                   
-                   Polygon[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                    0.42426406871192845`}, {0.42426406871192845`, 
-                    0.282842712474619}}], 
-                   
-                   Polygon[{{0.42426406871192845`, -0.282842712474619}, {
-                    0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                    0.42426406871192845`}}]}, ImageSize -> 18, 
-                  PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                  None], 
-                 Graphics[{
-                   GrayLevel[
-                    Rational[128, 255]], 
-                   
-                   Polygon[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                    0.42426406871192845`}, {0.42426406871192845`, 
-                    0.282842712474619}}], 
-                   
-                   Polygon[{{0.42426406871192845`, -0.282842712474619}, {
-                    
-                    0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                    0.42426406871192845`}}]}, ImageSize -> 18, 
-                  PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                  None]], "LinkHand"], Symbol["System`ResourceFunction"]; 
-               FunctionResource`DefinitionNotebook`Private`deleteMe[
-                "559d2d5c-028b-4c26-864d-246999fe400e"], Appearance -> None, 
-               BoxID -> "559d2d5c-028b-4c26-864d-246999fe400e"], 
-              "LinkHand"]}}, ItemSize -> {{Automatic, Automatic, 
-              Scaled[0.35], Automatic, Fit, Automatic}, Automatic}, 
-           Alignment -> {{Left, Left, Left, Left, Right, Right}, Baseline}], 
-          Grid[{{"", 
-             Style[
-              Grid[{{"\[FilledVerySmallSquare]", "Resource object:", 
-                 RawBoxes[
-                  TemplateBox[{
-                    TagBox[
-                    RowBox[{"ResourceObject", "[", 
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False], "]"}],
-                     Short[#, 0.75]& ], 
-                    RawBoxes[
-                    RowBox[{"ResourceObject", "[", 
-                    InterpretationBox[
-                    TagBox[
-                    StyleBox[
-                    StyleBox[
-                    FrameBox[
-                    GridBox[{{
-                    AdjustmentBox[
-                    StyleBox[
-                    StyleBox[
-                    StyleBox[
-                    "\"[\[FilledSmallSquare]]\"", FontColor -> 
-                    GrayLevel[0.15]], "ResourceFunctionIcon"], FontFamily -> 
-                    "Source Sans Pro Black", FontWeight -> "Heavy", 
-                    PrivateFontOptions -> {"OperatorSubstitution" -> False}, 
-                    FontSize -> Rational[10, 13] Inherited, 
-                    ShowStringCharacters -> False], BoxBaselineShift -> -0.25,
-                     BoxMargins -> {{0, 0}, {-1, -1}}], 
-                    StyleBox[
-                    StyleBox["\"TessellationPlot\"", "ResourceFunctionLabel"],
-                     FontSize -> Rational[12, 13] Inherited, 
-                    ShowStringCharacters -> False]}}]], 
-                    "ResourceFunctionFrame"], 
-                    FrameBoxOptions -> {
-                    FrameMargins -> {{3, 3}, {0, 0}}, FrameStyle -> 
-                    Directive[
-                    GrayLevel[0.5, 0.35], 
-                    AbsoluteThickness[0.5]], RoundingRadius -> 4, Background -> 
-                    GrayLevel[0.5, 0.15], 
-                    BaseStyle -> {
-                    "StandardForm", LineSpacing -> {0, 0}, LineBreakWithin -> 
-                    False}}, 
-                    GridBoxOptions -> {
-                    FrameStyle -> GrayLevel[1, 0], 
-                    GridBoxFrame -> {
-                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.25}}, "Rows" -> {-0.1, {}, 0}}}], {
-                    "FunctionResourceBox", 
-                    GrayLevel[0.15], "\"TessellationPlot\""}], 
-                    ResourceFunction[
-                    ResourceObject[
-                    Association[
-                    "Name" -> "TessellationPlot", "ShortName" -> 
-                    "TessellationPlot", "UUID" -> 
-                    "d160c104-47f1-4d2e-afae-98177ab7388a", "ResourceType" -> 
-                    "Function", "Version" -> None, "Description" -> 
-                    "Generates a tessellation of the plane with specified \
-cell shapes.", "SymbolName" -> 
-                    "FunctionRepository`$d160c10447f14d2eafae98177ab7388a`\
-TessellationPlot", "FunctionLocation" -> None]]], Selectable -> False], 
-                    "]"}]]}, "ClickToCopyTemplate"]]}}, Alignment -> Left, 
-               ItemSize -> {{Automatic, Automatic, Fit}, Automatic}], 
-              FontColor -> GrayLevel[0.5], FontSize -> 12]}}, 
-           ItemSize -> {{Automatic, Fit}, Automatic}, Alignment -> Left, 
-           Dividers -> {None, {-1 -> GrayLevel[
-                Rational[239, 255]]}}, Spacings -> {{1, {}, 1}, {1, {}, 2}}]},
-          False]], DynamicModuleValues -> Automatic], Setting[#, {0}]& ], 
-     "Text", FontSize -> 12, FontColor -> GrayLevel[0.25], StripOnInput -> 
-     False]], "StripeCell", CellFrameMargins -> {{20, 5}, {2, 2}}, 
-   CellFrame -> {{0, 0}, {1, 0}}, CellFrameColor -> GrayLevel[0.75]]},
+      EvaluationNotebook[], {TaggingRules, "ToolsOpen"}, False]]]},
 TaggingRules->{
  "ResourceType" -> "Function", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> "1.2.22", "ToolsOpen" -> True, "StatusMessage" -> "", 
@@ -3615,6 +2781,7 @@ clickTime$$ > FunctionResourceTools`BuildDefinitionNotebook`Private`timeout$$,
                     Graphics[{
                     RGBColor[0, 2/3, 0], 
                     Thickness[2/45], 
+                    
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 
                     0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
@@ -4053,7 +3220,8 @@ peOfCD7MPTA+zL0yUSnW9/sV4Hxw/DgpQOL7igUkfi8qwsMHAHSDTZ8=
                     StripOnInput -> False]}}, 
                   GridBoxAlignment -> {
                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, AutoDelete -> 
-                  False, GridBoxDividers -> {
+                  False, 
+                  GridBoxDividers -> {
                    "ColumnsIndexed" -> {2 -> GrayLevel[1]}, 
                     "Rows" -> {{None}}}, 
                   GridBoxItemSize -> {
@@ -4279,7 +3447,6 @@ submitRepositoryUpdate[
                     GraphicsBox[{
                     Thickness[0.06349206349206349], 
                     StyleBox[{
-                    
                     FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2,
                      0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
                     0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
@@ -4320,7 +3487,8 @@ eU8aPfbS9kxawAvxnrSCx3c3XzbS6JX4RFrAS34B53ckaw==
                     AspectRatio -> 1.15], "\"Submit to Repository\""}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
+                    False, 
+                    GridBoxItemSize -> {
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
                     GridBoxSpacings -> {
                     "Columns" -> {{0}}, "ColumnsIndexed" -> {2 -> 0.5}, 
@@ -4721,22 +3889,22 @@ CellTagsIndex->{
   Cell[93283, 2040, 595, 9, 31, "Item",ExpressionUUID->"19213d6a-1d2e-48f0-8c82-9854b69faad7",
    CellTags->"TabNext",
    CellID->123227828],
-  Cell[100671, 2241, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
+  Cell[100719, 2242, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
    CellTags->"TabNext",
    CellID->79477165],
-  Cell[102142, 2278, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
+  Cell[102190, 2279, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
    CellTags->"TabNext",
    CellID->960273585],
-  Cell[104225, 2325, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
+  Cell[104273, 2326, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
    CellTags->"TabNext",
    CellID->343081869],
-  Cell[105759, 2364, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
+  Cell[105807, 2365, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
    CellTags->"TabNext",
    CellID->485448166],
-  Cell[107822, 2424, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
+  Cell[107870, 2425, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
    CellTags->"TabNext",
    CellID->567921317],
-  Cell[109259, 2459, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
+  Cell[109307, 2460, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
    CellTags->"TabNext",
    CellID->920818074]},
  "Description"->{
@@ -4780,61 +3948,61 @@ CellTagsIndex->{
    CellTags->"Categories",
    CellID->749076926]},
  "CategoriesCell"->{
-  Cell[95342, 2083, 4515, 132, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
+  Cell[95342, 2083, 4563, 133, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
    CellTags->"CategoriesCell",
    CellID->379366600]},
  "Related Symbols"->{
-  Cell[99894, 2220, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
+  Cell[99942, 2221, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
    CellTags->"Related Symbols",
    CellID->161079978]},
  "Related Resource Objects"->{
-  Cell[101293, 2255, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
+  Cell[101341, 2256, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
    CellTags->"Related Resource Objects",
    CellID->588449267]},
  "Source/Reference Citation"->{
-  Cell[103347, 2303, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
+  Cell[103395, 2304, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
    CellTags->"Source/Reference Citation",
    CellID->642091068]},
  "Links"->{
-  Cell[105029, 2343, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
+  Cell[105077, 2344, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
    CellTags->"Links",
    CellID->521525586]},
  "Tests"->{
-  Cell[106336, 2377, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
+  Cell[106384, 2378, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
    CellTags->"Tests",
    CellID->74308299]},
  "Author Notes"->{
-  Cell[107637, 2418, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
+  Cell[107685, 2419, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
    CellTags->"Author Notes",
    CellID->795110225]},
  "Submission Notes"->{
-  Cell[108423, 2437, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
+  Cell[108471, 2438, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
    CellTags->"Submission Notes",
    CellID->843283583]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 225446, 4697},
- {"TabNext", 225612, 4701},
- {"Description", 227530, 4741},
- {"Definition", 227705, 4745},
- {"Documentation", 227873, 4749},
- {"Usage", 228036, 4753},
- {"Details & Options", 228208, 4757},
- {"Examples", 228382, 4761},
- {"Source & Additional Information", 228569, 4765},
- {"Contributed By", 228760, 4769},
- {"Keywords", 228932, 4773},
- {"Categories", 229100, 4777},
- {"CategoriesCell", 229273, 4781},
- {"Related Symbols", 229451, 4785},
- {"Related Resource Objects", 229640, 4789},
- {"Source/Reference Citation", 229840, 4793},
- {"Links", 230021, 4797},
- {"Tests", 230182, 4801},
- {"Author Notes", 230349, 4805},
- {"Submission Notes", 230524, 4809}
+ {"Title", 182181, 3865},
+ {"TabNext", 182347, 3869},
+ {"Description", 184265, 3909},
+ {"Definition", 184440, 3913},
+ {"Documentation", 184608, 3917},
+ {"Usage", 184771, 3921},
+ {"Details & Options", 184943, 3925},
+ {"Examples", 185117, 3929},
+ {"Source & Additional Information", 185304, 3933},
+ {"Contributed By", 185495, 3937},
+ {"Keywords", 185667, 3941},
+ {"Categories", 185835, 3945},
+ {"CategoriesCell", 186008, 3949},
+ {"Related Symbols", 186186, 3953},
+ {"Related Resource Objects", 186375, 3957},
+ {"Source/Reference Citation", 186575, 3961},
+ {"Links", 186756, 3965},
+ {"Tests", 186917, 3969},
+ {"Author Notes", 187084, 3973},
+ {"Submission Notes", 187259, 3977}
  }
 *)
 (*NotebookFileOutline
@@ -4998,71 +4166,71 @@ Cell[CellGroupData[{
 Cell[95158, 2077, 181, 4, 53, "Subsection",ExpressionUUID->"60263731-ed83-4799-8286-7c8326e72cab",
  CellTags->"Categories",
  CellID->749076926],
-Cell[95342, 2083, 4515, 132, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
+Cell[95342, 2083, 4563, 133, 274, "Output",ExpressionUUID->"5a4f837a-5e4e-4200-bcdc-2be150c1106f",
  CellTags->"CategoriesCell",
  CellID->379366600]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[99894, 2220, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
+Cell[99942, 2221, 774, 19, 53, "Subsection",ExpressionUUID->"877c50d3-e0f6-4cb4-993d-92b265970c3d",
  CellTags->"Related Symbols",
  CellID->161079978],
-Cell[100671, 2241, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
+Cell[100719, 2242, 585, 9, 31, "Item",ExpressionUUID->"b5a93663-a1a9-4c55-8909-0bcde818813a",
  CellTags->"TabNext",
  CellID->79477165]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[101293, 2255, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
+Cell[101341, 2256, 824, 19, 53, "Subsection",ExpressionUUID->"6bf94625-b9eb-4783-9776-8db7e87168ff",
  CellTags->"Related Resource Objects",
  CellID->588449267],
 Cell[CellGroupData[{
-Cell[102142, 2278, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
+Cell[102190, 2279, 586, 9, 31, "Item",ExpressionUUID->"6e1b66bc-2066-466a-8174-4cd3b78f46ef",
  CellTags->"TabNext",
  CellID->960273585],
-Cell[102731, 2289, 567, 8, 31, "Item",ExpressionUUID->"a7b1c97d-ee9d-4a7f-9475-446aad1b5bb6",
+Cell[102779, 2290, 567, 8, 31, "Item",ExpressionUUID->"a7b1c97d-ee9d-4a7f-9475-446aad1b5bb6",
  CellID->742077667]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[103347, 2303, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
+Cell[103395, 2304, 875, 20, 53, "Subsection",ExpressionUUID->"9cbe2d7c-c1fd-4835-9a80-3bcbbfaf2692",
  CellTags->"Source/Reference Citation",
  CellID->642091068],
-Cell[104225, 2325, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
+Cell[104273, 2326, 767, 13, 56, "Text",ExpressionUUID->"702cac8b-c021-42aa-80e1-9427de8c9439",
  CellTags->"TabNext",
  CellID->343081869]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[105029, 2343, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
+Cell[105077, 2344, 727, 19, 53, "Subsection",ExpressionUUID->"ebbe447e-6250-47a3-9912-3cbabcceccd7",
  CellTags->"Links",
  CellID->521525586],
-Cell[105759, 2364, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
+Cell[105807, 2365, 540, 8, 31, "Item",ExpressionUUID->"b03400b8-60a3-4411-a7dd-4d7e814f9304",
  CellTags->"TabNext",
  CellID->485448166]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[106336, 2377, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
+Cell[106384, 2378, 880, 21, 53, "Subsection",ExpressionUUID->"b224fb4d-1088-4773-b7df-156f1f562d95",
  CellTags->"Tests",
  CellID->74308299],
 Cell[CellGroupData[{
-Cell[107241, 2402, 184, 4, 28, "Input",ExpressionUUID->"188377da-9b7d-4e83-8db0-d1f8bdf4ccd4",
+Cell[107289, 2403, 184, 4, 28, "Input",ExpressionUUID->"188377da-9b7d-4e83-8db0-d1f8bdf4ccd4",
  CellID->667877521],
-Cell[107428, 2408, 148, 3, 32, "Output",ExpressionUUID->"3ceb6d10-4fb9-42b5-a2f6-66c37fa76a04",
+Cell[107476, 2409, 148, 3, 32, "Output",ExpressionUUID->"3ceb6d10-4fb9-42b5-a2f6-66c37fa76a04",
  CellID->993233288]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[107637, 2418, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
+Cell[107685, 2419, 182, 4, 67, "Section",ExpressionUUID->"81e50332-8365-41ad-8fd4-7e03685fc480",
  CellTags->"Author Notes",
  CellID->795110225],
-Cell[107822, 2424, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
+Cell[107870, 2425, 564, 8, 34, "Text",ExpressionUUID->"8d66c709-188a-49be-899f-f98a3b82a6ec",
  CellTags->"TabNext",
  CellID->567921317]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[108423, 2437, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
+Cell[108471, 2438, 833, 20, 67, "Section",ExpressionUUID->"5f3dc4eb-6eda-4751-b731-c3fd45110bd3",
  CellTags->"Submission Notes",
  CellID->843283583],
-Cell[109259, 2459, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
+Cell[109307, 2460, 785, 13, 56, "Text",ExpressionUUID->"04c52896-37e9-4682-a32e-0d73c48a3a92",
  CellTags->"TabNext",
  CellID->920818074]
 }, Open  ]]
